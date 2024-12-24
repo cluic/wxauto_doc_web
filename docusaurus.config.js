@@ -99,7 +99,7 @@ const config = {
         title: 'wxauto',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.png',
+          src: 'img/wxauto_logo_small.png',
         },
         items: [
           {

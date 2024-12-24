@@ -2,13 +2,16 @@
 sidebar_position: 1
 title: 关于plus版本
 ---
+
+![wxauto plus](/img/wxauto_plus_logo3.png)
+
 # 关于plus版本
 
 该版本为`wxauto`的plus版本`✨wxautox`，在保留`wxauto`所有功能的基础上，完善和提升了过与用户规模最举的体验和性能：
 
 1. **BUG 修复**：完善了并修复了`wxauto`存在的许多问题。
 2. **高效性能**：新增多项完善功能，大部分场景用户不再需要移动鼠标。
-3. **进阶专属支持**：加入VIP群，提供VIP用户专属支持。
+3. **进阶专属支持**：加入plus群，提供plus用户专属支持。
 
 ### 文档介绍
 
@@ -33,7 +36,7 @@ from wxautox import WeChat
 <details>
 <summary>点击查看功能对比</summary>
 
-|    类别    |    功能    | wxauto | ✨wxautox |
+|    类别    |    功能    | 开源版 | ✨plus版 |
 | :--------: | :--------: | :--: | :----: |
 | 消息类 | 发送文字消息 | ✅ | ✅ |
 | 消息类 | 发送文件 | ✅ | ✅ |
@@ -66,4 +69,8 @@ from wxautox import WeChat
 </details>
 
 
+### 获取Plus
 
+备注`plus`
+
+![qrcode](/img/qrcode.png)

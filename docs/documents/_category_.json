@@ -1,0 +1,10 @@
+{
+    "label": "普通版本文档",
+    "position": 2,
+    "collapsed": false,
+    "collapsible": true,
+    "className": "red",
+    "customProps": {
+        "description": "This description can be used in the swizzled DocCard"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "label": "2. 消息对象",
+    "position": 3,
+    "collapsed": false,
+    "collapsible": false,
+    "className": "red",
+    "customProps": {
+        "description": "This description can be used in the swizzled DocCard"
+    }
+}

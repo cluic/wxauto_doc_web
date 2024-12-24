@@ -1,0 +1,10 @@
+{
+    "label": "二、朋友圈",
+    "position": 3,
+    "collapsed": false,
+    "collapsible": false,
+    "className": "red",
+    "customProps": {
+        "description": "This description can be used in the swizzled DocCard"
+    }
+}

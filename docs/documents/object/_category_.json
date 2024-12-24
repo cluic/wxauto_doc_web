@@ -1,0 +1,9 @@
+{
+    "label": "四、对象说明",
+    "position": 3,
+
+    "className": "red",
+    "customProps": {
+        "description": "This description can be used in the swizzled DocCard"
+    }
+}

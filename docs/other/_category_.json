@@ -1,0 +1,10 @@
+{
+    "label": "其他",
+    "position": 4,
+    "collapsed": false,
+    "collapsible": false,
+    "className": "red",
+    "customProps": {
+        "description": "This description can be used in the swizzled DocCard"
+    }
+}

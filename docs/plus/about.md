@@ -73,4 +73,4 @@ from wxautox import WeChat
 
 备注`plus`
 
-![qrcode](/img/qrcode.png)
+![qrcode](/img/qrcode_bot.png)

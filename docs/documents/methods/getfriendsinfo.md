@@ -44,7 +44,7 @@ from wxauto import WeChat
 
 wx = WeChat()
 
-friend_details = wx.GetAllFriendDetails()
+friend_details = wx.GetFriendDetails()
 # [{'微信号：': 'abc123456',
 #   '地区：': '上海 浦东新区',
 #   '备注': '',

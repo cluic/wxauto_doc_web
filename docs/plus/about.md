@@ -74,3 +74,7 @@ from wxautox import WeChat
 备注`plus`
 
 ![qrcode](/img/qrcode_bot.png)
+
+:::info 注意
+如果没有备注，不会通过好友请求哦~
+:::

@@ -133,6 +133,14 @@ const config = {
                 label: '使用文档',
                 to: '/docs/intro',
               },
+              {
+                label: 'Plus版本',
+                to: '/docs/plus/about'
+              },
+              {
+                label: '云服务器部署',
+                to: '/docs/other/deploy'
+              }
             ],
           },
           {
@@ -156,8 +164,8 @@ const config = {
                 to: '/docs/intro/#-交流'
               },
               {
-                label: '云服务器部署',
-                to: '/docs/other/deploy'
+                label: '用户协议',
+                to: '/docs/other/agreement'
               }
             ],
           },

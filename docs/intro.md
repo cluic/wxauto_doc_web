@@ -52,7 +52,7 @@ wx.SendMsg('这是通过wxauto发给你的消息！', '文件传输助手')
 
 有任何问题或建议，欢迎加作者好友，备注wxauto
 
-![qrcode](/img/qrcode_bot.png)
+![qrcode](/img/qrcode.png)
 
 :::info 注意
 如果没有备注，不会通过好友请求哦~

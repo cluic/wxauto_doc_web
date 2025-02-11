@@ -71,9 +71,9 @@ from wxautox import WeChat
 
 ### 获取Plus
 
-备注`plus`
+加作者好友，备注`plus`（左侧二维码）
 
-![qrcode](/img/qrcode.png)
+<img src="/img/qrcode.png" alt="author" width="260"/><img src="/img/group_qrcode.png" alt="group" width="245"/>
 
 :::info 注意
 如果没有备注，不会通过好友请求哦~

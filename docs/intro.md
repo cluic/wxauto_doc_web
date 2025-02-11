@@ -50,9 +50,9 @@ wx.SendMsg('这是通过wxauto发给你的消息！', '文件传输助手')
 
 ## 🤝 交流
 
-有任何问题或建议，欢迎加作者好友，备注wxauto
+有任何问题或建议，欢迎加作者好友，备注wxauto（左侧二维码）
 
-![qrcode](/img/qrcode.png)
+<img src="/img/qrcode.png" alt="author" width="260"/><img src="/img/group_qrcode.png" alt="group" width="245"/>
 
 :::info 注意
 如果没有备注，不会通过好友请求哦~

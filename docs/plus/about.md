@@ -7,7 +7,7 @@ title: 关于plus版本
 
 # 关于plus版本
 
-该版本为`wxauto`的plus版本`✨wxautox`，在保留`wxauto`所有功能的基础上，完善和提升了过与用户规模最举的体验和性能：
+该版本为`wxauto`的plus版本`✨wxautox`，在保留`wxauto`所有功能的基础上，完善和提升了用户的体验和性能：
 
 1. **BUG 修复**：完善了并修复了`wxauto`存在的许多问题。
 2. **高效性能**：新增多项完善功能，大部分场景用户不再需要移动鼠标。
@@ -71,7 +71,7 @@ from wxautox import WeChat
 
 ### 获取Plus
 
-加作者好友，备注`plus`（左侧二维码）
+加作者好友，备注`plus`（左侧二维码），或加群获取对接AI应用demo（右侧二维码）。
 
 <img src="/img/qrcode.png" alt="author" width="260"/><img src="/img/group_qrcode.png" alt="group" width="245"/>
 

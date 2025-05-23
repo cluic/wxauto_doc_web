@@ -71,8 +71,7 @@ wx.SendMsg('这是通过wxauto发给你的消息！', '文件传输助手')
 
 有任何问题或建议，欢迎加作者好友，备注wxauto
 
-<img src="/img/qrcode.png" alt="author" width="260"/><img src="/img/group_qrcode.png" alt="group" width="245"/>
+<img src="/images/qrcode.png" alt="author" width="260"/><img src="/images/group_qrcode.png" alt="group" width="245"/>
 
-{{< callout type="info" >}}
-如果没有备注，不会通过好友请求哦~
-{{< /callout >}}
+> [!Note]
+> 如果没有备注，不会通过好友请求哦~

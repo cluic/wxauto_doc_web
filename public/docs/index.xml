@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>wxauto – wxauto(x)文档</title>
+    <title>wxauto – wxauto(x)</title>
     <link>http://localhost:1313/docs/</link>
-    <description>Recent content in wxauto(x)文档 on wxauto</description>
+    <description>Recent content in wxauto(x) on wxauto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     
@@ -1493,9 +1493,14 @@
 &lt;li&gt;&lt;strong&gt;进阶专属支持&lt;/strong&gt;：加入plus群，提供plus用户专属支持。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3&gt;文档介绍&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;文档介绍&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#%e6%96%87%e6%a1%a3%e4%bb%8b%e7%bb%8d&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;文档中标题前缀为&lt;code&gt;✨&lt;/code&gt;标志的，为Plus版本特有方法，开源版无法调用&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+    &lt;a href=&#34;#%e6%96%87%e6%a1%a3%e4%bb%8b%e7%bb%8d&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200&#34;&gt;
+  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;div class=&#34;hx:select-none hx:text-xl&#34; style=&#34;font-family: &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;;&#34;&gt;ℹ️&lt;/div&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
+    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;strong&gt;文档中标题前缀为&lt;code&gt;✨&lt;/code&gt;标志的，为Plus版本特有方法，开源版无法调用&lt;/strong&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;p&gt;该版本完全兼容开源版&lt;code&gt;wxauto&lt;/code&gt;，你可以完全保留现有&lt;code&gt;wxauto&lt;/code&gt;项目，不需修改任何其他代码。只需将&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
 
@@ -1524,12 +1529,7 @@
 &lt;/div&gt;
 &lt;p&gt;即可完成迁移。&lt;/p&gt;
 &lt;h3&gt;功能对比&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;功能对比&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#%e5%8a%9f%e8%83%bd%e5%af%b9%e6%af%94&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;details class=&#34;hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group&#34; &gt;
-  &lt;summary class=&#34;hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[&#39;&#39;] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90&#34;&gt;
-    &lt;strong class=&#34;hx:text-lg&#34;&gt;👉点击查看功能对比&lt;/strong&gt;
-  &lt;/summary&gt;
-  &lt;div class=&#34;hx:p-2 hx:overflow-hidden&#34;&gt;
-    &lt;table&gt;
+    &lt;a href=&#34;#%e5%8a%9f%e8%83%bd%e5%af%b9%e6%af%94&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
           &lt;th style=&#34;text-align: center&#34;&gt;类别&lt;/th&gt;
@@ -1703,8 +1703,6 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-  &lt;/div&gt;
-&lt;/details&gt;
 &lt;h3&gt;获取Plus&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;获取plus&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#%e8%8e%b7%e5%8f%96plus&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose&#34; style=&#34;--hextra-cards-grid-cols: 3;&#34;&gt;
   

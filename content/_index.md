@@ -1,5 +1,5 @@
 ---
-title: wxauto(x)文档
+title: wxauto(x)
 cascade:
   type: docs
 ---

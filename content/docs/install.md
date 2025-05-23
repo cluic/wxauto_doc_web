@@ -4,8 +4,6 @@ bookFlatSection: true
 title: "一、环境配置和安装"
 ---
 
-{{% steps %}}
-
 ## 一、环境配置
 
 |  环境  |              版本               |
@@ -59,4 +57,3 @@ for msg in msgs:
 
 > [!TIP] Success
 > ✅ 如果测试运行成功，恭喜您，环境配置完成！
-{{% /steps %}}

@@ -1,5 +1,5 @@
 # 用于构建和部署 Hugo 站点到 GitHub Pages 的示例工作流
-name: 部署 Hugo 站点到 Pages
+name: 部署wxauto docs到Pages
 
 on:
   # 在推送到默认分支时运行

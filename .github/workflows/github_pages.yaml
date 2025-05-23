@@ -49,6 +49,11 @@ jobs:
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: 调试信息
+        run: |
+          hugo version
+          ls -la themes/
+          cat hugo.yaml
       - name: 使用 Hugo 构建
         env:
           # 为了最大程度地兼容 Hugo 模块

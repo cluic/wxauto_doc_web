@@ -1,6 +1,7 @@
 baseURL: https://example.org/
 languageCode: zh-cn
 title: wxauto
+theme: hextra
 
 outputs:
   home: [HTML]

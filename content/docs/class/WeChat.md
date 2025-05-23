@@ -34,6 +34,20 @@ from wxautox import WeChat
 wx = WeChat()
 ```
 
+### ✨保持程序运行 KeepRunning
+
+由于wxautox使用守护线程来监听消息，当程序仅用于监听模式时，主线程会退出，因此需要调用此方法来保持程序运行
+
+```python
+from wxautox import WeChat
+
+wx = WeChat()
+wx.AddListenChat('张三', callback=lambda msg, chat: ...)
+
+# 保持程序运行，确保正常监听
+wx.KeepRunning()
+```
+
 ### 获取当前会话列表 GetSession
 
 ```python
@@ -44,7 +58,7 @@ for session in sessions:
 
 **返回值**：
 
-- 类型：`List[SessionElement]`
+- 类型：List[[SessionElement](/docs/class/other/#sessionelement)]
 - 描述：当前会话列表
 
 ### ✨发送链接卡片 SendUrlCard
@@ -95,7 +109,7 @@ chat = wx.GetSubWindow(nickname="张三")
 
 **返回值**：
 
-- 类型：`Chat`
+- 类型：[`Chat`](/docs/class/Chat)
 - 描述：子窗口实例
 
 ### 获取所有子窗口实例 GetAllSubWindow
@@ -106,7 +120,7 @@ chats = wx.GetAllSubWindow()
 
 **返回值**：
 
-- 类型：`List[Chat]`
+- 类型：List[[`Chat`](/docs/class/Chat)]
 - 描述：所有子窗口实例的列表
 
 ### 添加监听聊天窗口 AddListenChat
@@ -127,7 +141,7 @@ wx.AddListenChat(nickname="张三", callback=on_message)
 | 参数     | 类型                                              | 默认值 | 描述                                                       |
 | -------- | ------------------------------------------------- | ------ | ---------------------------------------------------------- |
 | nickname | str                                               | 必填   | 要监听的聊天对象                                           |
-| callback | Callable[[[Message](/docs/class/message/), str], None] | 必填   | 回调函数，参数为([Message](/docs/class/message/)对象, [Chat](/docs/class/chat/)对象) |
+| callback | Callable[[[Message](/docs/class/message/), [Chat](/docs/class/chat/)], None] | 必填   | 回调函数，参数为([Message](/docs/class/message/)对象, [Chat](/docs/class/chat/)对象) |
 
 **返回值**：
 
@@ -202,7 +216,7 @@ moments = wx.Moments(timeout=3)
 
 **返回值**：
 
-- 类型：`MomentsWnd`
+- 类型：[`MomentsWnd`](/docs/class/moment)
 - 描述：朋友圈窗口实例
 
 ### 获取下一个新消息 GetNextNewMessage

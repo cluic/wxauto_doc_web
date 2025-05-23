@@ -25,6 +25,7 @@ title: "Message类"
   - emotion：表情消息
   - merge：合并转发消息
   - personal_card：个人名片消息
+  - note: 笔记消息
   - other：其他消息
 
 而`self`和`friend`又可以跟消息类型所组合，所以所有消息类别如下：
@@ -47,6 +48,7 @@ Message (基类)
     │   ├── SelfEmotionMessage (表情消息)
     │   ├── SelfMergeMessage (合并转发消息)
     │   ├── SelfPersonalCardMessage (个人名片消息)
+    |   ├─── SelfNoteMessage (笔记消息)
     │   └── SelfOtherMessage (其他消息)
     └── FriendMessage (好友消息)
         ├── FriendTextMessage (文本消息)
@@ -76,6 +78,7 @@ Message (基类)
 |      [表情消息`EmotionMessage`](#emotionmessage)      |               SelfEmotionMessage           |              FriendEmotionMessage                |
 |        [合并消息`MergeMessage`](#mergemessage)        |                SelfMergeMessage            |               FriendMergeMessage                 |
 | [名片消息`PersonalCardMessage`](#personalcardmessage) |            SelfPersonalCardMessage         |           FriendPersonalCardMessage              |
+|      [笔记消息`NoteMessage`](#notemessage)            |                SelfNoteMessage             |               FriendNoteMessage                  |
 |        [其他消息`OtherMessage`](#othermessage)        |                SelfOtherMessage            |               FriendOtherMessage                 |
 
 简单的使用示例：

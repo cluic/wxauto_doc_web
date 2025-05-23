@@ -18,6 +18,13 @@ title: "一、环境配置和安装"
 
 ## 二、安装
 
+### 1. 开源版
+
+```bash
+pip install wxauto
+```
+
+### 2. ✨[Plus版](/plus)
 ```bash
 pip install wxautox
 ```
@@ -33,7 +40,8 @@ wxautox -a [激活码]
 ## 三、测试运行
 
 ```python
-from wxautox import WeChat
+from wxauto import WeChat   # 开源版
+# from wxautox import WeChat   # ✨Plus版
 
 # 初始化微信实例
 wx = WeChat()
@@ -49,4 +57,6 @@ for msg in msgs:
     print(f"{msg.sender}: {msg.content}")
 ```
 
+> [!TIP] Success
+> ✅ 如果测试运行成功，恭喜您，环境配置完成！
 {{% /steps %}}

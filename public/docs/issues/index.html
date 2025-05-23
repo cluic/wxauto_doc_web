@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn"><head>
-	<meta name="generator" content="Hugo 0.147.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="zh-cn"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
@@ -11,24 +10,106 @@
 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
-<title>wxauto</title>
-  <meta name="description" content="Modern, responsive, batteries-included Hugo theme for creating beautiful static websites." /><link rel="canonical" href="http://localhost:1313/" itemprop="url" />
+<title>六、常见问题 – wxauto</title>
+  <meta name="description" content="不同获取消息的方法有什么区别wxauto中，有以下获取消息的方法，除GetAllMessage之外，其余方法均用于获取新消息
+方法 说明 GetAllMessage 获取当前聊天页面中已加载的消息 GetNextNewMessage 获取微信主窗口中，其中一个未设置消息免打扰窗口的新消息 GetListenMessage 获取监听模式下聊天窗口的新消息 监听模式GetListenMessage
+调用AddListenMessage方法将目标聊天窗口独立出去加入监听列表，获取新消息
+优点准确 读取速度快 缺点数量限制，最多设置40个监听对象 全局模式GetAllNewMessage、GetNextNewMessage
+获取所有微信主窗口中，未被设置为消息免打扰的窗口中的新消息
+优点没有数量限制，无差别获取所有窗口新消息 缺点有概率漏消息
+该方法原理是获取会话列表中，聊天对象头像上的未读消息角标数字来判断新消息数，正常情况下按黑色流程读取未读消息，如果在程序读取完角标之后，读取完新消息之前，对方又发过来几条消息，就会漏掉相应数量的消息
+必须进行UI操作，速度可能相较监听模式慢些
+为什么会掉线掉线是微信3.9.9及以后的版本中加入的机制，客户端频繁操作导致的
+plus版本会掉线吗会，手动操作频繁也会掉线，是微信客户端的机制" /><link rel="canonical" href="http://localhost:1313/docs/issues/" itemprop="url" />
 
-<meta property="og:title" content="wxauto(x)文档" />
-<meta property="og:description" content="Modern, responsive, batteries-included Hugo theme for creating beautiful static websites." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
+<meta property="og:title" content="六、常见问题" />
+<meta property="og:description" content="不同获取消息的方法有什么区别
+    wxauto中，有以下获取消息的方法，除GetAllMessage之外，其余方法均用于获取新消息
 
-  <meta itemprop="name" content="wxauto(x)文档">
-  <meta itemprop="description" content="什么是 wxauto？wxauto 是我在2020年开发的一个基于 UIAutomation 的开源 Python 微信自动化库，最初只是一个简单的脚本，只能获取消息和发送消息，经历了2年多的停滞，期间很多网友留言说需要更多的功能，所以在2023年针对新版微信重新开发了 wxauto，增加了更多的功能，即使 Python 初学者也可以简单上手自动化微信操作。目前已实现很多日常的微信操作的自动化，如自动发送消息、自动添加好友、自动回复、自动获取聊天记录、图片、文件等功能，后续还会根据反馈更新更多功能。
-wxauto 的主要功能消息发送：支持发送文字、图片、文件、@群好友、引用消息等功能 聊天记录：可获取好友的聊天记录内容 监听消息：实时获取指定监听好友（群）的新消息 其他定制功能：根据需求定制自动化流程，满足各种特殊需求。 安装和使用安装 wxauto 非常简单，在命令行输入以下命令即可：
-pip install wxauto接下来，可以按照以下步骤进行基本配置和使用：">
-  <meta itemprop="wordCount" content="63">
+  
+      
+          方法
+          说明
+      
+  
+  
+      
+          GetAllMessage
+          获取当前聊天页面中已加载的消息
+      
+      
+          GetNextNewMessage
+          获取微信主窗口中，其中一个未设置消息免打扰窗口的新消息
+      
+      
+          GetListenMessage
+          获取监听模式下聊天窗口的新消息
+      
+  
+
+监听模式
+    GetListenMessage
+调用AddListenMessage方法将目标聊天窗口独立出去加入监听列表，获取新消息
+优点
+    
+准确
+读取速度快
+
+缺点
+    
+数量限制，最多设置40个监听对象
+
+全局模式
+    GetAllNewMessage、GetNextNewMessage
+获取所有微信主窗口中，未被设置为消息免打扰的窗口中的新消息
+优点
+    
+没有数量限制，无差别获取所有窗口新消息
+
+缺点
+    
+
+有概率漏消息
+该方法原理是获取会话列表中，聊天对象头像上的未读消息角标数字来判断新消息数，正常情况下按黑色流程读取未读消息，如果在程序读取完角标之后，读取完新消息之前，对方又发过来几条消息，就会漏掉相应数量的消息
+
+
+
+必须进行UI操作，速度可能相较监听模式慢些
+
+
+为什么会掉线
+    掉线是微信3.9.9及以后的版本中加入的机制，客户端频繁操作导致的
+plus版本会掉线吗
+    会，手动操作频繁也会掉线，是微信客户端的机制" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/docs/issues/" /><meta property="article:section" content="docs" />
+
+
+
+  <meta itemprop="name" content="六、常见问题">
+  <meta itemprop="description" content="不同获取消息的方法有什么区别wxauto中，有以下获取消息的方法，除GetAllMessage之外，其余方法均用于获取新消息
+方法 说明 GetAllMessage 获取当前聊天页面中已加载的消息 GetNextNewMessage 获取微信主窗口中，其中一个未设置消息免打扰窗口的新消息 GetListenMessage 获取监听模式下聊天窗口的新消息 监听模式GetListenMessage
+调用AddListenMessage方法将目标聊天窗口独立出去加入监听列表，获取新消息
+优点准确 读取速度快 缺点数量限制，最多设置40个监听对象 全局模式GetAllNewMessage、GetNextNewMessage
+获取所有微信主窗口中，未被设置为消息免打扰的窗口中的新消息
+优点没有数量限制，无差别获取所有窗口新消息 缺点有概率漏消息
+该方法原理是获取会话列表中，聊天对象头像上的未读消息角标数字来判断新消息数，正常情况下按黑色流程读取未读消息，如果在程序读取完角标之后，读取完新消息之前，对方又发过来几条消息，就会漏掉相应数量的消息
+必须进行UI操作，速度可能相较监听模式慢些
+为什么会掉线掉线是微信3.9.9及以后的版本中加入的机制，客户端频繁操作导致的
+plus版本会掉线吗会，手动操作频繁也会掉线，是微信客户端的机制">
+  <meta itemprop="wordCount" content="93">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="wxauto(x)文档">
-  <meta name="twitter:description" content="什么是 wxauto？wxauto 是我在2020年开发的一个基于 UIAutomation 的开源 Python 微信自动化库，最初只是一个简单的脚本，只能获取消息和发送消息，经历了2年多的停滞，期间很多网友留言说需要更多的功能，所以在2023年针对新版微信重新开发了 wxauto，增加了更多的功能，即使 Python 初学者也可以简单上手自动化微信操作。目前已实现很多日常的微信操作的自动化，如自动发送消息、自动添加好友、自动回复、自动获取聊天记录、图片、文件等功能，后续还会根据反馈更新更多功能。
-wxauto 的主要功能消息发送：支持发送文字、图片、文件、@群好友、引用消息等功能 聊天记录：可获取好友的聊天记录内容 监听消息：实时获取指定监听好友（群）的新消息 其他定制功能：根据需求定制自动化流程，满足各种特殊需求。 安装和使用安装 wxauto 非常简单，在命令行输入以下命令即可：
-pip install wxauto接下来，可以按照以下步骤进行基本配置和使用：">
+  <meta name="twitter:title" content="六、常见问题">
+  <meta name="twitter:description" content="不同获取消息的方法有什么区别wxauto中，有以下获取消息的方法，除GetAllMessage之外，其余方法均用于获取新消息
+方法 说明 GetAllMessage 获取当前聊天页面中已加载的消息 GetNextNewMessage 获取微信主窗口中，其中一个未设置消息免打扰窗口的新消息 GetListenMessage 获取监听模式下聊天窗口的新消息 监听模式GetListenMessage
+调用AddListenMessage方法将目标聊天窗口独立出去加入监听列表，获取新消息
+优点准确 读取速度快 缺点数量限制，最多设置40个监听对象 全局模式GetAllNewMessage、GetNextNewMessage
+获取所有微信主窗口中，未被设置为消息免打扰的窗口中的新消息
+优点没有数量限制，无差别获取所有窗口新消息 缺点有概率漏消息
+该方法原理是获取会话列表中，聊天对象头像上的未读消息角标数字来判断新消息数，正常情况下按黑色流程读取未读消息，如果在程序读取完角标之后，读取完新消息之前，对方又发过来几条消息，就会漏掉相应数量的消息
+必须进行UI操作，速度可能相较监听模式慢些
+为什么会掉线掉线是微信3.9.9及以后的版本中加入的机制，客户端频繁操作导致的
+plus版本会掉线吗会，手动操作频繁也会掉线，是微信客户端的机制">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -74,7 +155,7 @@ pip install wxauto接下来，可以按照以下步骤进行基本配置和使�
             title="文档"
             href="/docs"
             
-            class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-block hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+            class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-block hx:font-medium"
           >
             <span class="hx:text-center">文档</span>
           </a><div class="search-wrapper hx:relative hx:md:w-64">
@@ -233,13 +314,94 @@ pip install wxauto接下来，可以按照以下步骤进行基本配置和使�
   >五、使用示例
     </a>
               
-            </li><li class="hx:flex hx:flex-col "><a
+            </li><li class="hx:flex hx:flex-col open"><a
     class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
     href="/docs/issues/"
     
   >六、常见问题
     </a>
+  
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#%e4%b8%8d%e5%90%8c%e8%8e%b7%e5%8f%96%e6%b6%88%e6%81%af%e7%9a%84%e6%96%b9%e6%b3%95%e6%9c%89%e4%bb%80%e4%b9%88%e5%8c%ba%e5%88%ab"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >不同获取消息的方法有什么区别</a>
+            </li>
+          <li>
+              <a
+                href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e4%bc%9a%e6%8e%89%e7%ba%bf"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >为什么会掉线</a>
+            </li>
+          <li>
+              <a
+                href="#%e4%bc%9a%e5%b0%81%e5%8f%b7%e5%90%97"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >会封号吗</a>
+            </li>
+          <li>
+              <a
+                href="#%e6%8e%89%e7%ba%bf%e6%80%8e%e4%b9%88%e5%8a%9e"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >掉线怎么办</a>
+            </li>
+          <li>
+              <a
+                href="#%e6%94%af%e6%8c%81linuxmac%e5%90%97"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >支持Linux/Mac吗</a>
+            </li>
+          <li>
+              <a
+                href="#plus%e7%89%88%e6%9c%ac%e5%90%8e%e5%8f%b0%e6%a8%a1%e5%bc%8f%e6%98%af%e4%bb%80%e4%b9%88"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Plus版本后台模式是什么</a>
+            </li>
+          <li>
+              <a
+                href="#%e6%98%af%e5%90%a6%e6%94%af%e6%8c%81%e5%be%ae%e4%bf%a1%e5%a4%9a%e5%bc%80"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >是否支持微信多开</a>
+            </li>
+          <li>
+              <a
+                href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e5%ae%89%e8%a3%85%e6%88%90%e5%8a%9f%e4%bd%86%e6%98%af%e6%97%a0%e6%b3%95%e5%af%bc%e5%85%a5"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >为什么安装成功但是无法导入</a>
+            </li>
+          <li>
+              <a
+                href="#%e6%94%af%e6%8c%81%e4%bc%81%e4%b8%9a%e5%be%ae%e4%bf%a1%e5%90%97"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >支持企业微信吗</a>
+            </li>
+          <li>
+              <a
+                href="#%e6%8f%90%e7%a4%ba"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >提示</a>
+            </li>
+          <li>
+              <a
+                href="#%e6%9c%89%e4%bb%80%e4%b9%88%e9%99%90%e5%88%b6"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >有什么限制</a>
+            </li>
+          <li>
+              <a
+                href="#%e4%bc%9a%e6%8c%81%e7%bb%ad%e6%9b%b4%e6%96%b0%e5%90%97"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >会持续更新吗</a>
+            </li>
+          <li>
+              <a
+                href="#%e5%8f%af%e4%bb%a5%e6%9c%80%e5%b0%8f%e5%8c%96%e5%90%97"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >可以最小化吗</a>
+            </li>
+          </ul>
+  
               
             </li></ul>
       </div></li>
@@ -359,9 +521,9 @@ pip install wxauto接下来，可以按照以下步骤进行基本配置和使�
   >五、使用示例
     </a>
               
-            </li><li class="hx:flex hx:flex-col "><a
+            </li><li class="hx:flex hx:flex-col open"><a
     class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
     href="/docs/issues/"
     
   >六、常见问题
@@ -409,15 +571,43 @@ pip install wxauto接下来，可以按照以下步骤进行基本配置和使�
 <nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx:sticky hx:top-16 hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4"><p class="hx:mb-4 hx:font-semibold hx:tracking-tight">此页上</p><ul>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e4%bb%80%e4%b9%88%e6%98%af-wxauto">什么是 wxauto？
+        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e4%b8%8d%e5%90%8c%e8%8e%b7%e5%8f%96%e6%b6%88%e6%81%af%e7%9a%84%e6%96%b9%e6%b3%95%e6%9c%89%e4%bb%80%e4%b9%88%e5%8c%ba%e5%88%ab">不同获取消息的方法有什么区别
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#wxauto-%e7%9a%84%e4%b8%bb%e8%a6%81%e5%8a%9f%e8%83%bd">wxauto 的主要功能
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e7%9b%91%e5%90%ac%e6%a8%a1%e5%bc%8f">监听模式
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e5%ae%89%e8%a3%85%e5%92%8c%e4%bd%bf%e7%94%a8">安装和使用
+        <a class="hx:ltr:pl-8 hx:rtl:pr-8 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e4%bc%98%e7%82%b9">优点
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-8 hx:rtl:pr-8 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e7%bc%ba%e7%82%b9">缺点
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e5%85%a8%e5%b1%80%e6%a8%a1%e5%bc%8f">全局模式
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-8 hx:rtl:pr-8 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e4%bc%98%e7%82%b9-1">优点
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-8 hx:rtl:pr-8 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e7%bc%ba%e7%82%b9-1">缺点
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e4%bc%9a%e6%8e%89%e7%ba%bf">为什么会掉线
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-12 hx:rtl:pr-12 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#plus%e7%89%88%e6%9c%ac%e4%bc%9a%e6%8e%89%e7%ba%bf%e5%90%97">plus版本会掉线吗
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-12 hx:rtl:pr-12 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e5%a6%82%e4%bd%95%e8%a7%84%e9%81%bf">如何规避
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
@@ -425,7 +615,43 @@ pip install wxauto接下来，可以按照以下步骤进行基本配置和使�
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e4%ba%a4%e6%b5%81">交流
+        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e6%8e%89%e7%ba%bf%e6%80%8e%e4%b9%88%e5%8a%9e">掉线怎么办
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e6%94%af%e6%8c%81linuxmac%e5%90%97">支持Linux/Mac吗
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#plus%e7%89%88%e6%9c%ac%e5%90%8e%e5%8f%b0%e6%a8%a1%e5%bc%8f%e6%98%af%e4%bb%80%e4%b9%88">Plus版本后台模式是什么
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e6%98%af%e5%90%a6%e6%94%af%e6%8c%81%e5%be%ae%e4%bf%a1%e5%a4%9a%e5%bc%80">是否支持微信多开
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e5%ae%89%e8%a3%85%e6%88%90%e5%8a%9f%e4%bd%86%e6%98%af%e6%97%a0%e6%b3%95%e5%af%bc%e5%85%a5">为什么安装成功但是无法导入
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e6%94%af%e6%8c%81%e4%bc%81%e4%b8%9a%e5%be%ae%e4%bf%a1%e5%90%97">支持企业微信吗
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e6%8f%90%e7%a4%ba">提示
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e6%9c%89%e4%bb%80%e4%b9%88%e9%99%90%e5%88%b6">有什么限制
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e4%bc%9a%e6%8c%81%e7%bb%ad%e6%9b%b4%e6%96%b0%e5%90%97">会持续更新吗
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-semibold hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e5%8f%af%e4%bb%a5%e6%9c%80%e5%b0%8f%e5%8c%96%e5%90%97">可以最小化吗
         </a>
       </li></ul>
       <div class="hx:mt-8 hx:border-t hx:bg-white hx:pt-8 hx:shadow-[0_-12px_16px_white] hx:dark:bg-dark hx:dark:shadow-[0_-12px_16px_#111] hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400">
@@ -443,80 +669,81 @@ pip install wxauto接下来，可以按照以下步骤进行基本配置和使�
     <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
       <main class="hx:w-full hx:min-w-0 hx:max-w-6xl hx:px-6 hx:pt-4 hx:md:px-12">
         
-  <div class="hx:mt-1.5 hx:flex hx:items-center hx:gap-1 hx:overflow-hidden hx:text-sm hx:text-gray-500 hx:dark:text-gray-400 hx:contrast-more:text-current"><div class="hx:whitespace-nowrap hx:transition-colors hx:font-medium hx:text-gray-700 hx:contrast-more:font-bold hx:contrast-more:text-current hx:dark:text-gray-100 hx:contrast-more:dark:text-current">wxauto(x)文档</div>
+  <div class="hx:mt-1.5 hx:flex hx:items-center hx:gap-1 hx:overflow-hidden hx:text-sm hx:text-gray-500 hx:dark:text-gray-400 hx:contrast-more:text-current">
+        <div class="hx:whitespace-nowrap hx:transition-colors hx:min-w-[24px] hx:overflow-hidden hx:text-ellipsis hx:hover:text-gray-900 hx:dark:hover:text-gray-100">
+          <a href="/docs/">wxauto(x)文档</a>
+        </div><svg class="hx:w-3.5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx:whitespace-nowrap hx:transition-colors hx:font-medium hx:text-gray-700 hx:contrast-more:font-bold hx:contrast-more:text-current hx:dark:text-gray-100 hx:contrast-more:dark:text-current">六、常见问题</div>
   </div>
 
         <div class="content">
-          <h1>wxauto(x)文档</h1>
-          <h2>什么是 wxauto？<span class="hx:absolute hx:-mt-20" id="什么是-wxauto"></span>
-    <a href="#%e4%bb%80%e4%b9%88%e6%98%af-wxauto" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>wxauto 是我在2020年开发的一个基于 UIAutomation 的开源 Python 微信自动化库，最初只是一个简单的脚本，只能获取消息和发送消息，经历了2年多的停滞，期间很多网友留言说需要更多的功能，所以在2023年针对新版微信重新开发了 wxauto，增加了更多的功能，即使 Python 初学者也可以简单上手自动化微信操作。目前已实现很多日常的微信操作的自动化，如自动发送消息、自动添加好友、自动回复、自动获取聊天记录、图片、文件等功能，后续还会根据反馈更新更多功能。</p>
-<h2>wxauto 的主要功能<span class="hx:absolute hx:-mt-20" id="wxauto-的主要功能"></span>
-    <a href="#wxauto-%e7%9a%84%e4%b8%bb%e8%a6%81%e5%8a%9f%e8%83%bd" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
-<li>消息发送：支持发送文字、图片、文件、@群好友、引用消息等功能</li>
-<li>聊天记录：可获取好友的聊天记录内容</li>
-<li>监听消息：实时获取指定监听好友（群）的新消息</li>
-<li>其他定制功能：根据需求定制自动化流程，满足各种特殊需求。</li>
+          <h1>六、常见问题</h1>
+          <h2>不同获取消息的方法有什么区别<span class="hx:absolute hx:-mt-20" id="不同获取消息的方法有什么区别"></span>
+    <a href="#%e4%b8%8d%e5%90%8c%e8%8e%b7%e5%8f%96%e6%b6%88%e6%81%af%e7%9a%84%e6%96%b9%e6%b3%95%e6%9c%89%e4%bb%80%e4%b9%88%e5%8c%ba%e5%88%ab" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>wxauto中，有以下获取消息的方法，除GetAllMessage之外，其余方法均用于获取新消息</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">方法</th>
+          <th style="text-align: center">说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">GetAllMessage</td>
+          <td style="text-align: center">获取当前聊天页面中<strong>已加载</strong>的消息</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">GetNextNewMessage</td>
+          <td style="text-align: center">获取微信主窗口中，其中一个<strong>未设置消息免打扰</strong>窗口的新消息</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">GetListenMessage</td>
+          <td style="text-align: center">获取<strong>监听模式</strong>下聊天窗口的新消息</td>
+      </tr>
+  </tbody>
+</table>
+<h3>监听模式<span class="hx:absolute hx:-mt-20" id="监听模式"></span>
+    <a href="#%e7%9b%91%e5%90%ac%e6%a8%a1%e5%bc%8f" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>GetListenMessage</p>
+<p>调用AddListenMessage方法将目标聊天窗口独立出去加入监听列表，获取新消息</p>
+<h4>优点<span class="hx:absolute hx:-mt-20" id="优点"></span>
+    <a href="#%e4%bc%98%e7%82%b9" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li>准确</li>
+<li>读取速度快</li>
 </ul>
-<h2>安装和使用<span class="hx:absolute hx:-mt-20" id="安装和使用"></span>
-    <a href="#%e5%ae%89%e8%a3%85%e5%92%8c%e4%bd%bf%e7%94%a8" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>安装 wxauto 非常简单，在命令行输入以下命令即可：</p>
-<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install wxauto</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-  <button
-    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
-    <div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
-  </button>
-</div>
-</div>
-<p>接下来，可以按照以下步骤进行基本配置和使用：</p>
-<p>引入 wxauto 库：</p>
-<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">wxauto</span> <span class="kn">import</span> <span class="n">WeChat</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-  <button
-    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
-    <div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
-  </button>
-</div>
-</div>
-<p>初始化微信对象：</p>
-<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">wx</span> <span class="o">=</span> <span class="n">WeChat</span><span class="p">()</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-  <button
-    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
-    <div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
-  </button>
-</div>
-</div>
-<p>发送消息：</p>
-<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 给文件传输助手发送消息</span>
-</span></span><span class="line"><span class="cl"><span class="n">wx</span><span class="o">.</span><span class="n">SendMsg</span><span class="p">(</span><span class="s1">&#39;这是通过wxauto发给你的消息！&#39;</span><span class="p">,</span> <span class="s1">&#39;文件传输助手&#39;</span><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-  <button
-    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-    title="Copy code"
-  >
-    <div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
-    <div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
-  </button>
-</div>
-</div>
-<p>就这么简单几步，你就可以开始使用 wxauto 了！</p>
+<h4>缺点<span class="hx:absolute hx:-mt-20" id="缺点"></span>
+    <a href="#%e7%bc%ba%e7%82%b9" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li>数量限制，最多设置40个监听对象</li>
+</ul>
+<h3>全局模式<span class="hx:absolute hx:-mt-20" id="全局模式"></span>
+    <a href="#%e5%85%a8%e5%b1%80%e6%a8%a1%e5%bc%8f" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>GetAllNewMessage、GetNextNewMessage</p>
+<p>获取所有微信主窗口中，未被设置为消息免打扰的窗口中的新消息</p>
+<h4>优点<span class="hx:absolute hx:-mt-20" id="优点-1"></span>
+    <a href="#%e4%bc%98%e7%82%b9-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li>没有数量限制，无差别获取所有窗口新消息</li>
+</ul>
+<h4>缺点<span class="hx:absolute hx:-mt-20" id="缺点-1"></span>
+    <a href="#%e7%bc%ba%e7%82%b9-1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li>
+<p>有概率漏消息</p>
+<p>该方法原理是获取会话列表中，聊天对象头像上的未读消息角标数字来判断新消息数，正常情况下按黑色流程读取未读消息，如果在程序读取完角标之后，读取完新消息之前，对方又发过来几条消息，就会漏掉相应数量的消息</p>
+<p><img src="/images/issues_global_message.png" alt="image-20241221115227556"  loading="lazy" /></p>
+</li>
+<li>
+<p>必须进行UI操作，速度可能相较监听模式慢些</p>
+</li>
+</ul>
+<h2>为什么会掉线<span class="hx:absolute hx:-mt-20" id="为什么会掉线"></span>
+    <a href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e4%bc%9a%e6%8e%89%e7%ba%bf" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>掉线是微信3.9.9及以后的版本中加入的机制，客户端频繁操作导致的</p>
+<h5>plus版本会掉线吗<span class="hx:absolute hx:-mt-20" id="plus版本会掉线吗"></span>
+    <a href="#plus%e7%89%88%e6%9c%ac%e4%bc%9a%e6%8e%89%e7%ba%bf%e5%90%97" class="subheading-anchor" aria-label="Permalink for this section"></a></h5><p>会，手动操作频繁也会掉线，是微信客户端的机制</p>
+<h5>如何规避<span class="hx:absolute hx:-mt-20" id="如何规避"></span>
+    <a href="#%e5%a6%82%e4%bd%95%e8%a7%84%e9%81%bf" class="subheading-anchor" aria-label="Permalink for this section"></a></h5><ul>
+<li>加延迟时间</li>
+<li>用3.9.8版本客户端</li>
+<li>plus版本提供自动登录、获取二维码操作</li>
+</ul>
 <h2>会封号吗<span class="hx:absolute hx:-mt-20" id="会封号吗"></span>
-    <a href="#%e4%bc%9a%e5%b0%81%e5%8f%b7%e5%90%97" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>不封号。</p>
-<p><strong>该项目基于Windows官方API开发，不涉及任何侵入、破解、抓包微信客户端应用，完全以人操作微信的行为执行操作</strong></p>
-<p>但是如果你有以下行为，<strong>即使手动操作</strong>也有风控的风险：</p>
+    <a href="#%e4%bc%9a%e5%b0%81%e5%8f%b7%e5%90%97" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p><strong>该项目基于Windows官方API开发，不涉及任何侵入、破解、抓包微信客户端应用，完全以人操作微信的行为执行操作</strong></p>
+<p>但是如果你有以下行为，<u><strong>即使手动操作</strong></u>也有风控的风险：</p>
 <ul>
 <li>曾用hook类或webhook类微信工具，如dll注入、itchat及其衍生产品</li>
 <li>频繁且大量的发送消息、添加好友等，导致风控</li>
@@ -533,21 +760,84 @@ pip install wxauto接下来，可以按照以下步骤进行基本配置和使�
 </ul>
 </li>
 </ul>
-<h2>交流<span class="hx:absolute hx:-mt-20" id="交流"></span>
-    <a href="#%e4%ba%a4%e6%b5%81" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>有任何问题或建议，欢迎加作者好友，备注wxauto</p>
-<p><img src="/img/qrcode.png" alt="author" width="260"/><img src="/img/group_qrcode.png" alt="group" width="245"/></p>
+<h2>掉线怎么办<span class="hx:absolute hx:-mt-20" id="掉线怎么办"></span>
+    <a href="#%e6%8e%89%e7%ba%bf%e6%80%8e%e4%b9%88%e5%8a%9e" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>掉线是微信客户端在3.9.9+版本以后新增的安全机制，主要发生在微信号在陌生电脑设备登录后触发，不会涉及封号，没有完美解决方案，以下提供两个思路：</p>
+<ul>
+<li>微信号在同一台电脑养至可快速登录，几乎不会掉线，再进行wxauto托管</li>
+<li>想办法使用3.9.8版本微信客户端，完全不掉线（绕过微信版本检测的风险自行承担）</li>
+<li>plus版本提供掉线检测、二维码获取、自动登录等方法</li>
+</ul>
+<h2>支持Linux/Mac吗<span class="hx:absolute hx:-mt-20" id="支持linuxmac吗"></span>
+    <a href="#%e6%94%af%e6%8c%81linuxmac%e5%90%97" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>不支持，基于windows官方API开发，只支持windows系统</p>
+<h2>Plus版本后台模式是什么<span class="hx:absolute hx:-mt-20" id="plus版本后台模式是什么"></span>
+    <a href="#plus%e7%89%88%e6%9c%ac%e5%90%8e%e5%8f%b0%e6%a8%a1%e5%bc%8f%e6%98%af%e4%bb%80%e4%b9%88" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>后台模式即不依赖鼠标移动，绝大部分场景无需将微信调到前台窗口即可进行操作，但是有些操作必须要微信在前台才可以操作成功，例如获取发送者详情信息等；</p>
+<p>大部分场景下：</p>
+<ul>
+<li>不抢占鼠标</li>
+<li>执行速度快</li>
+<li>窗口不必在桌面顶部也能操作</li>
+</ul>
 <div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
   <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><div class="hx:select-none hx:text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">ℹ️</div></div>
 
   <div class="hx:w-full hx:min-w-0 hx:leading-7">
-    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0">如果没有备注，不会通过好友请求哦~</div>
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0">因为原理上还是ui自动化操作，所以某些个别场景可能需要激活微信窗口才可以操作</div>
   </div>
 </div>
 
+<h2>是否支持微信多开<span class="hx:absolute hx:-mt-20" id="是否支持微信多开"></span>
+    <a href="#%e6%98%af%e5%90%a6%e6%94%af%e6%8c%81%e5%be%ae%e4%bf%a1%e5%a4%9a%e5%bc%80" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p><strong>wxauto项目不支持一切违反官方用户协议的操作，<font color='red'>不建议</font>、<font color='red'>不支持</font>、<font color='red'>不提供</font>微信多开的方法或行为。</strong></p>
+<p>但是如果你<strong>自行使用</strong>其他方法多开微信，plus版本可用<code>WeChat(nickname='xxx')</code>来区分，但wxauto不承担由你自行多开的行为导致的风险，也不保证所有功能的正常调用。</p>
+<h2>为什么安装成功但是无法导入<span class="hx:absolute hx:-mt-20" id="为什么安装成功但是无法导入"></span>
+    <a href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e5%ae%89%e8%a3%85%e6%88%90%e5%8a%9f%e4%bd%86%e6%98%af%e6%97%a0%e6%b3%95%e5%af%bc%e5%85%a5" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>检查下安装wxautox的环境与你运行环境是否同一个python环境。</p>
+<p>PyCharm默认会给你的项目创建一个虚拟环境，需要在虚拟环境中安装才可以调用</p>
+<blockquote>
+  <p>如果不清楚如何使用虚拟环境安装，可问AI  ”怎么用pycharm的虚拟环境安装本地离线whl包“</p>
+</blockquote>
+<h2>支持企业微信吗<span class="hx:absolute hx:-mt-20" id="支持企业微信吗"></span>
+    <a href="#%e6%94%af%e6%8c%81%e4%bc%81%e4%b8%9a%e5%be%ae%e4%bf%a1%e5%90%97" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>不支持。法律风险较高，影响腾讯收入，严抓</p>
+<blockquote>
+  <p>如果你的企业开启了在个人微信中接受企业消息的功能，可以在个人微信手动将企业微信群拖出来使用wxauto监听模式进行操作</p>
+</blockquote>
+<p><img src="/images/issues_wecom.png" alt="image-20250322214731403"  loading="lazy" /></p>
+<h2>提示<span class="hx:absolute hx:-mt-20" id="提示"></span>
+    <a href="#%e6%8f%90%e7%a4%ba" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>该项目为<strong>模拟</strong>操作，即模拟用户鼠标键盘操作微信客户端的行为，系统、网络、硬件等个体差异较大，</p>
+<h2>有什么限制<span class="hx:absolute hx:-mt-20" id="有什么限制"></span>
+    <a href="#%e6%9c%89%e4%bb%80%e4%b9%88%e9%99%90%e5%88%b6" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
+<li>不可以发布到公共平台</li>
+<li>不可以做违法的事情</li>
+<li>个人或内部使用，不允许商业软件厂商进行集成</li>
+</ul>
+<h2>会持续更新吗<span class="hx:absolute hx:-mt-20" id="会持续更新吗"></span>
+    <a href="#%e4%bc%9a%e6%8c%81%e7%bb%ad%e6%9b%b4%e6%96%b0%e5%90%97" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
+<li>
+<p>3.x版本微信客户端</p>
+<p>持续更新，<strong>后续更新免费</strong>。</p>
+</li>
+<li>
+<p>4.x版本微信客户端</p>
+<p>与3.x版本是完全不同的客户端，购买3.x plus版本的用户半年内若官方禁止3.x客户端登录，免费升级4.x plus版本，超过半年则半价升级。</p>
+</li>
+</ul>
+<div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-yellow-100 hx:bg-yellow-50 hx:text-yellow-900 hx:dark:border-yellow-200/30 hx:dark:bg-yellow-700/30 hx:dark:text-yellow-200">
+  <div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2"><div class="hx:select-none hx:text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">⚠️</div></div>
+
+  <div class="hx:w-full hx:min-w-0 hx:leading-7">
+    <div class="hx:mt-6 hx:leading-7 hx:first:mt-0"><strong>由于发现有倒卖、商业分发plus版本安装包或功能，不排除后续更新<u>会增加设备限制</u>等可能</strong></div>
+  </div>
+</div>
+
+<h2>可以最小化吗<span class="hx:absolute hx:-mt-20" id="可以最小化吗"></span>
+    <a href="#%e5%8f%af%e4%bb%a5%e6%9c%80%e5%b0%8f%e5%8c%96%e5%90%97" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>可以但是<strong>不建议</strong>。</p>
+<p>wxauto项目本身是ui自动化，最小化会导致窗口ui绘制更新慢，自动化效率低</p>
 
         </div>
         <div class="hx:mt-16"></div>
-        
+        <div class="hx:mb-8 hx:flex hx:items-center hx:border-t hx:pt-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-neutral-400 hx:dark:contrast-more:border-neutral-400 hx:print:hidden"><a
+        href="/docs/example/"
+        title="五、使用示例"
+        class="hx:flex hx:max-w-[50%] hx:items-center hx:gap-1 hx:py-4 hx:text-base hx:font-medium hx:text-gray-600 hx:transition-colors [word-break:break-word] hx:hover:text-primary-600 hx:dark:text-gray-300 hx:md:text-lg hx:ltr:pr-4 hx:rtl:pl-4"
+      ><svg class="hx:inline hx:h-5 hx:shrink-0 hx:ltr:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>五、使用示例</a></div>
         
       </main>
     </article>

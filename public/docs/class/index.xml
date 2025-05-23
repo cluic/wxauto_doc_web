@@ -1,6 +1,11 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>wxauto – 四、核心类方法文档</title><link>http://localhost:63478/docs/class/</link><description>Recent content in 四、核心类方法文档 on wxauto</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="http://localhost:63478/docs/class/index.xml" rel="self" type="application/rss+xml"/><item><title>Chat类</title><link>http://localhost:63478/docs/class/chat/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:63478/docs/class/chat/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>wxauto – 四、核心类方法文档</title><link>https://example.org/docs/class/</link><description>Recent content in 四、核心类方法文档 on wxauto</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="https://example.org/docs/class/index.xml" rel="self" type="application/rss+xml"/><item><title>Chat类</title><link>https://example.org/docs/class/chat/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/docs/class/chat/</guid><description>
 &lt;h2>Chat 类属性&lt;span class="hx:absolute hx:-mt-20" id="chat-类属性">&lt;/span>
-&lt;a href="#chat-%e7%b1%bb%e5%b1%9e%e6%80%a7" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>聊天窗口类型 chat_type&lt;span class="hx:absolute hx:-mt-20" id="聊天窗口类型-chat_type">&lt;/span>
+&lt;a href="#chat-%e7%b1%bb%e5%b1%9e%e6%80%a7" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>在了解&lt;code>Chat&lt;/code>类的方法之前，我想先介绍一下为什么要做这个类。
+&lt;code>wxauto(x)&lt;/code>这个项目的原理是模拟人工对微信客户端的操作，拿取到的所有信息都是人眼可见的部分，
+所以当我们想监听某个人或群消息的时候，需要把这个人的聊天窗口独立出来，以确保UI元素不会因为微信主窗口切换聊天而丢失，
+同时也不需要每来一条信息都切换聊天窗口去获取。
+所以，&lt;code>Chat&lt;/code>类就是用来创建一个独立的聊天窗口，并获取这个聊天窗口的信息。&lt;/p>
+&lt;h3>聊天窗口类型 chat_type&lt;span class="hx:absolute hx:-mt-20" id="聊天窗口类型-chat_type">&lt;/span>
 &lt;a href="#%e8%81%8a%e5%a4%a9%e7%aa%97%e5%8f%a3%e7%b1%bb%e5%9e%8b-chat_type" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>获取当前聊天窗口的类型，返回值为字符串，取值范围如下：&lt;/p>
 &lt;ul>
 &lt;li>friend：好友&lt;/li>
@@ -126,7 +131,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="http://localhost:63478/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：是否发送成功&lt;/li>
 &lt;/ul>
 &lt;h3>发送消息 SendMsg&lt;span class="hx:absolute hx:-mt-20" id="发送消息-sendmsg">&lt;/span>
@@ -186,7 +191,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="http://localhost:63478/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：是否发送成功&lt;/li>
 &lt;/ul>
 &lt;h3>✨发送文本消息（打字机模式）SendTypingText&lt;span class="hx:absolute hx:-mt-20" id="发送文本消息打字机模式sendtypingtext">&lt;/span>
@@ -240,7 +245,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="http://localhost:63478/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：是否发送成功&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>示例&lt;/strong>：&lt;/p>
@@ -301,7 +306,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="http://localhost:63478/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：是否发送成功&lt;/li>
 &lt;/ul>
 &lt;h3>✨发送自定义表情 SendEmotion&lt;span class="hx:absolute hx:-mt-20" id="发送自定义表情-sendemotion">&lt;/span>
@@ -349,7 +354,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="http://localhost:63478/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：是否发送成功&lt;/li>
 &lt;/ul>
 &lt;h3>获取当前聊天窗口的所有消息 GetAllMessage&lt;span class="hx:absolute hx:-mt-20" id="获取当前聊天窗口的所有消息-getallmessage">&lt;/span>
@@ -383,7 +388,7 @@ title="Copy code"
 &lt;/div>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="http://localhost:63478/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：是否发送成功&lt;/li>
 &lt;/ul>
 &lt;h3>获取当前聊天窗口的新消息 GetNewMessage&lt;span class="hx:absolute hx:-mt-20" id="获取当前聊天窗口的新消息-getnewmessage">&lt;/span>
@@ -448,7 +453,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="http://localhost:63478/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：是否添加成功&lt;/li>
 &lt;/ul>
 &lt;h3>✨获取当前聊天群成员 GetGroupMembers&lt;span class="hx:absolute hx:-mt-20" id="获取当前聊天群成员-getgroupmembers">&lt;/span>
@@ -507,7 +512,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="http://localhost:63478/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：是否移除成功&lt;/li>
 &lt;/ul>
 &lt;h3>✨修改好友备注名或标签 ManageFriend&lt;span class="hx:absolute hx:-mt-20" id="修改好友备注名或标签-managefriend">&lt;/span>
@@ -550,7 +555,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="http://localhost:63478/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：是否成功修改备注名或标签&lt;/li>
 &lt;/ul>
 &lt;h3>✨管理当前群聊 ManageGroup&lt;span class="hx:absolute hx:-mt-20" id="管理当前群聊-managegroup">&lt;/span>
@@ -623,11 +628,11 @@ title="Copy code"
 &lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
 &lt;/button>
 &lt;/div>
-&lt;/div></description></item><item><title>WeChat类</title><link>http://localhost:63478/docs/class/wechat/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:63478/docs/class/wechat/</guid><description>
+&lt;/div></description></item><item><title>WeChat类</title><link>https://example.org/docs/class/wechat/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/docs/class/wechat/</guid><description>
 &lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-orange-100 hx:bg-orange-50 hx:text-orange-800 hx:dark:border-orange-400/30 hx:dark:bg-orange-400/20 hx:dark:text-orange-300">
 &lt;div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2">&lt;div class="hx:select-none hx:text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">🌐&lt;/div>&lt;/div>
 &lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
-&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;strong>提示：&lt;/strong>&lt;br>&lt;code>WeChat&lt;/code> 类继承了 &lt;a href="http://localhost:63478/docs/class/chat/" >&lt;code>Chat&lt;/code>类&lt;/a> 的所有方法，有关聊天框内的操作，请参考 &lt;a href="http://localhost:63478/docs/class/chat/" >&lt;code>Chat&lt;/code>类&lt;/a> 的文档。&lt;/div>
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;strong>提示：&lt;/strong>&lt;br>&lt;code>WeChat&lt;/code> 类继承了 &lt;a href="https://example.org/docs/class/chat/" >&lt;code>Chat&lt;/code>类&lt;/a> 的所有方法，有关聊天框内的操作，请参考 &lt;a href="https://example.org/docs/class/chat/" >&lt;code>Chat&lt;/code>类&lt;/a> 的文档。&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;h2>WeChat 类方法&lt;span class="hx:absolute hx:-mt-20" id="wechat-类方法">&lt;/span>
@@ -637,12 +642,12 @@ title="Copy code"
 &lt;li>&lt;font color='#00a2e8'>&lt;strong>导航栏（NavigationBox）：下图蓝色框内部分&lt;/strong>&lt;/font>&lt;/li>
 &lt;li>&lt;font color='#26b24f'>&lt;strong>会话列表（SessionBox）：下图绿色框内部分&lt;/strong>&lt;/font>
 &lt;ul>
-&lt;li>会话列表项（&lt;a href="http://localhost:63478/docs/class/other/#sessionelement" >&lt;code>SessionElement&lt;/code>&lt;/a>）：会话列表中每一个会话的元素，如好友、群聊、公众号等&lt;/li>
+&lt;li>会话列表项（&lt;a href="https://example.org/docs/class/other/#sessionelement" >&lt;code>SessionElement&lt;/code>&lt;/a>）：会话列表中每一个会话的元素，如好友、群聊、公众号等&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;font color='red'>&lt;strong>聊天框（&lt;a href="http://localhost:63478/docs/class/chat/" >Chat&lt;/a>）：下图红色框内部分&lt;/strong>&lt;/font>&lt;/li>
+&lt;li>&lt;font color='red'>&lt;strong>聊天框（&lt;a href="https://example.org/docs/class/chat/" >Chat&lt;/a>）：下图红色框内部分&lt;/strong>&lt;/font>&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="http://localhost:63478/images/wechat_window.png" alt="/images/wechat_window.png" loading="lazy" />&lt;/p>
+&lt;p>&lt;img src="https://example.org/images/wechat_window.png" alt="/images/wechat_window.png" loading="lazy" />&lt;/p>
 &lt;h3>初始化参数&lt;span class="hx:absolute hx:-mt-20" id="初始化参数">&lt;/span>
 &lt;a href="#%e5%88%9d%e5%a7%8b%e5%8c%96%e5%8f%82%e6%95%b0" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
 &lt;thead>
@@ -681,6 +686,25 @@ title="Copy code"
 &lt;/button>
 &lt;/div>
 &lt;/div>
+&lt;h3>✨保持程序运行 KeepRunning&lt;span class="hx:absolute hx:-mt-20" id="保持程序运行-keeprunning">&lt;/span>
+&lt;a href="#%e4%bf%9d%e6%8c%81%e7%a8%8b%e5%ba%8f%e8%bf%90%e8%a1%8c-keeprunning" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>由于wxautox使用守护线程来监听消息，当程序仅用于监听模式时，主线程会退出，因此需要调用此方法来保持程序运行&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">WeChat&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wx&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">WeChat&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wx&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">AddListenChat&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;张三&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">callback&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">lambda&lt;/span> &lt;span class="n">msg&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">chat&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="o">...&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 保持程序运行，确保正常监听&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wx&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">KeepRunning&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
 &lt;h3>获取当前会话列表 GetSession&lt;span class="hx:absolute hx:-mt-20" id="获取当前会话列表-getsession">&lt;/span>
 &lt;a href="#%e8%8e%b7%e5%8f%96%e5%bd%93%e5%89%8d%e4%bc%9a%e8%af%9d%e5%88%97%e8%a1%a8-getsession" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">sessions&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">wx&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">GetSession&lt;/span>&lt;span class="p">()&lt;/span>
@@ -697,7 +721,7 @@ title="Copy code"
 &lt;/div>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;code>List[SessionElement]&lt;/code>&lt;/li>
+&lt;li>类型：List[&lt;a href="https://example.org/docs/class/other/#sessionelement" >SessionElement&lt;/a>]&lt;/li>
 &lt;li>描述：当前会话列表&lt;/li>
 &lt;/ul>
 &lt;h3>✨发送链接卡片 SendUrlCard&lt;span class="hx:absolute hx:-mt-20" id="发送链接卡片-sendurlcard">&lt;/span>
@@ -819,7 +843,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;code>Chat&lt;/code>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/chat/" >&lt;code>Chat&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：子窗口实例&lt;/li>
 &lt;/ul>
 &lt;h3>获取所有子窗口实例 GetAllSubWindow&lt;span class="hx:absolute hx:-mt-20" id="获取所有子窗口实例-getallsubwindow">&lt;/span>
@@ -836,13 +860,13 @@ title="Copy code"
 &lt;/div>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;code>List[Chat]&lt;/code>&lt;/li>
+&lt;li>类型：List[&lt;a href="https://example.org/docs/class/chat/" >&lt;code>Chat&lt;/code>&lt;/a>]&lt;/li>
 &lt;li>描述：所有子窗口实例的列表&lt;/li>
 &lt;/ul>
 &lt;h3>添加监听聊天窗口 AddListenChat&lt;span class="hx:absolute hx:-mt-20" id="添加监听聊天窗口-addlistenchat">&lt;/span>
 &lt;a href="#%e6%b7%bb%e5%8a%a0%e7%9b%91%e5%90%ac%e8%81%8a%e5%a4%a9%e7%aa%97%e5%8f%a3-addlistenchat" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 3;">
 &lt;a
-class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="http://localhost:63478/docs/example/#2-%e7%9b%91%e5%90%ac%e6%b6%88%e6%81%af"
+class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="https://example.org/docs/example/#2-%e7%9b%91%e5%90%ac%e6%b6%88%e6%81%af"
 >&lt;span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">👉监听消息&lt;/span>&lt;div class="hextra-badge hextra-card-tag">
 &lt;div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:text-gray-600 hx:bg-gray-100 hx:dark:bg-neutral-800 hx:dark:text-neutral-200 hx:border-gray-200 hx:dark:border-neutral-700">使用示例&lt;/div>
 &lt;/div>&lt;/a>
@@ -880,9 +904,9 @@ title="Copy code"
 &lt;/tr>
 &lt;tr>
 &lt;td>callback&lt;/td>
-&lt;td>Callable[[&lt;a href="http://localhost:63478/docs/class/message/" >Message&lt;/a>, str], None]&lt;/td>
+&lt;td>Callable[[&lt;a href="https://example.org/docs/class/message/" >Message&lt;/a>, &lt;a href="https://example.org/docs/class/chat/" >Chat&lt;/a>], None]&lt;/td>
 &lt;td>必填&lt;/td>
-&lt;td>回调函数，参数为(&lt;a href="http://localhost:63478/docs/class/message/" >Message&lt;/a>对象, &lt;a href="http://localhost:63478/docs/class/chat/" >Chat&lt;/a>对象)&lt;/td>
+&lt;td>回调函数，参数为(&lt;a href="https://example.org/docs/class/message/" >Message&lt;/a>对象, &lt;a href="https://example.org/docs/class/chat/" >Chat&lt;/a>对象)&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -891,7 +915,7 @@ title="Copy code"
 &lt;li>
 &lt;p>成功时：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="http://localhost:63478/docs/class/chat/" >Chat&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/chat/" >Chat&lt;/a>&lt;/li>
 &lt;li>描述：该监的听子窗口实例&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -1031,7 +1055,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;code>MomentsWnd&lt;/code>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/moment/" >&lt;code>MomentsWnd&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：朋友圈窗口实例&lt;/li>
 &lt;/ul>
 &lt;h3>获取下一个新消息 GetNextNewMessage&lt;span class="hx:absolute hx:-mt-20" id="获取下一个新消息-getnextnewmessage">&lt;/span>
@@ -1067,13 +1091,13 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：Dict[str, List[&lt;a href="http://localhost:63478/docs/class/message/" >Message&lt;/a>]&lt;/li>
+&lt;li>类型：Dict[str, List[&lt;a href="https://example.org/docs/class/message/" >Message&lt;/a>]&lt;/li>
 &lt;li>描述：消息列表，键为聊天名称，值为消息列表&lt;/li>
 &lt;/ul>
 &lt;h3>✨获取新的好友申请列表 GetNewFriends&lt;span class="hx:absolute hx:-mt-20" id="获取新的好友申请列表-getnewfriends">&lt;/span>
 &lt;a href="#%e8%8e%b7%e5%8f%96%e6%96%b0%e7%9a%84%e5%a5%bd%e5%8f%8b%e7%94%b3%e8%af%b7%e5%88%97%e8%a1%a8-getnewfriends" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 3;">
 &lt;a
-class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="http://localhost:63478/docs/example/#3-%e5%a4%84%e7%90%86%e5%a5%bd%e5%8f%8b%e7%94%b3%e8%af%b7"
+class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="https://example.org/docs/example/#3-%e5%a4%84%e7%90%86%e5%a5%bd%e5%8f%8b%e7%94%b3%e8%af%b7"
 >&lt;span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">👉处理好友申请&lt;/span>&lt;div class="hextra-badge hextra-card-tag">
 &lt;div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:text-gray-600 hx:bg-gray-100 hx:dark:bg-neutral-800 hx:dark:text-neutral-200 hx:border-gray-200 hx:dark:border-neutral-700">使用示例&lt;/div>
 &lt;/div>&lt;/a>
@@ -1110,7 +1134,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：List[&lt;a href="http://localhost:63478/docs/class/other/#newfriendelement" >&lt;code>NewFriendElement&lt;/code>&lt;/a>]&lt;/li>
+&lt;li>类型：List[&lt;a href="https://example.org/docs/class/other/#newfriendelement" >&lt;code>NewFriendElement&lt;/code>&lt;/a>]&lt;/li>
 &lt;li>描述：新的好友申请列表&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>示例&lt;/strong>：&lt;/p>
@@ -1253,7 +1277,7 @@ title="Copy code"
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
 &lt;li>类型：Dict[str, str]&lt;/li>
-&lt;/ul></description></item><item><title>Message类</title><link>http://localhost:63478/docs/class/message/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:63478/docs/class/message/</guid><description>
+&lt;/ul></description></item><item><title>Message类</title><link>https://example.org/docs/class/message/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/docs/class/message/</guid><description>
 &lt;p>消息类中，有两个固定属性：&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>&lt;code>attr&lt;/code>&lt;/strong>：消息属性，即消息的来源属性
@@ -1279,6 +1303,7 @@ title="Copy code"
 &lt;li>emotion：表情消息&lt;/li>
 &lt;li>merge：合并转发消息&lt;/li>
 &lt;li>personal_card：个人名片消息&lt;/li>
+&lt;li>note: 笔记消息&lt;/li>
 &lt;li>other：其他消息&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -1302,6 +1327,7 @@ Message (基类)
 │ ├── SelfEmotionMessage (表情消息)
 │ ├── SelfMergeMessage (合并转发消息)
 │ ├── SelfPersonalCardMessage (个人名片消息)
+| ├─── SelfNoteMessage (笔记消息)
 │ └── SelfOtherMessage (其他消息)
 └── FriendMessage (好友消息)
 ├── FriendTextMessage (文本消息)
@@ -1380,6 +1406,11 @@ Message (基类)
 &lt;td style="text-align: center">&lt;a href="#personalcardmessage" >名片消息&lt;code>PersonalCardMessage&lt;/code>&lt;/a>&lt;/td>
 &lt;td style="text-align: center">SelfPersonalCardMessage&lt;/td>
 &lt;td style="text-align: center">FriendPersonalCardMessage&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;a href="#notemessage" >笔记消息&lt;code>NoteMessage&lt;/code>&lt;/a>&lt;/td>
+&lt;td style="text-align: center">SelfNoteMessage&lt;/td>
+&lt;td style="text-align: center">FriendNoteMessage&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align: center">&lt;a href="#othermessage" >其他消息&lt;code>OtherMessage&lt;/code>&lt;/a>&lt;/td>
@@ -2418,10 +2449,10 @@ title="Copy code"
 &lt;li>Path: markdown文件路径&lt;/li>
 &lt;/ul>
 &lt;h2>OtherMessage&lt;span class="hx:absolute hx:-mt-20" id="othermessage">&lt;/span>
-&lt;a href="#othermessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>其他暂未支持解析的消息类型&lt;/p></description></item><item><title>朋友圈类</title><link>http://localhost:63478/docs/class/moment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:63478/docs/class/moment/</guid><description>
+&lt;a href="#othermessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>其他暂未支持解析的消息类型&lt;/p></description></item><item><title>朋友圈类</title><link>https://example.org/docs/class/moment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/docs/class/moment/</guid><description>
 &lt;h2>MomentsWnd&lt;span class="hx:absolute hx:-mt-20" id="momentswnd">&lt;/span>
 &lt;a href="#momentswnd" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;strong>朋友圈窗口&lt;/strong>对象，即的是朋友圈的窗口对象，提供对朋友圈窗口的各种操作，如获取朋友圈内容、刷新、关闭等功能。&lt;/p>
-&lt;p>&lt;img src="http://localhost:63478/images/moment_wnd.png" alt="Moments" loading="lazy" />&lt;/p>
+&lt;p>&lt;img src="https://example.org/images/moment_wnd.png" alt="Moments" loading="lazy" />&lt;/p>
 &lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">WeChat&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
@@ -2513,7 +2544,7 @@ title="Copy code"
 &lt;/div>
 &lt;h2>Moments&lt;span class="hx:absolute hx:-mt-20" id="moments">&lt;/span>
 &lt;a href="#moments" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;strong>朋友圈内容&lt;/strong>对象，即的是朋友圈的内容对象，提供对朋友圈的各种操作，如获取朋友圈内容、点赞、评论等功能。&lt;/p>
-&lt;p>&lt;img src="http://localhost:63478/images/moment.png" alt="Moments" loading="lazy" />&lt;/p>
+&lt;p>&lt;img src="https://example.org/images/moment.png" alt="Moments" loading="lazy" />&lt;/p>
 &lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 获取朋友圈对象&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">moments&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">pyq&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">GetMoments&lt;/span>&lt;span class="p">()&lt;/span>
@@ -2680,7 +2711,7 @@ title="Copy code"
 &lt;/button>
 &lt;/div>
 &lt;/div>
-&lt;p>&lt;strong>返回值&lt;/strong>：无&lt;/p></description></item><item><title>其他类</title><link>http://localhost:63478/docs/class/other/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:63478/docs/class/other/</guid><description>
+&lt;p>&lt;strong>返回值&lt;/strong>：无&lt;/p></description></item><item><title>其他类</title><link>https://example.org/docs/class/other/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/docs/class/other/</guid><description>
 &lt;h2>WxResponse&lt;span class="hx:absolute hx:-mt-20" id="wxresponse">&lt;/span>
 &lt;a href="#wxresponse" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>该类用于该项目多个方法的返回值&lt;/p>
 &lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
@@ -2780,7 +2811,7 @@ title="Copy code"
 &lt;/div>
 &lt;/div>
 &lt;h2>SessionElement&lt;span class="hx:absolute hx:-mt-20" id="sessionelement">&lt;/span>
-&lt;a href="#sessionelement" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;img src="http://localhost:63478/images/session_element.png" alt="SessionElement" loading="lazy" />&lt;/p>
+&lt;a href="#sessionelement" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;img src="https://example.org/images/session_element.png" alt="SessionElement" loading="lazy" />&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -2935,7 +2966,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>返回值：&lt;a href="#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/p>
 &lt;h2>NewFriendElement&lt;span class="hx:absolute hx:-mt-20" id="newfriendelement">&lt;/span>
-&lt;a href="#newfriendelement" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;img src="http://localhost:63478/images/new_friend_element.png" alt="NewFriendElement" loading="lazy" />&lt;/p>
+&lt;a href="#newfriendelement" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;img src="https://example.org/images/new_friend_element.png" alt="NewFriendElement" loading="lazy" />&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -3073,7 +3104,7 @@ title="Copy code"
 &lt;/button>
 &lt;/div>
 &lt;/div>
-&lt;p>&lt;img src="http://localhost:63478/images/login_wnd.png" alt="LoginWnd" loading="lazy" />&lt;/p>
+&lt;p>&lt;img src="https://example.org/images/login_wnd.png" alt="LoginWnd" loading="lazy" />&lt;/p>
 &lt;p>参数：&lt;/p>
 &lt;table>
 &lt;thead>

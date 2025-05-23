@@ -16,7 +16,7 @@ weight: 2
 
 ### 文档介绍
 
-> **该文档为`wxauto`的补充文档，已存在于开源版文档中的内容将不会出现在本文档中，仅提供VIP用户参考。**
+> **文档中标题前缀为`✨`标志的，为Plus版本特有方法，开源版无法调用**
 
 该版本完全兼容开源版`wxauto`，你可以完全保留现有`wxauto`项目，不需修改任何其他代码。只需将
 
@@ -72,10 +72,7 @@ from wxautox import WeChat
 
 ### 获取Plus
 
-加作者好友，备注`plus`（左侧二维码），或加群获取对接AI应用demo（右侧二维码）。
-
-<img src="/img/qrcode.png" alt="author" width="260"/><img src="/img/group_qrcode.png" alt="group" width="245"/>
-
-:::info 注意
-如果没有备注，不会通过好友请求哦~
-:::
+{{< cards >}}
+  {{< card title="作者好友" image="/images/qrcode.png" subtitle="不备注的话，可能不会通过哦~" >}}
+  {{< card title="加群交流" image="/images/group_qrcode.png" subtitle="群内可获取AI应用demo" >}}
+{{< /cards >}}

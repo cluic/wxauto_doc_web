@@ -49,6 +49,11 @@ def on_message(msg, chatname):
 # 添加监听，监听到的消息用on_message函数进行处理
 wx.AddListenChat(nickname="张三", callback=on_message)
 
+# 保持程序运行
+wx.KeepRunning()
+```
+
+```python
 # ... 程序运行一段时间后 ...
 
 # 移除监听

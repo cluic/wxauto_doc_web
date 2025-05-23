@@ -33,6 +33,11 @@ jobs:
     env:
       HUGO_VERSION: 0.147.0
     steps:
+      - name: 检出
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 获取所有历史记录以支持 .GitInfo 和 .Lastmod
+          submodules: recursive
       - name: 设置 Go
         uses: actions/setup-go@v5
         with:

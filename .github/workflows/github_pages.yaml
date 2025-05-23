@@ -56,7 +56,7 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo \
-            --gc --minify \
+            --gc --minify --theme hextra \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: 上传工件
         uses: actions/upload-pages-artifact@v3

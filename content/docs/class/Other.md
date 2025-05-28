@@ -1,5 +1,5 @@
 ---
-weight: 4
+weight: 5
 bookFlatSection: true
 title: "其他类"
 ---
@@ -27,11 +27,11 @@ else:
 | ------------------- | ------ | -------- | ---------------------------------------------------------------------------------------- |
 | ENABLE_FILE_LOGGER  | bool   | True     | 是否启用日志文件                                                                         |
 | DEFAULT_SAVE_PATH   | str    | ./wxautox | 下载文件/图片默认保存路径 |
-| MESSAGE_HASH        | bool   | False    | 是否启用消息哈希值用于辅助判断消息，开启后会稍微影响性能                               |
+| ✨MESSAGE_HASH        | bool   | False    | 是否启用消息哈希值用于辅助判断消息，开启后会稍微影响性能                               |
 | DEFAULT_MESSAGE_XBIAS | int    | 51       | 头像到消息X偏移量，用于消息定位，点击消息等操作                                       |
 | FORCE_MESSAGE_XBIAS  | bool   | False    | 是否强制重新自动获取X偏移量，如果设置为True，则每次启动都会重新获取                   |
 | LISTEN_INTERVAL     | int    | 1        | 监听消息时间间隔，单位秒                                                                 |
-| LISTENER_EXCUTOR_WORKERS | int    | 4        | 监听执行器线程池大小，根据自身需求和设备性能设置                                       |
+| ✨LISTENER_EXCUTOR_WORKERS | int    | 4        | 监听执行器线程池大小，根据自身需求和设备性能设置                                       |
 | SEARCH_CHAT_TIMEOUT | int    | 5        | 搜索聊天对象超时时间，单位秒                                                             |
 
 
@@ -93,7 +93,7 @@ session.click()
 session.double_click()
 ```
 
-### delete
+### ✨delete
 
 **删除会话**
 
@@ -113,7 +113,7 @@ session.double_click()
 session.delete()
 ```
 
-### hide
+### ✨hide
 
 **隐藏会话**
 
@@ -126,7 +126,7 @@ session.delete()
 session.hide()
 ```
 
-### select_option
+### ✨select_option
 
 **选择会话选项**，即右键点击会话，然后选择某个选项
 
@@ -161,13 +161,13 @@ session.hide()
 | tags | list | None | 标签 |
 | permission | str  | '朋友圈' | 朋友圈权限，可选值：'全部'、'仅聊天' |
 
-### delete
+### ✨delete
 
 **删除好友申请**
 
 参数：无
 
-### reply
+### ✨reply
 
 **回复好友申请**
 
@@ -177,7 +177,7 @@ session.hide()
 | :--- | :--- | :--- |:--- |
 | text | str | 必填 | 回复信息 |
 
-### get_account
+### ✨get_account
 
 **获取申请添加的好友的账号信息**
 
@@ -193,25 +193,18 @@ session.hide()
 
 返回值：str
 
-## LoginWnd
+## ✨LoginWnd
+
+{{< cards >}}
+  {{< card link="/docs/example/#6-自动登录" title="👉查看自动登录、二维码示例" tag="点击跳转" tagType="info" >}}
+{{< /cards >}}
 
 该类用于微信登录、获取二维码等操作
 
 ```python
 from wxautox import LoginWnd
 
-wxlogin = LoginWnd(app_path="D:\\Program Files\\Tencent\\WeChat\\WeChat.exe")
-
-## 1. 获取二维码
-if wxlogin.exists(3):
-    wxlogin.reopen()   # 重新打开微信登录窗口
-    qrcode = wxlogin.get_qrcode()   # 保存并返回二维码图片地址
-    ...  # 拿到的二维码自行处理
-
-## 2. 自动登录（如果是被踢下线则需要重新扫码登录）
-if wxlogin.exists(3):
-    wxlogin.reopen()   # 重新打开微信登录窗口
-    login_result = wxlogin.login()   # 当login_result为True时，登录成功，None则登录失败需要扫码
+wxlogin = LoginWnd(app_path="...")
 ```
 
 ![LoginWnd](/images/login_wnd.png)
@@ -264,3 +257,40 @@ if wxlogin.exists(3):
 参数：无
 
 返回值：无
+
+## WeChatImage
+
+```python
+from wxautox.ui.components import WeChatImage
+
+imgwnd = WeChatImage()
+```
+
+微信图片/视频**窗口**类，用于处理微信图片或图片窗口的各种操作
+
+![wxauto_image_wnd](/images/wxauto_image_wnd.png)
+
+### ocr
+
+**识别图片中的文字**，仅支持图片，不支持视频
+
+参数：
+
+| 参数名 | 类型 |  默认值 | 说明 |
+| :--- | :--- | :--- |:--- |
+| wait | int | 10 | 隐性等待时间 |
+
+返回值：str，识别到的文字
+
+### save
+
+**保存图片/视频**
+
+参数：
+
+| 参数名 | 类型 |  默认值 | 说明 |
+| :--- | :--- | :--- |:--- |
+| dir_path | str | None | 保存的目录路径，None即本地路径下自动生成 |
+| timeout | int | 10 | 保存超时时间 |
+
+返回值：Path，保存的文件路径

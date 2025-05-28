@@ -126,7 +126,7 @@ chats = wx.GetAllSubWindow()
 ### 添加监听聊天窗口 AddListenChat
 
 {{< cards >}}
-  {{< card link="/docs/example/#2-监听消息" title="👉监听消息" tag= "使用示例" >}}
+  {{< card link="/docs/class/chat" title="👉查看监听消息示例" tag="点击跳转" tagType="info" >}}
 {{< /cards >}}
 
 ```python
@@ -194,14 +194,6 @@ wx.StopListening()
 
 **返回值**：无
 
-### 保持运行 KeepRunning
-
-用于防止监听时程序退出
-
-```python
-wx.KeepRunning()
-```
-
 ### ✨进入朋友圈 Moments
 
 ```python
@@ -235,11 +227,50 @@ messages = wx.GetNextNewMessage(filter_mute=False)
 
 - 类型：Dict[str, List[[Message](/docs/class/message/)]
 - 描述：消息列表，键为聊天名称，值为消息列表
+- 示例：
+    ```python
+    {'chat_name': 'wxauto交流',
+      'chat_type': 'group',
+      'msg': [
+          <wxautox - TimeMessage(2025年5月2...) at 0x227379555d0>,
+          <wxautox - FriendImageMessage([图片]) at 0x2273795ca10>,
+          <wxautox - FriendTextMessage(/[微笑]) at 0x22737967c50>,
+          <wxautox - FriendTextMessage(你点击发送会自动...) at 0x227366c4f50>, 
+          ...
+        ]
+    }
+    ```
+
+### ✨获取好友列表 GetFriendDetails
+
+```python
+# 获取前10个好友详情信息
+messages = wx.GetFriendDetails(n=10)
+```
+
+**参数**：
+
+| 参数        | 类型 | 默认值 | 描述                 |
+| ----------- | ---- | ------ | -------------------- |
+|        n    | int  | None   | 获取前n个好友详情信息 |
+| tag         | str  | None   | 从指定拼音首字母开始 |
+| timeout     | int  | 0xFFFFF | 获取超时时间（秒） |
+
+**返回值**：
+
+- 类型：List[dict]
+- 描述：好友详情信息列表
+
+> [!warning]
+> 1. 该方法运行时间较长，约0.5~1秒一个好友的速度，好友多的话可将n设置为一个较小的值，先测试一下
+> 2. 如果遇到企业微信的好友且为已离职状态，可能导致微信卡死，需重启（此为微信客户端BUG）
+> 3. 该方法未经过大量测试，可能存在未知问题，如有问题请微信群内反馈
+
 
 ### ✨获取新的好友申请列表 GetNewFriends
 
 {{< cards >}}
-  {{< card link="/docs/example/#3-处理好友申请" title="👉处理好友申请" tag= "使用示例" >}}
+  {{< card link="/docs/example/#3-处理好友申请" title="👉查看处理好友申请示例" tag="点击跳转" tagType="info" >}}
 {{< /cards >}}
 
 ```python
@@ -289,6 +320,20 @@ wx.AddNewFriend(keywords="张三", addmsg="我是小明", remark="老张", tags=
 - 类型：[WxResponse](#WxResponse)
 - 描述：添加好友的结果
 
+### ✨获取最近群聊名称列表 GetAllRecentGroups
+
+```python
+groups = wx.GetAllRecentGroups()
+if groups:
+    print(groups)
+else:
+    print('获取失败')
+```
+
+**返回值**：
+
+- 类型：WxResponse | List[str]: 失败时返回WxResponse，成功时返回所有最近群聊列表
+
 ### 切换到聊天页面 SwitchToChat
 
 ```python
@@ -306,7 +351,7 @@ wx.SwitchToContact()
 **返回值**：无
 
 
-### 是否在线 IsOnline
+### ✨是否在线 IsOnline
 
 ```python
 wx.IsOnline()
@@ -316,7 +361,7 @@ wx.IsOnline()
 
 - 类型：bool
 
-### 获取我的信息 GetMyInfo
+### ✨获取我的信息 GetMyInfo
 
 获取自己的微信号等信息
 

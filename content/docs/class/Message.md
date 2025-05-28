@@ -101,6 +101,68 @@ if isinstance(msg, FriendMessage):
     msg.reply('收到')
 ```
 
+## Message
+
+消息基类，所有消息类型都继承自该类
+
+**属性**（所有消息类型都包含以下属性）：
+
+| 属性名 | 类型 | 描述  |
+| :-----: | :---: | -------- |
+| type  | str | 消息内容类型 |
+| attr  | str | 消息来源类型 |
+| info | Dict | 消息的详细信息 |
+| id | str | 消息UI ID（不重复，切换UI后会变） |
+| ✨hash | str | 消息hash值（可能重复，切换UI后不变） |
+| sender | str | 消息发送者 |
+
+### chat_info
+
+获取该消息所属聊天窗口的信息
+
+```python
+chat_info = msg.chat_info
+```
+
+**返回值**：
+
+- 类型：`dict`
+- 描述：聊天窗口信息
+- 返回值示例：
+```python
+# 好友
+{'chat_type': 'friend', 'chat_name': '张三'}  
+
+# 群聊
+{'group_member_count': 500, 'chat_type': 'group', 'chat_name': '工作群'}  
+
+# 客服
+{'company': '@肯德基', 'chat_type': 'service', 'chat_name': '店长xxx'} 
+
+# 公众号
+{'chat_type': 'official', 'chat_name': '肯德基'} 
+```
+
+### ✨get_all_text
+
+获取消息中所有文本内容
+
+```python
+text_list = msg.get_all_text()
+```
+
+**返回值**：
+
+- 类型：List[str]
+
+### roll_into_view
+
+将消息滚动到视野内
+
+```python
+msg.roll_into_view()
+```
+
 ## SystemMessage
 
 系统消息，没有特殊用法
@@ -209,12 +271,25 @@ msg.forward("转发对象名称")
 - 描述：操作结果
 
 
-### tickle
+### ✨tickle
 
 拍一拍该消息发送人
 
 ```python
 msg.tickle()
+```
+
+**返回值**：
+
+- 类型：[WxResponse](#WxResponse)
+- 描述：操作结果
+
+### ✨delete
+
+删除该消息
+
+```python
+msg.delete()
 ```
 
 **返回值**：
@@ -228,7 +303,7 @@ msg.tickle()
 
 
 
-### sender_info
+### ✨sender_info
 
 获取发送人信息
 
@@ -242,7 +317,7 @@ msg.sender_info()
 
 
 
-### at
+### ✨at
 
 @该消息发送人
 
@@ -265,7 +340,7 @@ msg.at('xxxxxx')
 
 
 
-### add_friend
+### ✨add_friend
 
 添加该消息的发送人为好友
 
@@ -288,6 +363,22 @@ msg.add_friend()
 - 类型：[WxResponse](#WxResponse)
 - 描述：操作结果
 
+
+### multi_select
+
+{{< cards >}}
+  {{< card link="/docs/example/#8-合并转发消息" title="👉查看合并转发消息示例" tag="点击跳转" tagType="info" >}}
+{{< /cards >}}
+
+多选该消息，仅作合并转发使用，如果不进行合并转发，请勿调用该方法
+
+```python
+msg.multi_select()
+```
+
+**参数**：无
+
+**返回值**：无
 
 
 ## SelfMessage
@@ -434,7 +525,7 @@ msg.download()
 - Path: 文件路径，成功时返回该类型
 - [WxResponse](#WxResponse): 下载结果，失败时返回该类型
 
-## LocationMessage
+## ✨LocationMessage
 
 位置消息。继承自[HumanMessage](#humanmessage)
 
@@ -448,7 +539,7 @@ msg.download()
 
 | 属性名 | 类型 | 属性值  | 描述  |
 | ----- | --- |----- | -------- |
-| address | str |  地址信息 | 该消息卡片的地址信息 |
+| ✨address | str |  地址信息 | 该消息卡片的地址信息 |
 
 ## LinkMessage
 
@@ -460,7 +551,7 @@ msg.download()
 | ----- | --- |----- | -------- |
 | type | str |  link | 消息属性 |
 
-### get_url
+### ✨get_url
 
 获取链接地址
 
@@ -496,7 +587,7 @@ msg.get_url()
 | ----- | --- |----- | -------- |
 | type | str |  merge | 消息属性 |
 
-### get_messages
+### ✨get_messages
 
 获取合并消息中的所有消息
 
@@ -518,7 +609,7 @@ msg.get_messages()
 | ----- | --- |----- | -------- |
 | type | str |  personal_card | 消息属性 |
 
-### add_friend
+### ✨add_friend
 
 添加好友
 
@@ -548,7 +639,25 @@ msg.add_friend()
 | ----- | --- |----- | -------- |
 | type | str |  note | 消息属性 |
 
-### save_files
+### ✨get_content
+
+获取笔记内容
+
+```python
+from pathlib import Path
+
+note_content_list = msg.get_content()
+for content in note_content_list:
+    if isintance(content, str):
+        # 文本内容
+        print(content)
+    elif isintance(content, Path):
+        # 文件路径，文件、视频、图片等
+        print('文件路径：', content)
+```
+
+
+### ✨save_files
 
 保存笔记中的文件
 
@@ -564,7 +673,7 @@ msg.save_files()
 
 - [WxResponse](#WxResponse): 是否保存成功，若成功则data为保存的文件路径列表
 
-### to_markdown
+### ✨to_markdown
 
 将笔记转换为Markdown格式
 

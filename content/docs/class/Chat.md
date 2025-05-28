@@ -258,6 +258,35 @@ wx.RemoveGroupMembers(group="群名", members=["成员名1", "成员名2"])
 - 类型：[`WxResponse`](/docs/class/other/#wxresponse)
 - 描述：是否移除成功
 
+### ✨从群聊中添加好友 AddFriendFromGroup
+
+```python
+index = 5  # 申请群里索引值为5的成员为好友
+remark = "备注名"
+tags = ["标签1", "标签2"]
+result = wx.AddFriendFromGroup(index=index, remark=remark, tags=tags)
+if result:
+    print("成功发起申请")
+else:
+    print(f"申请失败：{result['message']}")
+```
+
+**参数**：
+
+| 参数    | 类型    | 默认值 | 描述    |
+| ------- | ------- | ------ | ------- |
+| index   | int     | None   | 群聊索引 |
+| who     | str     | None   | 群名，当`Chat`对象时该参数无效，仅`WeChat`对象有效 |
+| addmsg  | str     | None   | 申请理由，当群主开启验证时需要，不填写则取消申请 |
+| remark  | str     | None   | 添加好友后的备注名 |
+| tags    | list    | None   | 添加好友后的标签 |
+| permission | Literal['朋友圈', '仅聊天'] | '仅聊天' | 添加好友后的权限 |
+| exact   | bool    | False  | 是否精确匹配群聊名 |
+
+**返回值**：
+
+- 类型：[`WxResponse`](/docs/class/other/#wxresponse)
+
 ### ✨修改好友备注名或标签 ManageFriend
 
 ```python
@@ -303,8 +332,19 @@ wx.ManageGroup(quit=True)   # 谨慎使用
 wx.Close()
 ```
 
+### ✨合并转发消息 MergeForward
 
+{{< cards >}}
+  {{< card link="/docs/example/#8-合并转发消息" title="👉查看合并转发消息示例" tag="点击跳转" tagType="info" >}}
+{{< /cards >}}
 
+**参数**：
 
+| 参数   | 类型    | 默认值 | 描述     |
+| ------ | ------- | ------ | -------- |
+| targets   | Union[List[str], str]     | None   | 要转发的对象  |
 
+**返回值**：
 
+- 类型：[`WxResponse`](/docs/class/other/#wxresponse)
+- 描述：是否成功转发

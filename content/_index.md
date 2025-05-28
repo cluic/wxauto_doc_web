@@ -71,7 +71,7 @@ wx.SendMsg('这是通过wxauto发给你的消息！', '文件传输助手')
 
 有任何问题或建议，欢迎加作者好友，备注wxauto
 
-<img src="/images/qrcode.png" alt="author" width="260"/><img src="/images/group_qrcode.png" alt="group" width="245"/>
-
-> [!Note]
-> 如果没有备注，不会通过好友请求哦~
+{{< cards >}}
+  {{< card title="作者好友" image="/images/qrcode.png" subtitle="不备注的话，可能不会通过哦~" >}}
+  {{< card title="加群交流" image="/images/group_qrcode.png" subtitle="群内可获取AI应用demo" >}}
+{{< /cards >}}

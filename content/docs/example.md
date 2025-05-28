@@ -31,15 +31,16 @@ import time
 wx = WeChat()
 
 # 消息处理函数
-def on_message(msg, chatname):
-    text = f'[{msg.type} {msg.attr}]{chatname} - {msg.content}'
-    print(text)
+def on_message(msg, chat):
+    # 示例1：将消息记录到本地文件
     with open('msgs.txt', 'a', encoding='utf-8') as f:
-        f.write(text + '\n')
+        f.write(msg.content + '\n')
 
+    # 示例2：自动下载图片和视频
     if msg.type in ('image', 'video'):
         print(msg.download())
 
+    # 示例3：自动回复收到
     if isinstance(msg, FriendMessage):
         time.sleep(len(msg.content))
         msg.quote('收到')
@@ -100,4 +101,68 @@ from wxautox import get_wx_clients
 clients = get_wx_clients()
 for client in clients:
     print(f"微信客户端: {client}")
+```
+
+### 6. 自动登录
+
+{{< callout type="info" >}}
+仅可自动登录的微信有效
+{{< /callout >}}
+
+```python
+from wxautox import LoginWnd
+
+wxpath = "D:/path/to/WeChat.exe"
+
+# 创建登录窗口
+loginwnd = LoginWnd(wxpath)
+
+# 登录微信
+loginwnd.login()
+```
+
+### 7. 获取登录二维码
+
+```python
+from wxautox import LoginWnd
+
+wxpath = "D:/path/to/WeChat.exe"
+
+# 创建登录窗口
+loginwnd = LoginWnd(wxpath)
+
+# 获取登录二维码图片路径
+qrcode_path = loginwnd.get_qrcode()
+print(qrcode)
+```
+
+### 8. 合并转发消息
+
+```python
+from wxautox import WeChat
+from wxautox.msgs import HumanMessage
+
+wx = WeChat()
+
+# 打开指定聊天窗口
+wx.ChatWith("工作群")
+
+# 获取消息列表
+msgs = wx.GetAllMessage()
+
+# 多选最后五条消息
+n = 0
+for msg in msgs[::-1]:
+    if n >= 5:
+        break
+    if isinstance(msg, HumanMessage):
+        n += 1
+        msg.multi_select()
+
+# 执行合并转发
+targets = [
+    '张三',
+    '李四
+]
+wx.MergeForward(targets)
 ```

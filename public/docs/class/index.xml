@@ -3549,7 +3549,7 @@ title="Copy code"
 &lt;p>返回值：无&lt;/p>
 &lt;h2>WeChatImage&lt;span class="hx:absolute hx:-mt-20" id="wechatimage">&lt;/span>
 &lt;a href="#wechatimage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox.ui.components&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">WeChatImage&lt;/span>
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox.ui.component&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">WeChatImage&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">imgwnd&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">WeChatImage&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
 &lt;button

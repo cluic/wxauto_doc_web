@@ -261,7 +261,7 @@ wxlogin = LoginWnd(app_path="...")
 ## WeChatImage
 
 ```python
-from wxautox.ui.components import WeChatImage
+from wxautox.ui.component import WeChatImage
 
 imgwnd = WeChatImage()
 ```

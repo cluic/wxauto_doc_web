@@ -121,7 +121,7 @@ if isinstance(msg, FriendMessage):
 获取该消息所属聊天窗口的信息
 
 ```python
-chat_info = msg.chat_info
+chat_info = msg.chat_info()
 ```
 
 **返回值**：

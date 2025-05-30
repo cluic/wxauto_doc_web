@@ -391,23 +391,6 @@ title="Copy code"
 &lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：是否发送成功&lt;/li>
 &lt;/ul>
-&lt;h3>获取当前聊天窗口的新消息 GetNewMessage&lt;span class="hx:absolute hx:-mt-20" id="获取当前聊天窗口的新消息-getnewmessage">&lt;/span>
-&lt;a href="#%e8%8e%b7%e5%8f%96%e5%bd%93%e5%89%8d%e8%81%8a%e5%a4%a9%e7%aa%97%e5%8f%a3%e7%9a%84%e6%96%b0%e6%b6%88%e6%81%af-getnewmessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">new_messages&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">wx&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">GetNewMessage&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-&lt;button
-class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-title="Copy code"
->
-&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;/button>
-&lt;/div>
-&lt;/div>
-&lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
-&lt;ul>
-&lt;li>类型：List[&lt;a href="#message-%e7%b1%bb%e6%96%b9%e6%b3%95" >Message&lt;/a>]&lt;/li>
-&lt;li>描述：当前聊天窗口的新消息&lt;/li>
-&lt;/ul>
 &lt;h3>✨添加群成员 AddGroupMembers&lt;span class="hx:absolute hx:-mt-20" id="添加群成员-addgroupmembers">&lt;/span>
 &lt;a href="#%e6%b7%bb%e5%8a%a0%e7%be%a4%e6%88%90%e5%91%98-addgroupmembers" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">wx&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">AddGroupMembers&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">group&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;技术交流群&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">members&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;张三&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;李四&amp;#34;&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">reason&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;交流技术&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">

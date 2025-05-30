@@ -199,17 +199,6 @@ wx.LoadMoreMessage()
 - 类型：[`WxResponse`](/docs/class/other/#wxresponse)
 - 描述：是否发送成功
 
-### 获取当前聊天窗口的新消息 GetNewMessage
-
-```python
-new_messages = wx.GetNewMessage()
-```
-
-**返回值**：
-
-- 类型：List[[Message](#message-类方法)]
-- 描述：当前聊天窗口的新消息
-
 ### ✨添加群成员 AddGroupMembers
 
 ```python

@@ -1,77 +1,75 @@
 ---
 title: wxauto(x)
+layout: hextra-home
 cascade:
   type: docs
 ---
 
-## 什么是 wxauto？
+![logo](/images/wxauto_plus_logo3.png)
 
-wxauto 是我在2020年开发的一个基于 UIAutomation 的开源 Python 微信自动化库，最初只是一个简单的脚本，只能获取消息和发送消息，经历了2年多的停滞，期间很多网友留言说需要更多的功能，所以在2023年针对新版微信重新开发了 wxauto，增加了更多的功能，即使 Python 初学者也可以简单上手自动化微信操作。目前已实现很多日常的微信操作的自动化，如自动发送消息、自动添加好友、自动回复、自动获取聊天记录、图片、文件等功能，后续还会根据反馈更新更多功能。
+<div class="hx:mt-6 hx:mb-6">
+{{< hextra/hero-headline >}}
+  构建微信自动化应用&nbsp;<br class="hx:sm:block hx:hidden" />wxauto<font style="background: linear-gradient(45deg, #e59edd 5%, #afe1f6 95%); -webkit-background-clip: text; color: transparent;">x</font>
+{{< /hextra/hero-headline >}}
+</div>
 
-## wxauto 的主要功能
+<div class="hx:mb-12">
+{{< hextra/hero-subtitle >}}
+  简单、安全的微信自动化框架&nbsp;<br class="hx:sm:block hx:hidden" />为构建微信自动化应用而生
+{{< /hextra/hero-subtitle >}}
+</div>
 
-- 消息发送：支持发送文字、图片、文件、@群好友、引用消息等功能
-- 聊天记录：可获取好友的聊天记录内容
-- 监听消息：实时获取指定监听好友（群）的新消息
-- 其他定制功能：根据需求定制自动化流程，满足各种特殊需求。
+<div class="hx:mb-6">
+{{< hextra/hero-button text="现在开始" link="docs" >}}
+{{< hextra/hero-button text="获取Plus" link="plus" >}}
+</div>
 
-## 安装和使用
-
-安装 wxauto 非常简单，在命令行输入以下命令即可：
-
-```bash
-pip install wxauto
-```
-
-接下来，可以按照以下步骤进行基本配置和使用：
-
-引入 wxauto 库：
-
-```python
-from wxauto import WeChat
-```
-
-初始化微信对象：
-
-```python
-wx = WeChat()
-```
-
-发送消息：
-
-```python
-# 给文件传输助手发送消息
-wx.SendMsg('这是通过wxauto发给你的消息！', '文件传输助手')
-```
-
-就这么简单几步，你就可以开始使用 wxauto 了！
-
-## 会封号吗
-
-不封号。
-
-**该项目基于Windows官方API开发，不涉及任何侵入、破解、抓包微信客户端应用，完全以人操作微信的行为执行操作**
-
-但是如果你有以下行为，**即使手动操作**也有风控的风险：
-
-- 曾用hook类或webhook类微信工具，如dll注入、itchat及其衍生产品
-- 频繁且大量的发送消息、添加好友等，导致风控
-- 高频率发送机器人特征明显的消息，导致**被人举报**，致使行为风控
-- 扫码手机与电脑客户端不在同一个城市，导致异地风控
-- 低权重账号做太多动作，低权重账号可能包括：
-  - 新注册账号
-  - 长期未登录或不活跃账号
-  - 未实名认证账号
-  - 未绑定银行卡账号
-  - 曾被官方处罚的账号
-  - ...
+{{< hextra/feature-grid >}}
+  {{< hextra/feature-card
+    title="微信自动化操作"
+    subtitle="强大的 Python 库，助力微信自动化操作，无需人工干预。"
+    class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]"
+    image="/images/wechat_class.png"
+    imageClass="hx:top-[40%] hx:left-[24px] hx:w-[180%] hx:sm:w-[110%] hx:dark:opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
+  >}}
+  {{< hextra/feature-card
+    title="灵活的消息管理"
+    subtitle="支持发送文本、图片、视频、文件等多种消息类型，轻松管理与聊天记录。"
+    class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-lg:min-h-[340px]"
+    image="/images/main_page_msgs.png"
+    imageClass="hx:top-[40%] hx:left-[36px] hx:w-[180%] hx:sm:w-[110%] hx:dark:opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
+  >}}
+  {{< hextra/feature-card
+    title="消息监听与自动回复"
+    subtitle="支持监听聊天窗口消息并自动回复或执行自定义操作，实时响应用户交互。"
+    class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-md:min-h-[340px]"
+    image="/images/main_page_monitor.png"
+    imageClass="hx:top-[40%] hx:left-[36px] hx:w-[110%] hx:sm:w-[110%] hx:dark:opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
+  >}}
+  {{< hextra/feature-card
+    title="自动化好友管理"
+    subtitle="一键添加好友、处理好友申请，支持批量管理和标签管理，提升社交效率。"
+  >}}
+  {{< hextra/feature-card
+    title="多任务支持"
+    subtitle="支持多个微信实例同时运行，轻松管理多个微信账号。"
+  >}}
+  {{< hextra/feature-card
+    title="微信朋友圈操作"
+    subtitle="自动化进入朋友圈，获取朋友圈消息并执行自动化操作。"
+  >}}
+  {{< hextra/feature-card
+    title="完整的 API 文档"
+    subtitle="详细的类和方法说明，支持高度自定义和扩展。"
+  >}}
+  {{< hextra/feature-card
+    title="还有更多..."
+    icon="sparkles"
+    subtitle="批量消息发送 / 文件下载 / 消息引用 / @功能 / 自定义消息处理 / 等等..."
+  >}}
+{{< /hextra/feature-grid >}}
 
 
-## 交流
-
-有任何问题或建议，欢迎加作者好友，备注wxauto
-
-{{< cards >}}
-  {{< card title="作者好友" image="/images/qrcode.png" subtitle="不备注的话，可能不会通过哦~" >}}
-  {{< card title="加群交流" image="/images/group_qrcode.png" subtitle="群内可获取AI应用demo" >}}
-{{< /cards >}}

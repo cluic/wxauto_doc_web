@@ -47,12 +47,12 @@ moments = pyq.GetMoments(next_page=True)
 pyq.Refresh()
 ```
 
-### Close
+### close
 
 **关闭朋友圈**
 
 ```python
-pyq.Close()
+pyq.close()
 ```
 
 

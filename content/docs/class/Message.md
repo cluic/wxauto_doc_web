@@ -143,7 +143,7 @@ chat_info = msg.chat_info()
 {'chat_type': 'official', 'chat_name': '肯德基'} 
 ```
 
-### ✨get_all_text
+### ✨ get_all_text
 
 获取消息中所有文本内容
 
@@ -215,6 +215,13 @@ msg.roll_into_view()
 | ----- | --- |----- | -------- |
 | attr | str |  friend | 消息属性 |
 
+### click
+
+点击该消息，一般特殊消息才会有作用，比如图片消息、视频消息等
+
+```python
+msg.click()
+```
 
 ### select_option
 

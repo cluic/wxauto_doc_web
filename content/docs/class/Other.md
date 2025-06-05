@@ -294,3 +294,11 @@ imgwnd = WeChatImage()
 | timeout | int | 10 | 保存超时时间 |
 
 返回值：Path，保存的文件路径
+
+### close
+
+**关闭图片/视频窗口**
+
+参数：无
+
+返回值：无

@@ -3,6 +3,16 @@ languageCode: zh-cn
 title: wxauto
 theme: hextra
 
+enableRobotsTXT: true
+# Parse Git commit
+enableGitInfo: true
+# enableEmoji: false
+hasCJKLanguage: true
+
+# services:
+#   googleAnalytics:
+#     ID: G-YTPXPYKV40
+
 outputs:
   home: [HTML]
   page: [HTML]
@@ -15,6 +25,13 @@ languages:
     languageCode: zh-CN
     weight: 1
     title: wxauto
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.134.0"
+
+  workspace: hugo.work
 
 markup:
   highlight:
@@ -34,9 +51,13 @@ enableInlineShortcodes: true
 menu:
   main:
     - identifier: documentation
-      name: 文档
+      name: Documentation
       pageRef: /docs
       weight: 1
+    - identifier: showcase
+      name: Showcase
+      pageRef: /showcase
+      weight: 2
     - name: Search
       weight: 5
       params:
@@ -46,7 +67,11 @@ menu:
       url: "https://github.com/cluic/wxauto"
       params:
         icon: github
-
+    - name: WeChat
+      weight: 7
+      url: "/plus/#获取plus"
+      params:
+        icon: wechat
 
 params:
   description: Modern, responsive, batteries-included Hugo theme for creating beautiful static websites.
@@ -62,9 +87,45 @@ params:
       # link: /
     width: wide
 
+  page:
+    width: wide
 
   footer:
     enable: true
     displayCopyright: true
     displayPoweredBy: true
     width: normal
+
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      index: content
+      tokenize: forward
+
+  blog:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: desc # or "asc"
+    
+    article:
+      displayPagination: true
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
+
+  comments:
+    enable: true
+    type: giscus
+
+    # https://giscus.app/
+    giscus:
+      repo: cluic/wxauto_doc_web
+      repoId: R_kgDONhkCTQ
+      category: General
+      categoryId: DIC_kwDONhkCTc4Cqx3W

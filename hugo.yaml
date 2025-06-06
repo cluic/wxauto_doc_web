@@ -9,9 +9,9 @@ enableGitInfo: true
 # enableEmoji: false
 hasCJKLanguage: true
 
-# services:
-#   googleAnalytics:
-#     ID: G-YTPXPYKV40
+services:
+  googleAnalytics:
+    ID: G-YTPXPYKV40
 
 outputs:
   home: [HTML]

@@ -17,6 +17,7 @@ wxauto(x) 相关衍生项目，由用户开发。
 
   {{< card
         link="https://github.com/zj591227045/WXAUTO-HTTP-API"
+        icon="github"
         title="WXAUTO-HTTP-API"
         subtitle="wxauto Restful API 管理应用"
         image="/images/showcase/wxauto_http_api.png"
@@ -25,6 +26,7 @@ wxauto(x) 相关衍生项目，由用户开发。
 
   {{< card
         link="https://github.com/zj591227045/WXAUTO-MGT"
+        icon="github"
         title="WXAUTO-MGT"
         subtitle="wxauto应用管理，支持Dify"
         image="/images/showcase/wxauto_mgt.png"
@@ -33,6 +35,7 @@ wxauto(x) 相关衍生项目，由用户开发。
 
   {{< card
         link="https://blog.siverking.online/index.php/archives/7/"
+        icon="link"
         title="wxauto(x)UI面板"
         subtitle="基于Flask框架+html+css+js的UI面板"
         image="https://blog.siver.top/img/%E5%9F%BA%E4%BA%8Ewxauto%E7%9A%84UI%E9%9D%A2%E6%9D%BF/2.png"
@@ -41,6 +44,7 @@ wxauto(x) 相关衍生项目，由用户开发。
 
   {{< card
         link="https://github.com/KouriChat/KouriChat"
+        icon="github"
         title="KouriChat"
         subtitle="在虚拟与现实交织处，给予永恒的温柔羁绊"
         image="/images/showcase/courichat.png"
@@ -49,6 +53,7 @@ wxauto(x) 相关衍生项目，由用户开发。
 
   {{< card
         link="https://github.com/iwyxdxl/WeChatBot_WXAUTO_SE"
+        icon="github"
         title="WeChatBot_WXAUTO_SE"
         subtitle="AI大语言模型接入微信实现角色扮演自动聊天的聊天机器人，支持多种功能"
         image="/images/showcase/WeChatBot_WXAUTO_SE.png"
@@ -57,6 +62,7 @@ wxauto(x) 相关衍生项目，由用户开发。
 
   {{< card
         link="https://github.com/Vita0519/wechat_summary"
+        icon="github"
         title="微信群聊总结助手"
         subtitle="一个基于人工智能的微信群聊消息总结工具，支持多种AI服务，可以自动提取群聊重点内容并生成结构化总结。"
         image="/images/showcase/wechat_summary.png"

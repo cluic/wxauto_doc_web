@@ -424,6 +424,24 @@ msg.multi_select()
 | ----- | --- |----- | -------- |
 | quote_content | str |  引用消息内容 | 引用消息内容 |
 
+### download_quote_image
+
+下载引用消息中的图片，返回图片路径
+
+```python
+msg.download_quote_image()
+```
+
+**参数**：
+
+| 参数名 | 类型   |  默认值  | 描述         |
+| ----- | --- |----- | -------- |
+| dir_path     | str | None     | 下载路径，默认为None |
+| timeout     | int | 10     | 超时时间，默认为10秒    |
+
+**返回值**：
+Path: 视频路径，成功时返回该类型
+
 ## ImageMessage
 
 图片消息。继承自[HumanMessage](#humanmessage)

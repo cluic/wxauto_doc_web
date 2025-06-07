@@ -2697,6 +2697,46 @@ title="Copy code"
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
+&lt;h3>download_quote_image&lt;span class="hx:absolute hx:-mt-20" id="download_quote_image">&lt;/span>
+&lt;a href="#download_quote_image" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>下载引用消息中的图片，返回图片路径&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">msg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">download_quote_image&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;strong>参数&lt;/strong>：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>参数名&lt;/th>
+&lt;th>类型&lt;/th>
+&lt;th>默认值&lt;/th>
+&lt;th>描述&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>dir_path&lt;/td>
+&lt;td>str&lt;/td>
+&lt;td>None&lt;/td>
+&lt;td>下载路径，默认为None&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>timeout&lt;/td>
+&lt;td>int&lt;/td>
+&lt;td>10&lt;/td>
+&lt;td>超时时间，默认为10秒&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>返回值&lt;/strong>：
+Path: 视频路径，成功时返回该类型&lt;/p>
 &lt;h2>ImageMessage&lt;span class="hx:absolute hx:-mt-20" id="imagemessage">&lt;/span>
 &lt;a href="#imagemessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>图片消息。继承自&lt;a href="#humanmessage" >HumanMessage&lt;/a>&lt;/p>
 &lt;p>固定属性：&lt;/p>

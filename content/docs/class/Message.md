@@ -424,7 +424,7 @@ msg.multi_select()
 | ----- | --- |----- | -------- |
 | quote_content | str |  引用消息内容 | 引用消息内容 |
 
-### download_quote_image
+### ✨download_quote_image
 
 下载引用消息中的图片，返回图片路径
 

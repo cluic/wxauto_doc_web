@@ -126,7 +126,7 @@ chats = wx.GetAllSubWindow()
 ### 添加监听聊天窗口 AddListenChat
 
 {{< cards >}}
-  {{< card link="/docs/class/chat" title="👉查看监听消息示例" tag="点击跳转" tagType="info" >}}
+  {{< card link="/docs/example/#2-监听消息" title="👉查看监听消息示例" tag="点击跳转" tagType="info" >}}
 {{< /cards >}}
 
 ```python

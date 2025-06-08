@@ -233,7 +233,7 @@ msg.select_option("复制")
 
 **返回值**：
 
-- 类型：[WxResponse](#WxResponse)
+- 类型：[`WxResponse`](/docs/class/other/#wxresponse)
 - 描述：操作结果
 
 ### quote
@@ -254,7 +254,7 @@ msg.quote("回复内容")
 
 **返回值**：
 
-- 类型：[WxResponse](#WxResponse)
+- 类型：[`WxResponse`](/docs/class/other/#wxresponse)
 - 描述：操作结果
 
 ### forward
@@ -274,7 +274,7 @@ msg.forward("转发对象名称")
 
 **返回值**：
 
-- 类型：[WxResponse](#WxResponse)
+- 类型：[`WxResponse`](/docs/class/other/#wxresponse)
 - 描述：操作结果
 
 
@@ -288,7 +288,7 @@ msg.tickle()
 
 **返回值**：
 
-- 类型：[WxResponse](#WxResponse)
+- 类型：[`WxResponse`](/docs/class/other/#wxresponse)
 - 描述：操作结果
 
 ### ✨delete
@@ -301,7 +301,7 @@ msg.delete()
 
 **返回值**：
 
-- 类型：[WxResponse](#WxResponse)
+- 类型：[`WxResponse`](/docs/class/other/#wxresponse)
 - 描述：操作结果
 
 ## FriendMessage
@@ -342,7 +342,7 @@ msg.at('xxxxxx')
 
 **返回值**：
 
-- 类型：[WxResponse](#WxResponse)
+- 类型：[`WxResponse`](/docs/class/other/#wxresponse)
 - 描述：操作结果
 
 
@@ -367,7 +367,7 @@ msg.add_friend()
 
 **返回值**：
 
-- 类型：[WxResponse](#WxResponse)
+- 类型：[`WxResponse`](/docs/class/other/#wxresponse)
 - 描述：操作结果
 
 
@@ -470,7 +470,7 @@ msg.download()
 **返回值**：
 
 - Path: 图片路径，成功时返回该类型
-- [WxResponse](#WxResponse): 下载结果，失败时返回该类型
+- [`WxResponse`](/docs/class/other/#wxresponse): 下载结果，失败时返回该类型
 
 ## VideoMessage
 
@@ -500,7 +500,7 @@ msg.download()
 **返回值**：
 
 - Path: 视频路径，成功时返回该类型
-- [WxResponse](#WxResponse): 下载结果，失败时返回该类型
+- [`WxResponse`](/docs/class/other/#wxresponse): 下载结果，失败时返回该类型
 
 ## VoiceMessage
 
@@ -548,7 +548,7 @@ msg.download()
 **返回值**：
 
 - Path: 文件路径，成功时返回该类型
-- [WxResponse](#WxResponse): 下载结果，失败时返回该类型
+- [`WxResponse`](/docs/class/other/#wxresponse): 下载结果，失败时返回该类型
 
 ## ✨LocationMessage
 
@@ -652,7 +652,7 @@ msg.add_friend()
 
 **返回值**：
 
-- [WxResponse](#WxResponse): 是否添加成功
+- [`WxResponse`](/docs/class/other/#wxresponse): 是否添加成功
 
 ## NoteMessage
 
@@ -696,7 +696,7 @@ msg.save_files()
 
 **返回值**：
 
-- [WxResponse](#WxResponse): 是否保存成功，若成功则data为保存的文件路径列表
+- [`WxResponse`](/docs/class/other/#wxresponse): 是否保存成功，若成功则data为保存的文件路径列表
 
 ### ✨to_markdown
 

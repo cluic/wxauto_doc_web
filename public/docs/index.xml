@@ -862,7 +862,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="#WxResponse" >WxResponse&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：发送结果&lt;/li>
 &lt;/ul>
 &lt;h3>打开聊天窗口 ChatWith&lt;span class="hx:absolute hx:-mt-20" id="打开聊天窗口-chatwith">&lt;/span>
@@ -1015,7 +1015,7 @@ title="Copy code"
 &lt;li>
 &lt;p>失败时：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="#WxResponse" >WxResponse&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：执行结果，成功时包含监听名称&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -1053,7 +1053,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="#WxResponse" >WxResponse&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：执行结果&lt;/li>
 &lt;/ul>
 &lt;h3>开始监听 StartListening&lt;span class="hx:absolute hx:-mt-20" id="开始监听-startlistening">&lt;/span>
@@ -1377,7 +1377,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="#WxResponse" >WxResponse&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：添加好友的结果&lt;/li>
 &lt;/ul>
 &lt;h3>✨获取最近群聊名称列表 GetAllRecentGroups&lt;span class="hx:absolute hx:-mt-20" id="获取最近群聊名称列表-getallrecentgroups">&lt;/span>
@@ -2339,7 +2339,7 @@ title="Copy code"
 &lt;/div>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="#WxResponse" >WxResponse&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：操作结果&lt;/li>
 &lt;/ul>
 &lt;h3>quote&lt;span class="hx:absolute hx:-mt-20" id="quote">&lt;/span>
@@ -2388,7 +2388,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="#WxResponse" >WxResponse&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：操作结果&lt;/li>
 &lt;/ul>
 &lt;h3>forward&lt;span class="hx:absolute hx:-mt-20" id="forward">&lt;/span>
@@ -2431,7 +2431,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="#WxResponse" >WxResponse&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：操作结果&lt;/li>
 &lt;/ul>
 &lt;h3>✨tickle&lt;span class="hx:absolute hx:-mt-20" id="tickle">&lt;/span>
@@ -2449,7 +2449,7 @@ title="Copy code"
 &lt;/div>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="#WxResponse" >WxResponse&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：操作结果&lt;/li>
 &lt;/ul>
 &lt;h3>✨delete&lt;span class="hx:absolute hx:-mt-20" id="delete">&lt;/span>
@@ -2467,7 +2467,7 @@ title="Copy code"
 &lt;/div>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="#WxResponse" >WxResponse&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：操作结果&lt;/li>
 &lt;/ul>
 &lt;h2>FriendMessage&lt;span class="hx:absolute hx:-mt-20" id="friendmessage">&lt;/span>
@@ -2529,7 +2529,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="#WxResponse" >WxResponse&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：操作结果&lt;/li>
 &lt;/ul>
 &lt;h3>✨add_friend&lt;span class="hx:absolute hx:-mt-20" id="add_friend">&lt;/span>
@@ -2590,7 +2590,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>类型：&lt;a href="#WxResponse" >WxResponse&lt;/a>&lt;/li>
+&lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：操作结果&lt;/li>
 &lt;/ul>
 &lt;h3>multi_select&lt;span class="hx:absolute hx:-mt-20" id="multi_select">&lt;/span>
@@ -2799,7 +2799,7 @@ title="Copy code"
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
 &lt;li>Path: 图片路径，成功时返回该类型&lt;/li>
-&lt;li>&lt;a href="#WxResponse" >WxResponse&lt;/a>: 下载结果，失败时返回该类型&lt;/li>
+&lt;li>&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>: 下载结果，失败时返回该类型&lt;/li>
 &lt;/ul>
 &lt;h2>VideoMessage&lt;span class="hx:absolute hx:-mt-20" id="videomessage">&lt;/span>
 &lt;a href="#videomessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>视频消息。继承自&lt;a href="#humanmessage" >HumanMessage&lt;/a>&lt;/p>
@@ -2863,7 +2863,7 @@ title="Copy code"
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
 &lt;li>Path: 视频路径，成功时返回该类型&lt;/li>
-&lt;li>&lt;a href="#WxResponse" >WxResponse&lt;/a>: 下载结果，失败时返回该类型&lt;/li>
+&lt;li>&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>: 下载结果，失败时返回该类型&lt;/li>
 &lt;/ul>
 &lt;h2>VoiceMessage&lt;span class="hx:absolute hx:-mt-20" id="voicemessage">&lt;/span>
 &lt;a href="#voicemessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>视频消息。继承自&lt;a href="#humanmessage" >HumanMessage&lt;/a>&lt;/p>
@@ -2961,7 +2961,7 @@ title="Copy code"
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
 &lt;li>Path: 文件路径，成功时返回该类型&lt;/li>
-&lt;li>&lt;a href="#WxResponse" >WxResponse&lt;/a>: 下载结果，失败时返回该类型&lt;/li>
+&lt;li>&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>: 下载结果，失败时返回该类型&lt;/li>
 &lt;/ul>
 &lt;h2>✨LocationMessage&lt;span class="hx:absolute hx:-mt-20" id="locationmessage">&lt;/span>
 &lt;a href="#locationmessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>位置消息。继承自&lt;a href="#humanmessage" >HumanMessage&lt;/a>&lt;/p>
@@ -3196,7 +3196,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="#WxResponse" >WxResponse&lt;/a>: 是否添加成功&lt;/li>
+&lt;li>&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>: 是否添加成功&lt;/li>
 &lt;/ul>
 &lt;h2>NoteMessage&lt;span class="hx:absolute hx:-mt-20" id="notemessage">&lt;/span>
 &lt;a href="#notemessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>笔记消息。继承自&lt;a href="#humanmessage" >HumanMessage&lt;/a>&lt;/p>
@@ -3274,7 +3274,7 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="#WxResponse" >WxResponse&lt;/a>: 是否保存成功，若成功则data为保存的文件路径列表&lt;/li>
+&lt;li>&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>: 是否保存成功，若成功则data为保存的文件路径列表&lt;/li>
 &lt;/ul>
 &lt;h3>✨to_markdown&lt;span class="hx:absolute hx:-mt-20" id="to_markdown">&lt;/span>
 &lt;a href="#to_markdown" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>将笔记转换为Markdown格式&lt;/p>

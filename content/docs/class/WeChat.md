@@ -77,7 +77,7 @@ wx.SendUrlCard(url="https://example.com", friends="张三", timeout=10)
 
 **返回值**：
 
-- 类型：[WxResponse](#WxResponse)
+- 类型：[`WxResponse`](/docs/class/other/#wxresponse)
 - 描述：发送结果
 
 ### 打开聊天窗口 ChatWith
@@ -150,7 +150,7 @@ wx.AddListenChat(nickname="张三", callback=on_message)
   - 描述：该监的听子窗口实例
 
 - 失败时：
-  - 类型：[WxResponse](#WxResponse)
+  - 类型：[`WxResponse`](/docs/class/other/#wxresponse)
   - 描述：执行结果，成功时包含监听名称
 
 ### 移除监听聊天 RemoveListenChat
@@ -167,7 +167,7 @@ wx.RemoveListenChat(nickname="张三")
 
 **返回值**：
 
-- 类型：[WxResponse](#WxResponse)
+- 类型：[`WxResponse`](/docs/class/other/#wxresponse)
 - 描述：执行结果
 
 ### 开始监听 StartListening
@@ -317,7 +317,7 @@ wx.AddNewFriend(keywords="张三", addmsg="我是小明", remark="老张", tags=
 
 **返回值**：
 
-- 类型：[WxResponse](#WxResponse)
+- 类型：[`WxResponse`](/docs/class/other/#wxresponse)
 - 描述：添加好友的结果
 
 ### ✨获取最近群聊名称列表 GetAllRecentGroups

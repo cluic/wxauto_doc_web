@@ -304,6 +304,19 @@ msg.delete()
 - 类型：[`WxResponse`](/docs/class/other/#wxresponse)
 - 描述：操作结果
 
+### ✨download_head_image
+
+下载该消息发送人的头像
+
+```python
+msg.download_head_image()
+```
+
+**返回值**：
+
+- 类型：Path
+- 描述：下载路径Path对象
+
 ## FriendMessage
 
 好友、群友发送的消息，即聊天页面中，左侧人员发送的消息。继承自[HumanMessage](#humanmessage)

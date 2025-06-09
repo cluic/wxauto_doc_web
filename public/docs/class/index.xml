@@ -2017,6 +2017,24 @@ title="Copy code"
 &lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：操作结果&lt;/li>
 &lt;/ul>
+&lt;h3>✨download_head_image&lt;span class="hx:absolute hx:-mt-20" id="download_head_image">&lt;/span>
+&lt;a href="#download_head_image" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>下载该消息发送人的头像&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">msg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">download_head_image&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>类型：Path&lt;/li>
+&lt;li>描述：下载路径Path对象&lt;/li>
+&lt;/ul>
 &lt;h2>FriendMessage&lt;span class="hx:absolute hx:-mt-20" id="friendmessage">&lt;/span>
 &lt;a href="#friendmessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>好友、群友发送的消息，即聊天页面中，左侧人员发送的消息。继承自&lt;a href="#humanmessage" >HumanMessage&lt;/a>&lt;/p>
 &lt;h3>✨sender_info&lt;span class="hx:absolute hx:-mt-20" id="sender_info">&lt;/span>

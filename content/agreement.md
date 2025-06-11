@@ -1,7 +1,7 @@
 ---
 title: 用户协议与隐私政策
 toc: false
-weight: 2
+weight: 4
 ---
 
 最后更新日期：2025年05月23日

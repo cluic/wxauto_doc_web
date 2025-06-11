@@ -4,7 +4,7 @@ bookFlatSection: true
 title: "其他类"
 ---
 
-## WxResponse
+### WxResponse
 
 该类用于该项目多个方法的返回值
 
@@ -19,7 +19,7 @@ else:
     print(result['message'])  # 该方法调用失败，打印错误信息
 ```
 
-## WxParam
+### WxParam
 
 该类用于该项目的一些参数，在获取`WeChat`实例前，可以通过修改该类的属性来修改默认参数
 
@@ -33,6 +33,7 @@ else:
 | LISTEN_INTERVAL     | int    | 1        | 监听消息时间间隔，单位秒                                                                 |
 | ✨LISTENER_EXCUTOR_WORKERS | int    | 4        | 监听执行器线程池大小，根据自身需求和设备性能设置                                       |
 | SEARCH_CHAT_TIMEOUT | int    | 5        | 搜索聊天对象超时时间，单位秒                                                             |
+| ✨NOTE_LOAD_TIMEOUT | int    | 30        | 微信笔记加载超时时间，单位秒                                                            |
 
 
 示例：
@@ -45,7 +46,7 @@ WxParam.LISTENER_EXCUTOR_WORKERS = 8
 ...
 ```
 
-## SessionElement
+### SessionElement
 
 ![SessionElement](/images/session_element.png)
 
@@ -67,7 +68,7 @@ sessions = wx.GetSession()
 session = sessions[0]  # 获取第一个会话
 ```
 
-### click
+#### click
 
 **点击会话**，即切换到这个聊天窗口
 
@@ -80,7 +81,7 @@ session = sessions[0]  # 获取第一个会话
 session.click()
 ```
 
-### double_click
+#### double_click
 
 **双击会话**，即将这个聊天窗口独立出去
 
@@ -93,7 +94,7 @@ session.click()
 session.double_click()
 ```
 
-### ✨delete
+#### ✨delete
 
 **删除会话**
 
@@ -113,7 +114,7 @@ session.double_click()
 session.delete()
 ```
 
-### ✨hide
+#### ✨hide
 
 **隐藏会话**
 
@@ -126,7 +127,7 @@ session.delete()
 session.hide()
 ```
 
-### ✨select_option
+#### ✨select_option
 
 **选择会话选项**，即右键点击会话，然后选择某个选项
 
@@ -139,7 +140,7 @@ session.hide()
 返回值：[`WxResponse`](#wxresponse)
 
 
-## NewFriendElement
+### NewFriendElement
 
 ![NewFriendElement](/images/new_friend_element.png)
 
@@ -149,7 +150,7 @@ session.hide()
 | msg     | str    | 申请信息（wxautox）  |
 | acceptable | bool    | 是否可接受（True）  |
 
-### accept
+#### accept
 
 **同意添加好友**
 
@@ -161,13 +162,13 @@ session.hide()
 | tags | list | None | 标签 |
 | permission | str  | '朋友圈' | 朋友圈权限，可选值：'全部'、'仅聊天' |
 
-### ✨delete
+#### ✨delete
 
 **删除好友申请**
 
 参数：无
 
-### ✨reply
+#### ✨reply
 
 **回复好友申请**
 
@@ -177,7 +178,7 @@ session.hide()
 | :--- | :--- | :--- |:--- |
 | text | str | 必填 | 回复信息 |
 
-### ✨get_account
+#### ✨get_account
 
 **获取申请添加的好友的账号信息**
 
@@ -193,7 +194,7 @@ session.hide()
 
 返回值：str
 
-## ✨LoginWnd
+### ✨LoginWnd
 
 {{< cards >}}
   {{< card link="/docs/example/#6-自动登录" title="👉查看自动登录、二维码示例" tag="点击跳转" tagType="info" >}}
@@ -218,7 +219,7 @@ wxlogin = LoginWnd(app_path="...")
 
 属性：无
 
-### login
+#### login
 
 **登录微信**
 
@@ -230,7 +231,7 @@ wxlogin = LoginWnd(app_path="...")
 
 返回值：[`WxResponse`](#wxresponse)
 
-### get_qrcode
+#### get_qrcode
 
 **获取二维码**
 
@@ -242,7 +243,7 @@ wxlogin = LoginWnd(app_path="...")
 
 返回值：str，二维码图片的路径
 
-### reopen
+#### reopen
 
 **重新打开微信**，为了避免各种弹窗影响操作，建议调用该方法后再执行login或get_qrcode
 
@@ -250,7 +251,7 @@ wxlogin = LoginWnd(app_path="...")
 
 返回值：无
 
-### open
+#### open
 
 **启动微信**，建议在初始化的时候传入app_path参数，否则可能会启动失败
 
@@ -258,7 +259,7 @@ wxlogin = LoginWnd(app_path="...")
 
 返回值：无
 
-## WeChatImage
+### WeChatImage
 
 ```python
 from wxautox.ui.component import WeChatImage
@@ -270,7 +271,7 @@ imgwnd = WeChatImage()
 
 ![wxauto_image_wnd](/images/wxauto_image_wnd.png)
 
-### ocr
+#### ocr
 
 **识别图片中的文字**，仅支持图片，不支持视频
 
@@ -282,7 +283,7 @@ imgwnd = WeChatImage()
 
 返回值：str，识别到的文字
 
-### save
+#### save
 
 **保存图片/视频**
 
@@ -295,9 +296,31 @@ imgwnd = WeChatImage()
 
 返回值：Path，保存的文件路径
 
-### close
+#### close
 
 **关闭图片/视频窗口**
+
+参数：无
+
+返回值：无
+
+### ✨WeChatDialog
+
+微信对话框对象，用于处理微信对话框的各种操作
+
+![wxauto_dialog_wnd](/images/wechatdialog.png)
+
+#### select_option
+
+**选择对话框中的选项**，如“确定”、“取消”等
+
+参数：无
+
+返回值：[WxResponse](#wxresponse)对象
+
+#### close
+
+**关闭对话框**
 
 参数：无
 

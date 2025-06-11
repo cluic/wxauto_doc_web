@@ -21,7 +21,7 @@ title: "Chat类"
 - official：公众号
 
 ```python
-chat_type = wx.chat_type
+chat_type = chat.chat_type
 ```
 
 
@@ -30,13 +30,13 @@ chat_type = wx.chat_type
 ### 显示窗口 Show
 
 ```python
-wx.Show()
+chat.Show()
 ```
 
 ### 获取聊天窗口信息 ChatInfo
 
 ```python
-info = wx.ChatInfo()
+info = chat.ChatInfo()
 ```
 
 **返回值**：
@@ -337,3 +337,21 @@ wx.Close()
 
 - 类型：[`WxResponse`](/docs/class/other/#wxresponse)
 - 描述：是否成功转发
+  
+### ✨获取对话框 GetDialog
+
+```python
+if dialog := wx.GetDialog():
+    dialog.click_button("确定")
+```
+
+**参数**：
+
+| 参数   | 类型    | 默认值 | 描述     |
+| ------ | ------- | ------ | -------- |
+| wait   | int     | 3   | 隐性等待时间  |
+
+**返回值**：
+
+- 类型：[`WxDialog`](/docs/class/other/#wechatdialog)
+- 描述：对话框对象，如果不存在则返回None

@@ -4,6 +4,16 @@ toc: false
 weight: 3
 ---
 
+## v39.1.32
+
+- 增加移除群置顶消息的方法[`GetTopMessage`](/docs/class/chat/#移除置顶消息-gettopmessage)
+- 修复[`ChatInfo`](/docs/class/chat/#获取聊天窗口信息-chatinfo)的BUG
+- 修复朋友圈下载图片偶尔为空的BUG
+- 优化[`GetNextNewMessage`](/docs/class/wechat/#获取下一个新消息-getnextnewmessage)方法
+- 优化[`SendFiles`](/docs/class/chat/#发送文件-sendfiles)方法
+- 优化[`AddFriendFromGroup`](/docs/class/chat/#从群聊中添加好友-addfriendfromgroup)方法
+
+
 ## v39.1.31
 
 - 增加[`GetContactGroups`](/docs/class/wechat/#获取通讯录群聊列表-getcontactgroups)方法，获取通讯录群聊列表

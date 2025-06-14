@@ -353,5 +353,20 @@ if dialog := wx.GetDialog():
 
 **返回值**：
 
-- 类型：[`WxDialog`](/docs/class/other/#wechatdialog)
+- 类型：[`WeChatDialog`](/docs/class/other/#wechatdialog)
 - 描述：对话框对象，如果不存在则返回None
+
+### ✨移除置顶消息 GetTopMessage
+
+```python
+if top_messages := wx.GetTopMessage():
+    for top_message in top_messages:
+        print(f"移除置顶消息: {top_message.content}")
+        top_message.remove()
+```
+
+**参数**：无
+
+**返回值**：
+
+- 类型：`List[TopMsg]`

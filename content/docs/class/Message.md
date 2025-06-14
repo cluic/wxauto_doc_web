@@ -455,6 +455,18 @@ msg.download_quote_image()
 **返回值**：
 Path: 视频路径，成功时返回该类型
 
+### ✨click_quote
+
+点击引用框体
+
+```python
+msg.click_quote()
+```
+
+**参数**：无
+
+**返回值**：无
+
 ## ImageMessage
 
 图片消息。继承自[HumanMessage](#humanmessage)

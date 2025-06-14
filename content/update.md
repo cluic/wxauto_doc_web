@@ -12,6 +12,7 @@ weight: 3
 - 优化[`GetNextNewMessage`](/docs/class/wechat/#获取下一个新消息-getnextnewmessage)方法
 - 优化[`SendFiles`](/docs/class/chat/#发送文件-sendfiles)方法
 - 优化[`AddFriendFromGroup`](/docs/class/chat/#从群聊中添加好友-addfriendfromgroup)方法
+- [`QuoteMessage`](/docs/class/message/#quotemessage)增加`click_quote`方法，用于点击被引用框体
 
 
 ## v39.1.31

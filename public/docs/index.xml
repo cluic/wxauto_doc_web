@@ -2823,6 +2823,21 @@ title="Copy code"
 &lt;/table>
 &lt;p>&lt;strong>返回值&lt;/strong>：
 Path: 视频路径，成功时返回该类型&lt;/p>
+&lt;h3>✨click_quote&lt;span class="hx:absolute hx:-mt-20" id="click_quote">&lt;/span>
+&lt;a href="#click_quote" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>点击引用框体&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">msg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">click_quote&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;strong>参数&lt;/strong>：无&lt;/p>
+&lt;p>&lt;strong>返回值&lt;/strong>：无&lt;/p>
 &lt;h2>ImageMessage&lt;span class="hx:absolute hx:-mt-20" id="imagemessage">&lt;/span>
 &lt;a href="#imagemessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>图片消息。继承自&lt;a href="#humanmessage" >HumanMessage&lt;/a>&lt;/p>
 &lt;p>固定属性：&lt;/p>
@@ -3407,6 +3422,7 @@ title="Copy code"
 &lt;li>优化&lt;a href="https://example.org/docs/class/wechat/#%e8%8e%b7%e5%8f%96%e4%b8%8b%e4%b8%80%e4%b8%aa%e6%96%b0%e6%b6%88%e6%81%af-getnextnewmessage" >&lt;code>GetNextNewMessage&lt;/code>&lt;/a>方法&lt;/li>
 &lt;li>优化&lt;a href="https://example.org/docs/class/chat/#%e5%8f%91%e9%80%81%e6%96%87%e4%bb%b6-sendfiles" >&lt;code>SendFiles&lt;/code>&lt;/a>方法&lt;/li>
 &lt;li>优化&lt;a href="https://example.org/docs/class/chat/#%e4%bb%8e%e7%be%a4%e8%81%8a%e4%b8%ad%e6%b7%bb%e5%8a%a0%e5%a5%bd%e5%8f%8b-addfriendfromgroup" >&lt;code>AddFriendFromGroup&lt;/code>&lt;/a>方法&lt;/li>
+&lt;li>&lt;a href="https://example.org/docs/class/message/#quotemessage" >&lt;code>QuoteMessage&lt;/code>&lt;/a>增加&lt;code>click_quote&lt;/code>方法，用于点击被引用框体&lt;/li>
 &lt;/ul>
 &lt;h2>v39.1.31&lt;span class="hx:absolute hx:-mt-20" id="v39131">&lt;/span>
 &lt;a href="#v39131" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>

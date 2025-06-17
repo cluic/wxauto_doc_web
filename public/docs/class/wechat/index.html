@@ -29,12 +29,12 @@ WeChat 类方法
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/docs/class/wechat/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2025-06-11T19:46:41+08:00" />
+<meta property="article:modified_time" content="2025-06-17T10:47:30+08:00" />
 
   <meta itemprop="name" content="WeChat类">
   <meta itemprop="description" content="🌐提示：
 WeChat 类继承了 Chat类 的所有方法，有关聊天框内的操作，请参考 Chat类 的文档。WeChat 类方法概念为确保您可以理解该文档的一些内容，这里先简单介绍一下 wxauto(x) 的设计思路，如下图所示，wxauto(x) 将微信窗口拆解为三部分：">
-  <meta itemprop="dateModified" content="2025-06-11T19:46:41+08:00">
+  <meta itemprop="dateModified" content="2025-06-17T10:47:30+08:00">
   <meta itemprop="wordCount" content="2414">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="WeChat类">
@@ -831,8 +831,8 @@ WeChat 类继承了 Chat类 的所有方法，有关聊天框内的操作，请�
 
 <div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 
-<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">on_message</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">chatname</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;收到来自 </span><span class="si">{</span><span class="n">chatname</span><span class="si">}</span><span class="s2"> 的消息: </span><span class="si">{</span><span class="n">msg</span><span class="o">.</span><span class="n">content</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">on_message</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">chat</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;收到来自 </span><span class="si">{</span><span class="n">chat</span><span class="si">}</span><span class="s2"> 的消息: </span><span class="si">{</span><span class="n">msg</span><span class="o">.</span><span class="n">content</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">wx</span><span class="o">.</span><span class="n">AddListenChat</span><span class="p">(</span><span class="n">nickname</span><span class="o">=</span><span class="s2">&#34;张三&#34;</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="n">on_message</span><span class="p">)</span></span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
   <button

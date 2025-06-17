@@ -3,6 +3,9 @@ title: 更新日志
 toc: false
 weight: 3
 ---
+## v39.1.33
+
+- 修复[`SendFiles`](/docs/class/chat/#发送文件-sendfiles)方法发送文件/图片会多次执行的BUG
 
 ## v39.1.32
 

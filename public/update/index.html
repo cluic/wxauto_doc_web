@@ -11,10 +11,14 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>更新日志 – wxauto</title>
-  <meta name="description" content="v39.1.32增加移除群置顶消息的方法GetTopMessage 修复ChatInfo的BUG 修复朋友圈下载图片偶尔为空的BUG 优化GetNextNewMessage方法 优化SendFiles方法 优化AddFriendFromGroup方法 QuoteMessage增加click_quote方法，用于点击被引用框体 v39.1.31增加GetContactGroups方法，获取通讯录群聊列表 增加GetDialog方法，获取对话框对象，用于某些自定义操作 WxParam增加NOTE_LOAD_TIMEOUT属性，用于设置微信笔记加载超时时间 优化申请好友对话框判断 优化支持IDE方法参数提示和docstring的正确显示 " /><link rel="canonical" href="http://localhost:1313/update/" itemprop="url" />
+  <meta name="description" content="v39.1.33修复SendFiles方法发送文件/图片会多次执行的BUG v39.1.32增加移除群置顶消息的方法GetTopMessage 修复ChatInfo的BUG 修复朋友圈下载图片偶尔为空的BUG 优化GetNextNewMessage方法 优化SendFiles方法 优化AddFriendFromGroup方法 QuoteMessage增加click_quote方法，用于点击被引用框体 v39.1.31增加GetContactGroups方法，获取通讯录群聊列表 增加GetDialog方法，获取对话框对象，用于某些自定义操作 WxParam增加NOTE_LOAD_TIMEOUT属性，用于设置微信笔记加载超时时间 优化申请好友对话框判断 优化支持IDE方法参数提示和docstring的正确显示 " /><link rel="canonical" href="http://localhost:1313/update/" itemprop="url" />
 
 <meta property="og:title" content="更新日志" />
-<meta property="og:description" content="v39.1.32
+<meta property="og:description" content="v39.1.33
+    
+修复SendFiles方法发送文件/图片会多次执行的BUG
+
+v39.1.32
     
 增加移除群置顶消息的方法GetTopMessage
 修复ChatInfo的BUG
@@ -38,12 +42,12 @@ WxParam增加NOTE_LOAD_TIMEOUT属性，用于设置微信笔记加载超时时�
 <meta property="article:modified_time" content="2025-06-14T18:48:47+08:00" />
 
   <meta itemprop="name" content="更新日志">
-  <meta itemprop="description" content="v39.1.32增加移除群置顶消息的方法GetTopMessage 修复ChatInfo的BUG 修复朋友圈下载图片偶尔为空的BUG 优化GetNextNewMessage方法 优化SendFiles方法 优化AddFriendFromGroup方法 QuoteMessage增加click_quote方法，用于点击被引用框体 v39.1.31增加GetContactGroups方法，获取通讯录群聊列表 增加GetDialog方法，获取对话框对象，用于某些自定义操作 WxParam增加NOTE_LOAD_TIMEOUT属性，用于设置微信笔记加载超时时间 优化申请好友对话框判断 优化支持IDE方法参数提示和docstring的正确显示">
+  <meta itemprop="description" content="v39.1.33修复SendFiles方法发送文件/图片会多次执行的BUG v39.1.32增加移除群置顶消息的方法GetTopMessage 修复ChatInfo的BUG 修复朋友圈下载图片偶尔为空的BUG 优化GetNextNewMessage方法 优化SendFiles方法 优化AddFriendFromGroup方法 QuoteMessage增加click_quote方法，用于点击被引用框体 v39.1.31增加GetContactGroups方法，获取通讯录群聊列表 增加GetDialog方法，获取对话框对象，用于某些自定义操作 WxParam增加NOTE_LOAD_TIMEOUT属性，用于设置微信笔记加载超时时间 优化申请好友对话框判断 优化支持IDE方法参数提示和docstring的正确显示">
   <meta itemprop="dateModified" content="2025-06-14T18:48:47+08:00">
-  <meta itemprop="wordCount" content="294">
+  <meta itemprop="wordCount" content="324">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="更新日志">
-  <meta name="twitter:description" content="v39.1.32增加移除群置顶消息的方法GetTopMessage 修复ChatInfo的BUG 修复朋友圈下载图片偶尔为空的BUG 优化GetNextNewMessage方法 优化SendFiles方法 优化AddFriendFromGroup方法 QuoteMessage增加click_quote方法，用于点击被引用框体 v39.1.31增加GetContactGroups方法，获取通讯录群聊列表 增加GetDialog方法，获取对话框对象，用于某些自定义操作 WxParam增加NOTE_LOAD_TIMEOUT属性，用于设置微信笔记加载超时时间 优化申请好友对话框判断 优化支持IDE方法参数提示和docstring的正确显示">
+  <meta name="twitter:description" content="v39.1.33修复SendFiles方法发送文件/图片会多次执行的BUG v39.1.32增加移除群置顶消息的方法GetTopMessage 修复ChatInfo的BUG 修复朋友圈下载图片偶尔为空的BUG 优化GetNextNewMessage方法 优化SendFiles方法 优化AddFriendFromGroup方法 QuoteMessage增加click_quote方法，用于点击被引用框体 v39.1.31增加GetContactGroups方法，获取通讯录群聊列表 增加GetDialog方法，获取对话框对象，用于某些自定义操作 WxParam增加NOTE_LOAD_TIMEOUT属性，用于设置微信笔记加载超时时间 优化申请好友对话框判断 优化支持IDE方法参数提示和docstring的正确显示">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -288,6 +292,12 @@ WxParam增加NOTE_LOAD_TIMEOUT属性，用于设置微信笔记加载超时时�
   
     <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
               <a
+                href="#v39133"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >v39.1.33</a>
+            </li>
+          <li>
+              <a
                 href="#v39132"
                 class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
               >v39.1.32</a>
@@ -474,7 +484,11 @@ WxParam增加NOTE_LOAD_TIMEOUT属性，用于设置微信笔记加载超时时�
 
         <div class="content">
           <h1>更新日志</h1>
-          <h2>v39.1.32<span class="hx:absolute hx:-mt-20" id="v39132"></span>
+          <h2>v39.1.33<span class="hx:absolute hx:-mt-20" id="v39133"></span>
+    <a href="#v39133" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
+<li>修复<a href="/docs/class/chat/#%e5%8f%91%e9%80%81%e6%96%87%e4%bb%b6-sendfiles" ><code>SendFiles</code></a>方法发送文件/图片会多次执行的BUG</li>
+</ul>
+<h2>v39.1.32<span class="hx:absolute hx:-mt-20" id="v39132"></span>
     <a href="#v39132" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
 <li>增加移除群置顶消息的方法<a href="/docs/class/chat/#%e7%a7%bb%e9%99%a4%e7%bd%ae%e9%a1%b6%e6%b6%88%e6%81%af-gettopmessage" ><code>GetTopMessage</code></a></li>
 <li>修复<a href="/docs/class/chat/#%e8%8e%b7%e5%8f%96%e8%81%8a%e5%a4%a9%e7%aa%97%e5%8f%a3%e4%bf%a1%e6%81%af-chatinfo" ><code>ChatInfo</code></a>的BUG</li>

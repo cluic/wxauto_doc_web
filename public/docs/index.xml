@@ -836,7 +836,7 @@ title="Copy code"
 &lt;/button>
 &lt;/div>
 &lt;/div>
-&lt;h3>✨保持程序运行 KeepRunning&lt;span class="hx:absolute hx:-mt-20" id="保持程序运行-keeprunning">&lt;/span>
+&lt;h3>保持程序运行 KeepRunning&lt;span class="hx:absolute hx:-mt-20" id="保持程序运行-keeprunning">&lt;/span>
 &lt;a href="#%e4%bf%9d%e6%8c%81%e7%a8%8b%e5%ba%8f%e8%bf%90%e8%a1%8c-keeprunning" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>由于wxautox使用守护线程来监听消息，当程序仅用于监听模式时，主线程会退出，因此需要调用此方法来保持程序运行&lt;/p>
 &lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">WeChat&lt;/span>

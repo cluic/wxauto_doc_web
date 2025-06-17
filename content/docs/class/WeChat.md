@@ -34,7 +34,7 @@ from wxautox import WeChat
 wx = WeChat()
 ```
 
-### ✨保持程序运行 KeepRunning
+### 保持程序运行 KeepRunning
 
 由于wxautox使用守护线程来监听消息，当程序仅用于监听模式时，主线程会退出，因此需要调用此方法来保持程序运行
 

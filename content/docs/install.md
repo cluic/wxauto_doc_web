@@ -25,12 +25,18 @@ pip install wxauto
 ### 2. ✨[Plus版](/plus)
 ```bash
 pip install wxautox
+
+# 或指定python版本安装：
+py -3.12 -m pip install wxautox
 ```
+
+> [!Warning] 注意
+> **仅支持 Python3.9 至 3.12**
 
 激活：
 
 ```shell
-wxautox -a [激活码]
+wxautox -a 激活码
 ```
 
 ![wxauto_auth](/images/wxauto_auth.png)

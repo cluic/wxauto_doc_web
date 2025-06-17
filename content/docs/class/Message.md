@@ -73,12 +73,12 @@ Message (基类)
 |        [图片消息`ImageMessage`](#imagemessage)        |                SelfImageMessage            |               FriendImageMessage                 |
 |        [视频消息`VideoMessage`](#videomessage)        |                SelfVideoMessage            |               FriendVideoMessage                 |
 |         [文件消息`FileMessage`](#filemessage)         |                SelfFileMessage             |               FriendFileMessage                  |
-|     [位置消息`LocationMessage`](#locationmessage)     |              SelfLocationMessage           |             FriendLocationMessage                |
-|         [链接消息`LinkMessage`](#linkmessage)         |                SelfLinkMessage             |               FriendLinkMessage                  |
-|      [表情消息`EmotionMessage`](#emotionmessage)      |               SelfEmotionMessage           |              FriendEmotionMessage                |
-|        [合并消息`MergeMessage`](#mergemessage)        |                SelfMergeMessage            |               FriendMergeMessage                 |
-| [名片消息`PersonalCardMessage`](#personalcardmessage) |            SelfPersonalCardMessage         |           FriendPersonalCardMessage              |
-|      [笔记消息`NoteMessage`](#notemessage)            |                SelfNoteMessage             |               FriendNoteMessage                  |
+|     [✨位置消息`LocationMessage`](#locationmessage)     |              SelfLocationMessage           |             FriendLocationMessage                |
+|         [✨链接消息`LinkMessage`](#linkmessage)         |                SelfLinkMessage             |               FriendLinkMessage                  |
+|      [✨表情消息`EmotionMessage`](#emotionmessage)      |               SelfEmotionMessage           |              FriendEmotionMessage                |
+|        [✨合并消息`MergeMessage`](#mergemessage)        |                SelfMergeMessage            |               FriendMergeMessage                 |
+| [✨名片消息`PersonalCardMessage`](#personalcardmessage) |            SelfPersonalCardMessage         |           FriendPersonalCardMessage              |
+|      [✨笔记消息`NoteMessage`](#notemessage)            |                SelfNoteMessage             |               FriendNoteMessage                  |
 |        [其他消息`OtherMessage`](#othermessage)        |                SelfOtherMessage            |               FriendOtherMessage                 |
 
 简单的使用示例：
@@ -384,7 +384,7 @@ msg.add_friend()
 - 描述：操作结果
 
 
-### multi_select
+### ✨multi_select
 
 {{< cards >}}
   {{< card link="/docs/example/#8-合并转发消息" title="👉查看合并转发消息示例" tag="点击跳转" tagType="info" >}}
@@ -591,7 +591,7 @@ msg.download()
 | ----- | --- |----- | -------- |
 | ✨address | str |  地址信息 | 该消息卡片的地址信息 |
 
-## LinkMessage
+## ✨LinkMessage
 
 链接消息。继承自[HumanMessage](#humanmessage)
 
@@ -617,7 +617,7 @@ msg.get_url()
 
 - str: 链接地址
 
-## EmotionMessage
+## ✨EmotionMessage
 
 表情消息。继承自[HumanMessage](#humanmessage)
 
@@ -627,7 +627,7 @@ msg.get_url()
 | ----- | --- |----- | -------- |
 | type | str |  emotion | 消息属性 |
 
-## MergeMessage
+## ✨MergeMessage
 
 合并消息。继承自[HumanMessage](#humanmessage)
 
@@ -649,7 +649,7 @@ msg.get_messages()
 
 - List[str]: 合并消息中的所有消息
 
-## PersonalCardMessage
+## ✨PersonalCardMessage
 
 名片消息。继承自[HumanMessage](#humanmessage)
 
@@ -679,7 +679,7 @@ msg.add_friend()
 
 - [`WxResponse`](/docs/class/other/#wxresponse): 是否添加成功
 
-## NoteMessage
+## ✨NoteMessage
 
 笔记消息。继承自[HumanMessage](#humanmessage)
 

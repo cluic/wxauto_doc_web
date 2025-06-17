@@ -1669,32 +1669,32 @@ Message (基类)
 &lt;td style="text-align: center">FriendFileMessage&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: center">&lt;a href="#locationmessage" >位置消息&lt;code>LocationMessage&lt;/code>&lt;/a>&lt;/td>
+&lt;td style="text-align: center">&lt;a href="#locationmessage" >✨位置消息&lt;code>LocationMessage&lt;/code>&lt;/a>&lt;/td>
 &lt;td style="text-align: center">SelfLocationMessage&lt;/td>
 &lt;td style="text-align: center">FriendLocationMessage&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: center">&lt;a href="#linkmessage" >链接消息&lt;code>LinkMessage&lt;/code>&lt;/a>&lt;/td>
+&lt;td style="text-align: center">&lt;a href="#linkmessage" >✨链接消息&lt;code>LinkMessage&lt;/code>&lt;/a>&lt;/td>
 &lt;td style="text-align: center">SelfLinkMessage&lt;/td>
 &lt;td style="text-align: center">FriendLinkMessage&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: center">&lt;a href="#emotionmessage" >表情消息&lt;code>EmotionMessage&lt;/code>&lt;/a>&lt;/td>
+&lt;td style="text-align: center">&lt;a href="#emotionmessage" >✨表情消息&lt;code>EmotionMessage&lt;/code>&lt;/a>&lt;/td>
 &lt;td style="text-align: center">SelfEmotionMessage&lt;/td>
 &lt;td style="text-align: center">FriendEmotionMessage&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: center">&lt;a href="#mergemessage" >合并消息&lt;code>MergeMessage&lt;/code>&lt;/a>&lt;/td>
+&lt;td style="text-align: center">&lt;a href="#mergemessage" >✨合并消息&lt;code>MergeMessage&lt;/code>&lt;/a>&lt;/td>
 &lt;td style="text-align: center">SelfMergeMessage&lt;/td>
 &lt;td style="text-align: center">FriendMergeMessage&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: center">&lt;a href="#personalcardmessage" >名片消息&lt;code>PersonalCardMessage&lt;/code>&lt;/a>&lt;/td>
+&lt;td style="text-align: center">&lt;a href="#personalcardmessage" >✨名片消息&lt;code>PersonalCardMessage&lt;/code>&lt;/a>&lt;/td>
 &lt;td style="text-align: center">SelfPersonalCardMessage&lt;/td>
 &lt;td style="text-align: center">FriendPersonalCardMessage&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: center">&lt;a href="#notemessage" >笔记消息&lt;code>NoteMessage&lt;/code>&lt;/a>&lt;/td>
+&lt;td style="text-align: center">&lt;a href="#notemessage" >✨笔记消息&lt;code>NoteMessage&lt;/code>&lt;/a>&lt;/td>
 &lt;td style="text-align: center">SelfNoteMessage&lt;/td>
 &lt;td style="text-align: center">FriendNoteMessage&lt;/td>
 &lt;/tr>
@@ -2263,7 +2263,7 @@ title="Copy code"
 &lt;li>类型：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/li>
 &lt;li>描述：操作结果&lt;/li>
 &lt;/ul>
-&lt;h3>multi_select&lt;span class="hx:absolute hx:-mt-20" id="multi_select">&lt;/span>
+&lt;h3>✨multi_select&lt;span class="hx:absolute hx:-mt-20" id="multi_select">&lt;/span>
 &lt;a href="#multi_select" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 3;">
 &lt;a
 class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="https://example.org/docs/example/#8-%e5%90%88%e5%b9%b6%e8%bd%ac%e5%8f%91%e6%b6%88%e6%81%af"
@@ -2688,7 +2688,7 @@ title="Copy code"
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h2>LinkMessage&lt;span class="hx:absolute hx:-mt-20" id="linkmessage">&lt;/span>
+&lt;h2>✨LinkMessage&lt;span class="hx:absolute hx:-mt-20" id="linkmessage">&lt;/span>
 &lt;a href="#linkmessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>链接消息。继承自&lt;a href="#humanmessage" >HumanMessage&lt;/a>&lt;/p>
 &lt;p>固定属性：&lt;/p>
 &lt;table>
@@ -2744,7 +2744,7 @@ title="Copy code"
 &lt;ul>
 &lt;li>str: 链接地址&lt;/li>
 &lt;/ul>
-&lt;h2>EmotionMessage&lt;span class="hx:absolute hx:-mt-20" id="emotionmessage">&lt;/span>
+&lt;h2>✨EmotionMessage&lt;span class="hx:absolute hx:-mt-20" id="emotionmessage">&lt;/span>
 &lt;a href="#emotionmessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>表情消息。继承自&lt;a href="#humanmessage" >HumanMessage&lt;/a>&lt;/p>
 &lt;p>固定属性：&lt;/p>
 &lt;table>
@@ -2765,7 +2765,7 @@ title="Copy code"
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h2>MergeMessage&lt;span class="hx:absolute hx:-mt-20" id="mergemessage">&lt;/span>
+&lt;h2>✨MergeMessage&lt;span class="hx:absolute hx:-mt-20" id="mergemessage">&lt;/span>
 &lt;a href="#mergemessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>合并消息。继承自&lt;a href="#humanmessage" >HumanMessage&lt;/a>&lt;/p>
 &lt;p>固定属性：&lt;/p>
 &lt;table>
@@ -2803,7 +2803,7 @@ title="Copy code"
 &lt;ul>
 &lt;li>List[str]: 合并消息中的所有消息&lt;/li>
 &lt;/ul>
-&lt;h2>PersonalCardMessage&lt;span class="hx:absolute hx:-mt-20" id="personalcardmessage">&lt;/span>
+&lt;h2>✨PersonalCardMessage&lt;span class="hx:absolute hx:-mt-20" id="personalcardmessage">&lt;/span>
 &lt;a href="#personalcardmessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>名片消息。继承自&lt;a href="#humanmessage" >HumanMessage&lt;/a>&lt;/p>
 &lt;p>固定属性：&lt;/p>
 &lt;table>
@@ -2883,7 +2883,7 @@ title="Copy code"
 &lt;ul>
 &lt;li>&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>: 是否添加成功&lt;/li>
 &lt;/ul>
-&lt;h2>NoteMessage&lt;span class="hx:absolute hx:-mt-20" id="notemessage">&lt;/span>
+&lt;h2>✨NoteMessage&lt;span class="hx:absolute hx:-mt-20" id="notemessage">&lt;/span>
 &lt;a href="#notemessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>笔记消息。继承自&lt;a href="#humanmessage" >HumanMessage&lt;/a>&lt;/p>
 &lt;p>固定属性：&lt;/p>
 &lt;table>

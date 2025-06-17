@@ -130,8 +130,8 @@ chats = wx.GetAllSubWindow()
 {{< /cards >}}
 
 ```python
-def on_message(msg, chatname):
-    print(f"收到来自 {chatname} 的消息: {msg.content}")
+def on_message(msg, chat):
+    print(f"收到来自 {chat} 的消息: {msg.content}")
 
 wx.AddListenChat(nickname="张三", callback=on_message)
 ```

@@ -1773,6 +1773,11 @@ title="Copy code"
 &lt;td style="text-align: center">str&lt;/td>
 &lt;td>消息发送者&lt;/td>
 &lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">content&lt;/td>
+&lt;td style="text-align: center">str&lt;/td>
+&lt;td>消息内容&lt;/td>
+&lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h3>chat_info&lt;span class="hx:absolute hx:-mt-20" id="chat_info">&lt;/span>

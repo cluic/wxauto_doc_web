@@ -115,6 +115,7 @@ if isinstance(msg, FriendMessage):
 | id | str | 消息UI ID（不重复，切换UI后会变） |
 | ✨hash | str | 消息hash值（可能重复，切换UI后不变） |
 | sender | str | 消息发送者 |
+| content | str | 消息内容 |
 
 ### chat_info
 

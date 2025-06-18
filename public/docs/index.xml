@@ -1743,13 +1743,13 @@ title="Copy code"
 &lt;tr>
 &lt;td style="text-align: center">消息类&lt;/td>
 &lt;td style="text-align: center">@群好友&lt;/td>
-&lt;td style="text-align: center">✅&lt;/td>
+&lt;td style="text-align: center">❌&lt;/td>
 &lt;td style="text-align: center">✅&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align: center">消息类&lt;/td>
 &lt;td style="text-align: center">@所有人&lt;/td>
-&lt;td style="text-align: center">✅&lt;/td>
+&lt;td style="text-align: center">❌&lt;/td>
 &lt;td style="text-align: center">✅&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -1803,13 +1803,13 @@ title="Copy code"
 &lt;tr>
 &lt;td style="text-align: center">好友管理&lt;/td>
 &lt;td style="text-align: center">发送好友请求&lt;/td>
-&lt;td style="text-align: center">✅&lt;/td>
+&lt;td style="text-align: center">❌&lt;/td>
 &lt;td style="text-align: center">✅&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align: center">好友管理&lt;/td>
 &lt;td style="text-align: center">接受好友请求&lt;/td>
-&lt;td style="text-align: center">✅&lt;/td>
+&lt;td style="text-align: center">❌&lt;/td>
 &lt;td style="text-align: center">✅&lt;/td>
 &lt;/tr>
 &lt;tr>

@@ -1563,6 +1563,14 @@ title="Copy code"
 &lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
 &lt;ul>
 &lt;li>类型：List[str]&lt;/li>
+&lt;/ul></description></item><item><title>开源版</title><link>https://example.org/update/wxauto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/update/wxauto/</guid><description>
+&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.6&lt;span class="hx:absolute hx:-mt-20" id="v3916">&lt;/span>
+&lt;a href="#v3916" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>修复获取子窗口报错的问题&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.5&lt;span class="hx:absolute hx:-mt-20" id="v3915">&lt;/span>
+&lt;a href="#v3915" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>修复@报错的问题&lt;/li>
 &lt;/ul></description></item><item><title>一、环境配置和安装</title><link>https://example.org/docs/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/docs/install/</guid><description>
 &lt;h2>一、环境配置&lt;span class="hx:absolute hx:-mt-20" id="一环境配置">&lt;/span>
 &lt;a href="#%e4%b8%80%e7%8e%af%e5%a2%83%e9%85%8d%e7%bd%ae" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;table>
@@ -3989,8 +3997,8 @@ title="Copy code"
 &lt;/button>
 &lt;/div>
 &lt;/div>
-&lt;p>&lt;strong>返回值&lt;/strong>：无&lt;/p></description></item><item><title>更新日志</title><link>https://example.org/update/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/update/</guid><description>
-&lt;h2>v39.1.33&lt;span class="hx:absolute hx:-mt-20" id="v39133">&lt;/span>
+&lt;p>&lt;strong>返回值&lt;/strong>：无&lt;/p></description></item><item><title>Plus版✨</title><link>https://example.org/update/wxautox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/update/wxautox/</guid><description>
+&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.33&lt;span class="hx:absolute hx:-mt-20" id="v39133">&lt;/span>
 &lt;a href="#v39133" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
 &lt;li>修复&lt;a href="https://example.org/docs/class/chat/#%e5%8f%91%e9%80%81%e6%96%87%e4%bb%b6-sendfiles" >&lt;code>SendFiles&lt;/code>&lt;/a>方法发送文件/图片会多次执行的BUG&lt;/li>
 &lt;/ul>

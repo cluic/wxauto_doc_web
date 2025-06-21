@@ -295,7 +295,7 @@ newfriends = wx.GetNewFriends(acceptable=True)
 tags = ['标签1', '标签2']
 for friend in newfriends:
     remark = f'备注{friend.name}'
-    friend.Accept(remark=remark, tags=tags)  # 接受好友请求，并设置备注和标签
+    friend.accept(remark=remark, tags=tags)  # 接受好友请求，并设置备注和标签
 ```
 
 ### ✨添加新的好友 AddNewFriend

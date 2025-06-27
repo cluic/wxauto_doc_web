@@ -530,13 +530,13 @@ msg.download()
 
 ## VoiceMessage
 
-视频消息。继承自[HumanMessage](#humanmessage)
+语音消息。继承自[HumanMessage](#humanmessage)
 
 固定属性：
 
 | 属性名 | 类型 | 属性值  | 描述  |
 | ----- | --- |----- | -------- |
-| type | str |  video | 消息属性 |
+| type | str |  voice | 消息属性 |
 
 ### to_text
 

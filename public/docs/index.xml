@@ -3011,7 +3011,7 @@ title="Copy code"
 &lt;li>&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>: 下载结果，失败时返回该类型&lt;/li>
 &lt;/ul>
 &lt;h2>VoiceMessage&lt;span class="hx:absolute hx:-mt-20" id="voicemessage">&lt;/span>
-&lt;a href="#voicemessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>视频消息。继承自&lt;a href="#humanmessage" >HumanMessage&lt;/a>&lt;/p>
+&lt;a href="#voicemessage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>语音消息。继承自&lt;a href="#humanmessage" >HumanMessage&lt;/a>&lt;/p>
 &lt;p>固定属性：&lt;/p>
 &lt;table>
 &lt;thead>
@@ -3026,7 +3026,7 @@ title="Copy code"
 &lt;tr>
 &lt;td>type&lt;/td>
 &lt;td>str&lt;/td>
-&lt;td>video&lt;/td>
+&lt;td>voice&lt;/td>
 &lt;td>消息属性&lt;/td>
 &lt;/tr>
 &lt;/tbody>

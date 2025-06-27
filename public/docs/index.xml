@@ -1564,7 +1564,12 @@ title="Copy code"
 &lt;ul>
 &lt;li>类型：List[str]&lt;/li>
 &lt;/ul></description></item><item><title>开源版</title><link>https://example.org/update/wxauto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/update/wxauto/</guid><description>
-&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.7&lt;span class="hx:absolute hx:-mt-20" id="v3917">&lt;/span>
+&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.8&lt;span class="hx:absolute hx:-mt-20" id="v3918">&lt;/span>
+&lt;a href="#v3918" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>修复语音消息to_text方法报错的问题&lt;/li>
+&lt;li>修复GetNextNewMessage方法报错的问题&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.7&lt;span class="hx:absolute hx:-mt-20" id="v3917">&lt;/span>
 &lt;a href="#v3917" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
 &lt;li>修复无法解析文件消息的问题&lt;/li>
 &lt;/ul>
@@ -4002,7 +4007,11 @@ title="Copy code"
 &lt;/div>
 &lt;/div>
 &lt;p>&lt;strong>返回值&lt;/strong>：无&lt;/p></description></item><item><title>Plus版✨</title><link>https://example.org/update/wxautox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/update/wxautox/</guid><description>
-&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.34&lt;span class="hx:absolute hx:-mt-20" id="v39134">&lt;/span>
+&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.35&lt;span class="hx:absolute hx:-mt-20" id="v39135">&lt;/span>
+&lt;a href="#v39135" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>修复初始化时当微信窗口没有聊天页面时，GetNextNewMessage方法报错问题&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.34&lt;span class="hx:absolute hx:-mt-20" id="v39134">&lt;/span>
 &lt;a href="#v39134" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
 &lt;li>优化消息对象下载图片、视频&lt;/li>
 &lt;li>修复朋友圈下载图片报错问题&lt;/li>

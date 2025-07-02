@@ -74,7 +74,8 @@ wxautox -a [激活码]
 ## 获取Plus
 
 {{< cards >}}
-  {{< card title="作者好友" image="/images/qrcode.png" subtitle="不备注的话，可能不会通过哦~" >}}
+  {{< card title="作者好友" image="/images/qrcode.png" subtitle="备注plus，不备注可能不会通过" >}}
+  {{< card title="作者好友（备用）" image="/images/qrcode2.png" subtitle="第一个频繁时可加这个" >}}
   {{< card title="加群交流" image="/images/group_qrcode.png" subtitle="扫码加群" >}}
 {{< /cards >}}
 

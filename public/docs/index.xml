@@ -1585,7 +1585,15 @@ title="Copy code"
 &lt;ul>
 &lt;li>类型：List[str]&lt;/li>
 &lt;/ul></description></item><item><title>开源版</title><link>https://example.org/update/wxauto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/update/wxauto/</guid><description>
-&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.9&lt;span class="hx:absolute hx:-mt-20" id="v3919">&lt;/span>
+&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.11&lt;span class="hx:absolute hx:-mt-20" id="v39111">&lt;/span>
+&lt;a href="#v39111" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>修复引用消息解析为Other的问题&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.10&lt;span class="hx:absolute hx:-mt-20" id="v39110">&lt;/span>
+&lt;a href="#v39110" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>修复39.1.9导致的发送消息的bug&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.9&lt;span class="hx:absolute hx:-mt-20" id="v3919">&lt;/span>
 &lt;a href="#v3919" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
 &lt;li>修复发送消息未找到指定好友时错误发送的问题&lt;/li>
 &lt;li>修复企微群获取ChatInfo错误的问题&lt;/li>

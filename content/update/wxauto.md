@@ -5,6 +5,12 @@ weight: 1
 ---
 # 更新日志
 
+## v39.1.12
+
+- 修复ENABLE_FILE_LOGGER参数无效的问题
+- 优化GetNextNewMessage方法
+- 为确保兼容分辨率缩放，将FORCE_MESSAGE_XBIAS默认为True
+
 ## v39.1.11
 
 - 修复引用消息解析为Other的问题

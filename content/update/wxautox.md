@@ -5,6 +5,12 @@ weight: 4
 ---
 # 更新日志
 
+## v39.1.36
+
+- 为确保兼容分辨率缩放，将FORCE_MESSAGE_XBIAS默认为True
+- 优化GetNextNewMessage方法
+- 优化GetMyInfo方法
+
 ## v39.1.35
 
 - 修复初始化时当微信窗口没有聊天页面时，GetNextNewMessage方法报错问题

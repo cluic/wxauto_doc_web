@@ -4073,7 +4073,13 @@ title="Copy code"
 &lt;/div>
 &lt;/div>
 &lt;p>&lt;strong>返回值&lt;/strong>：无&lt;/p></description></item><item><title>Plus版✨</title><link>https://example.org/update/wxautox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/update/wxautox/</guid><description>
-&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.35&lt;span class="hx:absolute hx:-mt-20" id="v39135">&lt;/span>
+&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.36&lt;span class="hx:absolute hx:-mt-20" id="v39136">&lt;/span>
+&lt;a href="#v39136" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>为确保兼容分辨率缩放，将FORCE_MESSAGE_XBIAS默认为True&lt;/li>
+&lt;li>优化GetNextNewMessage方法&lt;/li>
+&lt;li>优化GetMyInfo方法&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.35&lt;span class="hx:absolute hx:-mt-20" id="v39135">&lt;/span>
 &lt;a href="#v39135" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
 &lt;li>修复初始化时当微信窗口没有聊天页面时，GetNextNewMessage方法报错问题&lt;/li>
 &lt;/ul>

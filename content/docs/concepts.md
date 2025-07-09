@@ -52,7 +52,6 @@ wx = WeChat(nickname="张三")
 ```python
 # 导入你想要的消息类型
 from wxautox.msgs import (
-    Message,
     TextMessage,
     FriendMessage,
     FriendTextMessage,

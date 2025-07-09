@@ -2679,6 +2679,12 @@ title="Copy code"
 &lt;td>下载文件的目录，不填则默认&lt;a href="#wxparam-%e7%b1%bb" >WxParam.DEFAULT_SAVE_PATH&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
+&lt;td>force_click&lt;/td>
+&lt;td>bool&lt;/td>
+&lt;td>False&lt;/td>
+&lt;td>是否强制点击文件消息（当自动下载不可用时指定，否则会打开该文件）&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;td>timeout&lt;/td>
 &lt;td>int&lt;/td>
 &lt;td>10&lt;/td>

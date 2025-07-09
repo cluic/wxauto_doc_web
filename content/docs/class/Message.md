@@ -575,6 +575,7 @@ msg.download()
 | 参数名 | 类型   |  默认值  | 描述           |
 | ------ | ------ | -------- | -------------- |
 | dir_path | Union[str, Path]  | None | 下载文件的目录，不填则默认[WxParam.DEFAULT_SAVE_PATH](#wxparam-类) |
+| force_click | bool  |  False | 是否强制点击文件消息（当自动下载不可用时指定，否则会打开该文件） |
 | timeout | int  |  10 | 下载超时时间 |
 
 **返回值**：

@@ -5,6 +5,13 @@ weight: 1
 ---
 # 更新日志
 
+## v39.1.13
+
+- Chat类增加chat_type属性
+- 增加GetMessageById，以为后续适配wxauto_restful_api
+- 修复特定情况下时间消息解析为other的问题
+- 修复客服微信session内容解析错误的问题
+
 ## v39.1.12
 
 - 修复ENABLE_FILE_LOGGER参数无效的问题

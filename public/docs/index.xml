@@ -1585,7 +1585,11 @@ title="Copy code"
 &lt;ul>
 &lt;li>类型：List[str]&lt;/li>
 &lt;/ul></description></item><item><title>开源版</title><link>https://example.org/update/wxauto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/update/wxauto/</guid><description>
-&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.13&lt;span class="hx:absolute hx:-mt-20" id="v39113">&lt;/span>
+&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.14&lt;span class="hx:absolute hx:-mt-20" id="v39114">&lt;/span>
+&lt;a href="#v39114" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>修复折叠群聊导致无法正常运行的问题&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.13&lt;span class="hx:absolute hx:-mt-20" id="v39113">&lt;/span>
 &lt;a href="#v39113" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
 &lt;li>Chat类增加chat_type属性&lt;/li>
 &lt;li>增加GetMessageById，以为后续适配wxauto_restful_api&lt;/li>

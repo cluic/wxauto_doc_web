@@ -14,7 +14,8 @@ weight: 3
 - **开箱即用**：Windows Server 2022 系统预装wxauto所需全套环境、内置防异地检查方法
 
 {{< cards >}}
-  {{< card link="https://www.pulidc.com/buy/wxauto" title="👉立即获取" tag="点击跳转" tagType="info" >}}
+  {{< card link="https://www.pulidc.com/buy/wxauto" image="/images/puli1.png" title="👉点击购买：4核4G 12/月" tag="点击跳转" tagType="info" >}}
+  {{< card link="https://www.pulidc.com/buy/wxauto" image="/images/puli2.png" title="👉点击购买：4核8G 15/月" tag="点击跳转" tagType="info" >}}
 {{< /cards >}}
 
 ### 预装环境清单

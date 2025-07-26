@@ -4,12 +4,34 @@ toc: false
 weight: 3
 ---
 
-## 选择服务器/虚拟机
+为了方便各位新用户，<u>**免去python的安装和wxauto环境配置过程**</u>，朴利科技为我们提供了专属wxauto系统镜像，无需自行准备电脑和配置环境即可直接启动项目。
 
-{{< cards cols="3" >}}
+- **超高性价比**：
+  - 最低4核4G 配置可流畅挂机wxauto+微信，可应对高频场景
+  - 按月付费更灵活
+  - 单月价格更优惠
+- **专业稳定**：专为7×24小时挂机优化
+- **开箱即用**：Windows Server 2022 系统预装wxauto所需全套环境、内置防异地检查方法
+
+{{< cards >}}
+  {{< card link="https://www.pulidc.com/buy/wxauto" title="👉立即获取" tag="点击跳转" tagType="info" >}}
+{{< /cards >}}
+
+### 预装环境清单
+| 组件类别     | 包含内容                                                     |
+| ------------ | ------------------------------------------------------------ |
+| **核心应用** | Windows微信官方版（3.9.12.51 wxauto可用）                    |
+| **开发环境** | Python环境  +  wxauto库  + VSCode开发环境                    |
+| **系统优化** | RDP退出不锁屏脚本、系统内存管理软件(memreduct)自动优化已设置 |
+| **远程管理** | VNC、Windows RDP、预装第三方远控软件（ToDesk或向日葵）       |
+| **部署教程** | 开箱即用，本地调试好的程序可直接在服务器运行或者打包exe发送到服务器可直接运行 |
+
+
+{{% details title="<font color=\"#f1b826\">其他云服务器</font>" closed="true" %}}
+
+{{< cards cols="2" >}}
   {{< card link="https://cloud.tencent.com/act/cps/redirect?redirect=5695&cps_key=348fc319f5c034afed4b7c6894f3883a&from=console" title="腾讯云" >}}
   {{< card link="https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=t9ic9gas" title="阿里云" >}}
-  {{< card link="https://www.rainyun.com/NjU4NDU3_" title="雨云服务器" >}}
 {{< /cards >}}
 
 > [!TIP]
@@ -21,6 +43,8 @@ weight: 3
 
 > [!TIP]
 > 云服务器最好买你所在城市或临近城市的，因为手机ip与服务器ip所在地不是一个城市有几率触发微信异地登录风控。
+
+{{% /details %}}
 
 ## 远程控制
 

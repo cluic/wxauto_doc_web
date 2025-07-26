@@ -54,10 +54,14 @@ menu:
       name: Documentation
       pageRef: /docs
       weight: 1
+    - identifier: deploy
+      name: Deploy
+      pageRef: /deploy
+      weight: 2
     - identifier: showcase
       name: Showcase
       pageRef: /showcase
-      weight: 2
+      weight: 3
     - name: Search
       weight: 5
       params:

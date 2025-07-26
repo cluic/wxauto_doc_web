@@ -3763,17 +3763,68 @@ title="Copy code"
 &lt;/button>
 &lt;/div>
 &lt;/div></description></item><item><title>云服务器部署</title><link>https://example.org/deploy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/deploy/</guid><description>
-&lt;h2>选择服务器/虚拟机&lt;span class="hx:absolute hx:-mt-20" id="选择服务器虚拟机">&lt;/span>
-&lt;a href="#%e9%80%89%e6%8b%a9%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%99%9a%e6%8b%9f%e6%9c%ba" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 3;">
+&lt;p>为了方便各位新用户，&lt;u>&lt;strong>免去python的安装和wxauto环境配置过程&lt;/strong>&lt;/u>，朴利科技为我们提供了专属wxauto系统镜像，无需自行准备电脑和配置环境即可直接启动项目。&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>超高性价比&lt;/strong>：
+&lt;ul>
+&lt;li>最低4核4G 配置可流畅挂机wxauto+微信，可应对高频场景&lt;/li>
+&lt;li>按月付费更灵活&lt;/li>
+&lt;li>单月价格更优惠&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>专业稳定&lt;/strong>：专为7×24小时挂机优化&lt;/li>
+&lt;li>&lt;strong>开箱即用&lt;/strong>：Windows Server 2022 系统预装wxauto所需全套环境、内置防异地检查方法&lt;/li>
+&lt;/ul>
+&lt;div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 3;">
+&lt;a
+class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="https://www.pulidc.com/buy/wxauto"
+target="_blank" rel="noreferrer">&lt;span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">👉立即获取&lt;/span>&lt;div class="hextra-badge hextra-card-tag">
+&lt;div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">点击跳转&lt;/div>
+&lt;/div>&lt;/a>
+&lt;/div>
+&lt;h3>预装环境清单&lt;span class="hx:absolute hx:-mt-20" id="预装环境清单">&lt;/span>
+&lt;a href="#%e9%a2%84%e8%a3%85%e7%8e%af%e5%a2%83%e6%b8%85%e5%8d%95" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>组件类别&lt;/th>
+&lt;th>包含内容&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>核心应用&lt;/strong>&lt;/td>
+&lt;td>Windows微信官方版（3.9.12.51 wxauto可用）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>开发环境&lt;/strong>&lt;/td>
+&lt;td>Python环境 + wxauto库 + VSCode开发环境&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>系统优化&lt;/strong>&lt;/td>
+&lt;td>RDP退出不锁屏脚本、系统内存管理软件(memreduct)自动优化已设置&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>远程管理&lt;/strong>&lt;/td>
+&lt;td>VNC、Windows RDP、预装第三方远控软件（ToDesk或向日葵）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>部署教程&lt;/strong>&lt;/td>
+&lt;td>开箱即用，本地调试好的程序可直接在服务器运行或者打包exe发送到服务器可直接运行&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" >
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+&lt;strong class="hx:text-lg">&lt;font color="#f1b826">其他云服务器&lt;/font>&lt;/strong>
+&lt;/summary>
+&lt;div class="hx:p-2 hx:overflow-hidden">
+&lt;div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 2;">
 &lt;a
 class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="https://cloud.tencent.com/act/cps/redirect?redirect=5695&amp;amp;cps_key=348fc319f5c034afed4b7c6894f3883a&amp;amp;from=console"
 target="_blank" rel="noreferrer">&lt;span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">腾讯云&lt;/span>&lt;/a>
 &lt;a
 class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=t9ic9gas"
 target="_blank" rel="noreferrer">&lt;span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">阿里云&lt;/span>&lt;/a>
-&lt;a
-class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="https://www.rainyun.com/NjU4NDU3_"
-target="_blank" rel="noreferrer">&lt;span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">雨云服务器&lt;/span>&lt;/a>
 &lt;/div>
 &lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-green-200 hx:bg-green-100 hx:text-green-900 hx:dark:border-green-200/30 hx:dark:bg-green-900/30 hx:dark:text-green-200">
 &lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>&lt;/svg>Tip&lt;/p>
@@ -3792,6 +3843,8 @@ target="_blank" rel="noreferrer">&lt;span class="hextra-card-icon hx:flex hx:fon
 &lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>云服务器最好买你所在城市或临近城市的，因为手机ip与服务器ip所在地不是一个城市有几率触发微信异地登录风控。&lt;/p>&lt;/div>
 &lt;/div>
 &lt;/div>
+&lt;/div>
+&lt;/details>
 &lt;h2>远程控制&lt;span class="hx:absolute hx:-mt-20" id="远程控制">&lt;/span>
 &lt;a href="#%e8%bf%9c%e7%a8%8b%e6%8e%a7%e5%88%b6" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>该项目为自动化模拟项目，需要窗口保持活跃（未锁屏）状态方可正常运行。&lt;/p>
 &lt;p>有很多远程方案，没有必须是什么，但要保证退出远程控制时不要锁屏，这里提供两个方式：&lt;/p>

@@ -269,7 +269,7 @@ msg.quote("回复内容")
 转发该消息
 
 ```python
-msg.forward("转发对象名称")
+msg.forward("张三", message="转发会议材料给你，请查收")
 ```
 
 **参数**：
@@ -277,6 +277,7 @@ msg.forward("转发对象名称")
 | 参数名 | 类型   |  默认值  | 描述           |
 | ------ | ------ | -------- | -------------- |
 | targets    | Union[List[str], str]    | 无       | 转发对象名称   |
+| ✨message    | str    | None       | 要附加的消息（仅✨Plus版本支持该参数）   |
 | timeout | int    | 3        | 超时时间，单位为秒 |
 
 **返回值**：

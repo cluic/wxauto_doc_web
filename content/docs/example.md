@@ -92,8 +92,9 @@ wx.SendTypingText("你好，这是一条测试消息", who="张三")
 wx.SendTypingText("各位好：\n{@张三} 请负责前端部分\n{@李四} 请负责后端部分", who="项目群")
 ```
 
-### 5. 获取多个微信客户端
+### 5. 获取多个微信客户端/登录窗口
 
+#### 5.1 获取多个微信客户端
 ```python
 from wxautox import get_wx_clients
 
@@ -101,6 +102,19 @@ from wxautox import get_wx_clients
 clients = get_wx_clients()
 for client in clients:
     print(f"微信客户端: {client}")
+```
+
+#### 5.2 获取多个登录窗口
+
+```python
+from wxautox import get_wx_logins
+
+# 获取所有微信客户端
+login_windows = get_wx_logins()
+
+# 关闭所有登录窗口
+for login_window in login_windows:
+    login_window.close()  # 关闭
 ```
 
 ### 6. 自动登录

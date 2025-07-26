@@ -5,6 +5,16 @@ weight: 4
 ---
 # 更新日志
 
+## v39.1.38
+
+- [dialog对象](/docs/class/other/#wechatdialog)增加[get_all_text](/docs/class/other/#get_all_text)方法，以方便获取对话框内容
+- 优化转发消息选择联系人优先精准匹配
+- [转发消息](/docs/class/message/#forward)选择联系人时，可发送附加信息
+- 增加[get_wx_logins](/docs/class/other/#get_wx_logins)方法，获取所有登录窗口对象
+- 优化搜索切换联系人，增加[分步搜索](/docs/class/session/#search)
+- GetSesion方法不再获取未显示的会话
+- 修复当前页面没有任何聊天消息时，无法触发新消息判断的问题
+
 ## v39.1.37
 
 - 修复session对象双击无效问题、选择菜单失败问题

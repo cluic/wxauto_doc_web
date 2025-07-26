@@ -2588,7 +2588,7 @@ title="Copy code"
 &lt;h3>forward&lt;span class="hx:absolute hx:-mt-20" id="forward">&lt;/span>
 &lt;a href="#forward" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>转发该消息&lt;/p>
 &lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">msg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">forward&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;转发对象名称&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">msg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">forward&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;张三&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">message&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;转发会议材料给你，请查收&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
 &lt;button
 class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
@@ -2614,6 +2614,12 @@ title="Copy code"
 &lt;td>Union[List[str], str]&lt;/td>
 &lt;td>无&lt;/td>
 &lt;td>转发对象名称&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>✨message&lt;/td>
+&lt;td>str&lt;/td>
+&lt;td>None&lt;/td>
+&lt;td>要附加的消息（仅✨Plus版本支持该参数）&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>timeout&lt;/td>
@@ -3826,7 +3832,364 @@ title="Copy code"
 &lt;/li>
 &lt;/ol>
 &lt;h3>其他商业远程软件&lt;span class="hx:absolute hx:-mt-20" id="其他商业远程软件">&lt;/span>
-&lt;a href="#%e5%85%b6%e4%bb%96%e5%95%86%e4%b8%9a%e8%bf%9c%e7%a8%8b%e8%bd%af%e4%bb%b6" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>如向日葵、TeamViewer、ToDesk等，断开连接不会锁屏即可&lt;/p></description></item><item><title>✨朋友圈类</title><link>https://example.org/docs/class/moment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/docs/class/moment/</guid><description>
+&lt;a href="#%e5%85%b6%e4%bb%96%e5%95%86%e4%b8%9a%e8%bf%9c%e7%a8%8b%e8%bd%af%e4%bb%b6" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>如向日葵、TeamViewer、ToDesk等，断开连接不会锁屏即可&lt;/p></description></item><item><title>Plus版✨</title><link>https://example.org/update/wxautox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/update/wxautox/</guid><description>
+&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.38&lt;span class="hx:absolute hx:-mt-20" id="v39138">&lt;/span>
+&lt;a href="#v39138" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>&lt;a href="https://example.org/docs/class/other/#wechatdialog" >dialog对象&lt;/a>增加&lt;a href="https://example.org/docs/class/other/#get_all_text" >get_all_text&lt;/a>方法，以方便获取对话框内容&lt;/li>
+&lt;li>优化转发消息选择联系人优先精准匹配&lt;/li>
+&lt;li>&lt;a href="https://example.org/docs/class/message/#forward" >转发消息&lt;/a>选择联系人时，可发送附加信息&lt;/li>
+&lt;li>增加&lt;a href="https://example.org/docs/class/other/#get_wx_logins" >get_wx_logins&lt;/a>方法，获取所有登录窗口对象&lt;/li>
+&lt;li>优化搜索切换联系人，增加&lt;a href="https://example.org/docs/class/session/#search" >分步搜索&lt;/a>&lt;/li>
+&lt;li>GetSesion方法不再获取未显示的会话&lt;/li>
+&lt;li>修复当前页面没有任何聊天消息时，无法触发新消息判断的问题&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.37&lt;span class="hx:absolute hx:-mt-20" id="v39137">&lt;/span>
+&lt;a href="#v39137" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>修复session对象双击无效问题、选择菜单失败问题&lt;/li>
+&lt;li>修复特定情况下时间消息解析为other的问题&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.36&lt;span class="hx:absolute hx:-mt-20" id="v39136">&lt;/span>
+&lt;a href="#v39136" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>为确保兼容分辨率缩放，将FORCE_MESSAGE_XBIAS默认为True&lt;/li>
+&lt;li>优化GetNextNewMessage方法&lt;/li>
+&lt;li>优化GetMyInfo方法&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.35&lt;span class="hx:absolute hx:-mt-20" id="v39135">&lt;/span>
+&lt;a href="#v39135" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>修复初始化时当微信窗口没有聊天页面时，GetNextNewMessage方法报错问题&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.34&lt;span class="hx:absolute hx:-mt-20" id="v39134">&lt;/span>
+&lt;a href="#v39134" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>优化消息对象下载图片、视频&lt;/li>
+&lt;li>修复朋友圈下载图片报错问题&lt;/li>
+&lt;li>修复删除消息偶尔报错问题&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.33&lt;span class="hx:absolute hx:-mt-20" id="v39133">&lt;/span>
+&lt;a href="#v39133" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>修复&lt;a href="https://example.org/docs/class/chat/#%e5%8f%91%e9%80%81%e6%96%87%e4%bb%b6-sendfiles" >&lt;code>SendFiles&lt;/code>&lt;/a>方法发送文件/图片会多次执行的BUG&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.32&lt;span class="hx:absolute hx:-mt-20" id="v39132">&lt;/span>
+&lt;a href="#v39132" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>增加移除群置顶消息的方法&lt;a href="https://example.org/docs/class/chat/#%e7%a7%bb%e9%99%a4%e7%bd%ae%e9%a1%b6%e6%b6%88%e6%81%af-gettopmessage" >&lt;code>GetTopMessage&lt;/code>&lt;/a>&lt;/li>
+&lt;li>修复&lt;a href="https://example.org/docs/class/chat/#%e8%8e%b7%e5%8f%96%e8%81%8a%e5%a4%a9%e7%aa%97%e5%8f%a3%e4%bf%a1%e6%81%af-chatinfo" >&lt;code>ChatInfo&lt;/code>&lt;/a>的BUG&lt;/li>
+&lt;li>修复朋友圈下载图片偶尔为空的BUG&lt;/li>
+&lt;li>优化&lt;a href="https://example.org/docs/class/wechat/#%e8%8e%b7%e5%8f%96%e4%b8%8b%e4%b8%80%e4%b8%aa%e6%96%b0%e6%b6%88%e6%81%af-getnextnewmessage" >&lt;code>GetNextNewMessage&lt;/code>&lt;/a>方法&lt;/li>
+&lt;li>优化&lt;a href="https://example.org/docs/class/chat/#%e5%8f%91%e9%80%81%e6%96%87%e4%bb%b6-sendfiles" >&lt;code>SendFiles&lt;/code>&lt;/a>方法&lt;/li>
+&lt;li>优化&lt;a href="https://example.org/docs/class/chat/#%e4%bb%8e%e7%be%a4%e8%81%8a%e4%b8%ad%e6%b7%bb%e5%8a%a0%e5%a5%bd%e5%8f%8b-addfriendfromgroup" >&lt;code>AddFriendFromGroup&lt;/code>&lt;/a>方法&lt;/li>
+&lt;li>&lt;a href="https://example.org/docs/class/message/#quotemessage" >&lt;code>QuoteMessage&lt;/code>&lt;/a>增加&lt;code>click_quote&lt;/code>方法，用于点击被引用框体&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.31&lt;span class="hx:absolute hx:-mt-20" id="v39131">&lt;/span>
+&lt;a href="#v39131" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>增加&lt;a href="https://example.org/docs/class/wechat/#%e8%8e%b7%e5%8f%96%e9%80%9a%e8%ae%af%e5%bd%95%e7%be%a4%e8%81%8a%e5%88%97%e8%a1%a8-getcontactgroups" >&lt;code>GetContactGroups&lt;/code>&lt;/a>方法，获取通讯录群聊列表&lt;/li>
+&lt;li>增加&lt;a href="https://example.org/docs/class/chat/#%e8%8e%b7%e5%8f%96%e5%af%b9%e8%af%9d%e6%a1%86-getdialog" >&lt;code>GetDialog&lt;/code>&lt;/a>方法，获取对话框对象，用于某些自定义操作&lt;/li>
+&lt;li>&lt;a href="https://example.org/docs/class/other/#wxparam" >WxParam&lt;/a>增加&lt;code>NOTE_LOAD_TIMEOUT&lt;/code>属性，用于设置微信笔记加载超时时间&lt;/li>
+&lt;li>优化申请好友对话框判断&lt;/li>
+&lt;li>优化支持IDE方法参数提示和docstring的正确显示&lt;/li>
+&lt;/ul></description></item><item><title>Session类</title><link>https://example.org/docs/class/session/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/docs/class/session/</guid><description>
+&lt;h2>Session 类方法&lt;span class="hx:absolute hx:-mt-20" id="session-类方法">&lt;/span>
+&lt;a href="#session-%e7%b1%bb%e6%96%b9%e6%b3%95" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>概念&lt;span class="hx:absolute hx:-mt-20" id="概念">&lt;/span>
+&lt;a href="#%e6%a6%82%e5%bf%b5" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;code>Session&lt;/code>类表示微信主窗口聊天页左侧的联系人会话列表，即下图&lt;font color='#26b24f'>绿色框内部分&lt;/font>&lt;/p>
+&lt;p>&lt;img src="https://example.org/images/wechat_window.png" alt="/images/wechat_window.png" loading="lazy" />&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="c1"># 此处省略wx对象的初始化&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">sessionbox&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">wx&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">SessionBox&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>✨search&lt;span class="hx:absolute hx:-mt-20" id="search">&lt;/span>
+&lt;a href="#search" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;strong>仅用于触发搜索&lt;/strong>，返回搜索结果，不会进行下一步的动作，可自行处理搜索结果&lt;/p>
+&lt;p>&lt;strong>示例&lt;/strong>：&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">search_result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">sessionbox&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">search&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;张三&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">item&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">search_result&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">f&lt;/span>&lt;span class="s2">&amp;#34;type: &lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">item&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">type&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">, text: &lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">item&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">text&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;strong>参数&lt;/strong>：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">参数&lt;/th>
+&lt;th style="text-align: center">类型&lt;/th>
+&lt;th style="text-align: center">默认值&lt;/th>
+&lt;th style="text-align: center">说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">keywords&lt;/td>
+&lt;td style="text-align: center">str&lt;/td>
+&lt;td style="text-align: center">False&lt;/td>
+&lt;td style="text-align: center">搜索关键词&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">force&lt;/td>
+&lt;td style="text-align: center">bool&lt;/td>
+&lt;td style="text-align: center">False&lt;/td>
+&lt;td style="text-align: center">是否强制等待，避免未搜索到就返回结果&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">force_wait&lt;/td>
+&lt;td style="text-align: center">Union[float, int]&lt;/td>
+&lt;td style="text-align: center">0.5&lt;/td>
+&lt;td style="text-align: center">强制等待时间，秒&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>返回值&lt;/strong>：&lt;/p>
+&lt;p>List[&lt;a href="#searchresultelement" >SearchResultElement&lt;/a>]&lt;/p>
+&lt;h3>go_top&lt;span class="hx:absolute hx:-mt-20" id="go_top">&lt;/span>
+&lt;a href="#go_top" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>回到会话列表顶部&lt;/p>
+&lt;p>&lt;strong>参数&lt;/strong>：无&lt;/p>
+&lt;p>&lt;strong>返回值&lt;/strong>：无&lt;/p>
+&lt;h3>roll_up&lt;span class="hx:absolute hx:-mt-20" id="roll_up">&lt;/span>
+&lt;a href="#roll_up" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>向上滚动会话列表&lt;/p>
+&lt;p>&lt;strong>参数&lt;/strong>：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">参数&lt;/th>
+&lt;th style="text-align: center">类型&lt;/th>
+&lt;th style="text-align: center">默认值&lt;/th>
+&lt;th style="text-align: center">说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">n&lt;/td>
+&lt;td style="text-align: center">int&lt;/td>
+&lt;td style="text-align: center">5&lt;/td>
+&lt;td style="text-align: center">滚动次数，自行调节滚动幅度&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>返回值&lt;/strong>：无&lt;/p>
+&lt;h3>roll_down&lt;span class="hx:absolute hx:-mt-20" id="roll_down">&lt;/span>
+&lt;a href="#roll_down" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>向下滚动会话列表&lt;/p>
+&lt;p>&lt;strong>参数&lt;/strong>：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">参数&lt;/th>
+&lt;th style="text-align: center">类型&lt;/th>
+&lt;th style="text-align: center">默认值&lt;/th>
+&lt;th style="text-align: center">说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">n&lt;/td>
+&lt;td style="text-align: center">int&lt;/td>
+&lt;td style="text-align: center">5&lt;/td>
+&lt;td style="text-align: center">滚动次数，自行调节滚动幅度&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>返回值&lt;/strong>：无&lt;/p>
+&lt;h2>SessionElement&lt;span class="hx:absolute hx:-mt-20" id="sessionelement">&lt;/span>
+&lt;a href="#sessionelement" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;img src="https://example.org/images/session_element.png" alt="SessionElement" loading="lazy" />&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>属性&lt;/th>
+&lt;th>类型&lt;/th>
+&lt;th>描述（以上图为例）&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>name&lt;/td>
+&lt;td>str&lt;/td>
+&lt;td>会话名（wxauto三群）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>time&lt;/td>
+&lt;td>str&lt;/td>
+&lt;td>时间（2025-05-14 14:41）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>content&lt;/td>
+&lt;td>str&lt;/td>
+&lt;td>消息内容（[10条]天道酬勤：这..）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ismute&lt;/td>
+&lt;td>bool&lt;/td>
+&lt;td>是否消息免打扰（True）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>isnew&lt;/td>
+&lt;td>bool&lt;/td>
+&lt;td>是否有新消息（True）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>new_count&lt;/td>
+&lt;td>int&lt;/td>
+&lt;td>新消息数量（10）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>info&lt;/td>
+&lt;td>Dict[str, Any]&lt;/td>
+&lt;td>会话信息（包含了上述所有属性的dict）&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxauto&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">WeChat&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wx&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">WeChat&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">sessions&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">wx&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">GetSession&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">session&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">sessions&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="c1"># 获取第一个会话&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>click&lt;span class="hx:absolute hx:-mt-20" id="click">&lt;/span>
+&lt;a href="#click" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;strong>点击会话&lt;/strong>，即切换到这个聊天窗口&lt;/p>
+&lt;p>参数：无&lt;/p>
+&lt;p>返回值：无&lt;/p>
+&lt;p>示例：&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">session&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">click&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>double_click&lt;span class="hx:absolute hx:-mt-20" id="double_click">&lt;/span>
+&lt;a href="#double_click" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;strong>双击会话&lt;/strong>，即将这个聊天窗口独立出去&lt;/p>
+&lt;p>参数：无&lt;/p>
+&lt;p>返回值：无&lt;/p>
+&lt;p>示例：&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">session&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">double_click&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>✨delete&lt;span class="hx:absolute hx:-mt-20" id="delete">&lt;/span>
+&lt;a href="#delete" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;strong>删除会话&lt;/strong>&lt;/p>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-yellow-100 hx:bg-yellow-50 hx:text-yellow-900 hx:dark:border-yellow-200/30 hx:dark:bg-yellow-700/30 hx:dark:text-yellow-200">
+&lt;div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2">&lt;div class="hx:select-none hx:text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">⚠️&lt;/div>&lt;/div>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">请谨慎调用该方法，该方法会删除该会话的所有聊天记录，无法恢复！！&lt;br>
+请谨慎调用该方法，该方法会删除该会话的所有聊天记录，无法恢复！！&lt;br>
+请谨慎调用该方法，该方法会删除该会话的所有聊天记录，无法恢复！！&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>参数：无&lt;/p>
+&lt;p>返回值：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/p>
+&lt;p>示例：&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">session&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">delete&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>✨hide&lt;span class="hx:absolute hx:-mt-20" id="hide">&lt;/span>
+&lt;a href="#hide" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;strong>隐藏会话&lt;/strong>&lt;/p>
+&lt;p>参数：无&lt;/p>
+&lt;p>返回值：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/p>
+&lt;p>示例：&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">session&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">hide&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>✨select_option&lt;span class="hx:absolute hx:-mt-20" id="select_option">&lt;/span>
+&lt;a href="#select_option" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;strong>选择会话选项&lt;/strong>，即右键点击会话，然后选择某个选项&lt;/p>
+&lt;p>参数：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">参数名&lt;/th>
+&lt;th style="text-align: left">类型&lt;/th>
+&lt;th style="text-align: left">说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">option&lt;/td>
+&lt;td style="text-align: left">str&lt;/td>
+&lt;td style="text-align: left">选项名称，例如“置顶”、“标为未读”等&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>返回值：&lt;a href="https://example.org/docs/class/other/#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/p>
+&lt;h2>✨SearchResultElement&lt;span class="hx:absolute hx:-mt-20" id="searchresultelement">&lt;/span>
+&lt;a href="#searchresultelement" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>会话搜索结果对象&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>属性&lt;/th>
+&lt;th>类型&lt;/th>
+&lt;th>描述&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>type&lt;/td>
+&lt;td>str&lt;/td>
+&lt;td>搜索结果对象的UI类型，一般&lt;code>pane&lt;/code>是分割线或者标签，不可交互；&lt;code>listitem&lt;/code>是搜索结果，可交互&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>text&lt;/td>
+&lt;td>str&lt;/td>
+&lt;td>搜索结果，有时候卡可能为空，建议使用&lt;code>get_all_text&lt;/code>方法进行完整判断&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3>get_all_text&lt;span class="hx:absolute hx:-mt-20" id="get_all_text">&lt;/span>
+&lt;a href="#get_all_text" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>获取该结果对象的所有UI文字内容，用于判断是不是你要的搜索结果&lt;/p>
+&lt;p>&lt;strong>参数&lt;/strong>：无&lt;/p>
+&lt;p>&lt;strong>返回值&lt;/strong>：List[str]&lt;/p>
+&lt;h3>click&lt;span class="hx:absolute hx:-mt-20" id="click-1">&lt;/span>
+&lt;a href="#click-1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>点击该搜索对象&lt;/p>
+&lt;p>&lt;strong>参数&lt;/strong>：无&lt;/p>
+&lt;p>&lt;strong>返回值&lt;/strong>：无&lt;/p>
+&lt;h3>close&lt;span class="hx:absolute hx:-mt-20" id="close">&lt;/span>
+&lt;a href="#close" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>关闭搜索窗口，关闭后本次搜索的所有对象均不可再交互&lt;/p>
+&lt;p>&lt;strong>参数&lt;/strong>：无&lt;/p>
+&lt;p>&lt;strong>返回值&lt;/strong>：无&lt;/p></description></item><item><title>✨朋友圈类</title><link>https://example.org/docs/class/moment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/docs/class/moment/</guid><description>
 &lt;h2>MomentsWnd&lt;span class="hx:absolute hx:-mt-20" id="momentswnd">&lt;/span>
 &lt;a href="#momentswnd" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;strong>朋友圈窗口&lt;/strong>对象，即的是朋友圈的窗口对象，提供对朋友圈窗口的各种操作，如获取朋友圈内容、刷新、关闭等功能。&lt;/p>
 &lt;p>&lt;img src="https://example.org/images/moment_wnd.png" alt="Moments" loading="lazy" />&lt;/p>
@@ -3867,7 +4230,7 @@ title="Copy code"
 &lt;tr>
 &lt;th style="text-align: center">参数&lt;/th>
 &lt;th style="text-align: center">类型&lt;/th>
-&lt;th style="text-align: center">说明&lt;/th>
+&lt;th style="text-align: center">默认值&lt;/th>
 &lt;th style="text-align: center">说明&lt;/th>
 &lt;/tr>
 &lt;/thead>
@@ -4088,603 +4451,12 @@ title="Copy code"
 &lt;/button>
 &lt;/div>
 &lt;/div>
-&lt;p>&lt;strong>返回值&lt;/strong>：无&lt;/p></description></item><item><title>Plus版✨</title><link>https://example.org/update/wxautox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/update/wxautox/</guid><description>
-&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.37&lt;span class="hx:absolute hx:-mt-20" id="v39137">&lt;/span>
-&lt;a href="#v39137" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>修复session对象双击无效问题、选择菜单失败问题&lt;/li>
-&lt;li>修复特定情况下时间消息解析为other的问题&lt;/li>
-&lt;/ul>
-&lt;h2>v39.1.36&lt;span class="hx:absolute hx:-mt-20" id="v39136">&lt;/span>
-&lt;a href="#v39136" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>为确保兼容分辨率缩放，将FORCE_MESSAGE_XBIAS默认为True&lt;/li>
-&lt;li>优化GetNextNewMessage方法&lt;/li>
-&lt;li>优化GetMyInfo方法&lt;/li>
-&lt;/ul>
-&lt;h2>v39.1.35&lt;span class="hx:absolute hx:-mt-20" id="v39135">&lt;/span>
-&lt;a href="#v39135" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>修复初始化时当微信窗口没有聊天页面时，GetNextNewMessage方法报错问题&lt;/li>
-&lt;/ul>
-&lt;h2>v39.1.34&lt;span class="hx:absolute hx:-mt-20" id="v39134">&lt;/span>
-&lt;a href="#v39134" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>优化消息对象下载图片、视频&lt;/li>
-&lt;li>修复朋友圈下载图片报错问题&lt;/li>
-&lt;li>修复删除消息偶尔报错问题&lt;/li>
-&lt;/ul>
-&lt;h2>v39.1.33&lt;span class="hx:absolute hx:-mt-20" id="v39133">&lt;/span>
-&lt;a href="#v39133" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>修复&lt;a href="https://example.org/docs/class/chat/#%e5%8f%91%e9%80%81%e6%96%87%e4%bb%b6-sendfiles" >&lt;code>SendFiles&lt;/code>&lt;/a>方法发送文件/图片会多次执行的BUG&lt;/li>
-&lt;/ul>
-&lt;h2>v39.1.32&lt;span class="hx:absolute hx:-mt-20" id="v39132">&lt;/span>
-&lt;a href="#v39132" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>增加移除群置顶消息的方法&lt;a href="https://example.org/docs/class/chat/#%e7%a7%bb%e9%99%a4%e7%bd%ae%e9%a1%b6%e6%b6%88%e6%81%af-gettopmessage" >&lt;code>GetTopMessage&lt;/code>&lt;/a>&lt;/li>
-&lt;li>修复&lt;a href="https://example.org/docs/class/chat/#%e8%8e%b7%e5%8f%96%e8%81%8a%e5%a4%a9%e7%aa%97%e5%8f%a3%e4%bf%a1%e6%81%af-chatinfo" >&lt;code>ChatInfo&lt;/code>&lt;/a>的BUG&lt;/li>
-&lt;li>修复朋友圈下载图片偶尔为空的BUG&lt;/li>
-&lt;li>优化&lt;a href="https://example.org/docs/class/wechat/#%e8%8e%b7%e5%8f%96%e4%b8%8b%e4%b8%80%e4%b8%aa%e6%96%b0%e6%b6%88%e6%81%af-getnextnewmessage" >&lt;code>GetNextNewMessage&lt;/code>&lt;/a>方法&lt;/li>
-&lt;li>优化&lt;a href="https://example.org/docs/class/chat/#%e5%8f%91%e9%80%81%e6%96%87%e4%bb%b6-sendfiles" >&lt;code>SendFiles&lt;/code>&lt;/a>方法&lt;/li>
-&lt;li>优化&lt;a href="https://example.org/docs/class/chat/#%e4%bb%8e%e7%be%a4%e8%81%8a%e4%b8%ad%e6%b7%bb%e5%8a%a0%e5%a5%bd%e5%8f%8b-addfriendfromgroup" >&lt;code>AddFriendFromGroup&lt;/code>&lt;/a>方法&lt;/li>
-&lt;li>&lt;a href="https://example.org/docs/class/message/#quotemessage" >&lt;code>QuoteMessage&lt;/code>&lt;/a>增加&lt;code>click_quote&lt;/code>方法，用于点击被引用框体&lt;/li>
-&lt;/ul>
-&lt;h2>v39.1.31&lt;span class="hx:absolute hx:-mt-20" id="v39131">&lt;/span>
-&lt;a href="#v39131" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
-&lt;li>增加&lt;a href="https://example.org/docs/class/wechat/#%e8%8e%b7%e5%8f%96%e9%80%9a%e8%ae%af%e5%bd%95%e7%be%a4%e8%81%8a%e5%88%97%e8%a1%a8-getcontactgroups" >&lt;code>GetContactGroups&lt;/code>&lt;/a>方法，获取通讯录群聊列表&lt;/li>
-&lt;li>增加&lt;a href="https://example.org/docs/class/chat/#%e8%8e%b7%e5%8f%96%e5%af%b9%e8%af%9d%e6%a1%86-getdialog" >&lt;code>GetDialog&lt;/code>&lt;/a>方法，获取对话框对象，用于某些自定义操作&lt;/li>
-&lt;li>&lt;a href="https://example.org/docs/class/other/#wxparam" >WxParam&lt;/a>增加&lt;code>NOTE_LOAD_TIMEOUT&lt;/code>属性，用于设置微信笔记加载超时时间&lt;/li>
-&lt;li>优化申请好友对话框判断&lt;/li>
-&lt;li>优化支持IDE方法参数提示和docstring的正确显示&lt;/li>
-&lt;/ul></description></item><item><title>关于</title><link>https://example.org/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/about/</guid><description>
+&lt;p>&lt;strong>返回值&lt;/strong>：无&lt;/p></description></item><item><title>关于</title><link>https://example.org/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/about/</guid><description>
 &lt;p>wxauto 是一个基于 &lt;a href="https://github.com/yinkaisheng/Python-UIAutomation-for-Windows" target="_blank" rel="noopener">Python-UIAutomation-for-Windows&lt;/a> 的微信机器人，通过模拟微信客户端操作实现自动回复、消息转发等功能。&lt;/p>
 &lt;h2>鸣谢&lt;span class="hx:absolute hx:-mt-20" id="鸣谢">&lt;/span>
 &lt;a href="#%e9%b8%a3%e8%b0%a2" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
 &lt;li>&lt;a href="https://github.com/yinkaisheng/Python-UIAutomation-for-Windows" target="_blank" rel="noopener">Python-UIAutomation-for-Windows&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>其他类</title><link>https://example.org/docs/class/other/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/docs/class/other/</guid><description>
-&lt;h3>WxResponse&lt;span class="hx:absolute hx:-mt-20" id="wxresponse">&lt;/span>
-&lt;a href="#wxresponse" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>该类用于该项目多个方法的返回值&lt;/p>
-&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 这里假设result为某个方法的WxResponse类型返回值&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">result&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">WxResponse&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="o">...&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 判断是否成功&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;data&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="c1"># 成功，获取返回数据，大多数情况下为None&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">result&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;message&amp;#39;&lt;/span>&lt;span class="p">])&lt;/span> &lt;span class="c1"># 该方法调用失败，打印错误信息&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-&lt;button
-class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-title="Copy code"
->
-&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;/button>
-&lt;/div>
-&lt;/div>
-&lt;h3>WxParam&lt;span class="hx:absolute hx:-mt-20" id="wxparam">&lt;/span>
-&lt;a href="#wxparam" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>该类用于该项目的一些参数，在获取&lt;code>WeChat&lt;/code>实例前，可以通过修改该类的属性来修改默认参数&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>属性&lt;/th>
-&lt;th>类型&lt;/th>
-&lt;th>默认值&lt;/th>
-&lt;th>描述&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>ENABLE_FILE_LOGGER&lt;/td>
-&lt;td>bool&lt;/td>
-&lt;td>True&lt;/td>
-&lt;td>是否启用日志文件&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>DEFAULT_SAVE_PATH&lt;/td>
-&lt;td>str&lt;/td>
-&lt;td>./wxautox&lt;/td>
-&lt;td>下载文件/图片默认保存路径&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>✨MESSAGE_HASH&lt;/td>
-&lt;td>bool&lt;/td>
-&lt;td>False&lt;/td>
-&lt;td>是否启用消息哈希值用于辅助判断消息，开启后会稍微影响性能&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>DEFAULT_MESSAGE_XBIAS&lt;/td>
-&lt;td>int&lt;/td>
-&lt;td>51&lt;/td>
-&lt;td>头像到消息X偏移量，用于消息定位，点击消息等操作&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>FORCE_MESSAGE_XBIAS&lt;/td>
-&lt;td>bool&lt;/td>
-&lt;td>False&lt;/td>
-&lt;td>是否强制重新自动获取X偏移量，如果设置为True，则每次启动都会重新获取，系统设置了分辨率缩放时开启&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>LISTEN_INTERVAL&lt;/td>
-&lt;td>int&lt;/td>
-&lt;td>1&lt;/td>
-&lt;td>监听消息时间间隔，单位秒&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>✨LISTENER_EXCUTOR_WORKERS&lt;/td>
-&lt;td>int&lt;/td>
-&lt;td>4&lt;/td>
-&lt;td>监听执行器线程池大小，根据自身需求和设备性能设置&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>SEARCH_CHAT_TIMEOUT&lt;/td>
-&lt;td>int&lt;/td>
-&lt;td>5&lt;/td>
-&lt;td>搜索聊天对象超时时间，单位秒&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>✨NOTE_LOAD_TIMEOUT&lt;/td>
-&lt;td>int&lt;/td>
-&lt;td>30&lt;/td>
-&lt;td>微信笔记加载超时时间，单位秒&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>示例：&lt;/p>
-&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">WxParam&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 设置8个监听线程&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">WxParam&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">LISTENER_EXCUTOR_WORKERS&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">8&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-&lt;button
-class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-title="Copy code"
->
-&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;/button>
-&lt;/div>
-&lt;/div>
-&lt;h3>SessionElement&lt;span class="hx:absolute hx:-mt-20" id="sessionelement">&lt;/span>
-&lt;a href="#sessionelement" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;img src="https://example.org/images/session_element.png" alt="SessionElement" loading="lazy" />&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>属性&lt;/th>
-&lt;th>类型&lt;/th>
-&lt;th>描述（以上图为例）&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>name&lt;/td>
-&lt;td>str&lt;/td>
-&lt;td>会话名（wxauto三群）&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>time&lt;/td>
-&lt;td>str&lt;/td>
-&lt;td>时间（2025-05-14 14:41）&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>content&lt;/td>
-&lt;td>str&lt;/td>
-&lt;td>消息内容（[10条]天道酬勤：这..）&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>ismute&lt;/td>
-&lt;td>bool&lt;/td>
-&lt;td>是否消息免打扰（True）&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>isnew&lt;/td>
-&lt;td>bool&lt;/td>
-&lt;td>是否有新消息（True）&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>new_count&lt;/td>
-&lt;td>int&lt;/td>
-&lt;td>新消息数量（10）&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>info&lt;/td>
-&lt;td>Dict[str, Any]&lt;/td>
-&lt;td>会话信息（包含了上述所有属性的dict）&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxauto&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">WeChat&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wx&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">WeChat&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">sessions&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">wx&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">GetSession&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">session&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">sessions&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="c1"># 获取第一个会话&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-&lt;button
-class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-title="Copy code"
->
-&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;/button>
-&lt;/div>
-&lt;/div>
-&lt;h4>click&lt;span class="hx:absolute hx:-mt-20" id="click">&lt;/span>
-&lt;a href="#click" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>点击会话&lt;/strong>，即切换到这个聊天窗口&lt;/p>
-&lt;p>参数：无&lt;/p>
-&lt;p>返回值：无&lt;/p>
-&lt;p>示例：&lt;/p>
-&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">session&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">click&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-&lt;button
-class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-title="Copy code"
->
-&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;/button>
-&lt;/div>
-&lt;/div>
-&lt;h4>double_click&lt;span class="hx:absolute hx:-mt-20" id="double_click">&lt;/span>
-&lt;a href="#double_click" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>双击会话&lt;/strong>，即将这个聊天窗口独立出去&lt;/p>
-&lt;p>参数：无&lt;/p>
-&lt;p>返回值：无&lt;/p>
-&lt;p>示例：&lt;/p>
-&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">session&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">double_click&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-&lt;button
-class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-title="Copy code"
->
-&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;/button>
-&lt;/div>
-&lt;/div>
-&lt;h4>✨delete&lt;span class="hx:absolute hx:-mt-20" id="delete">&lt;/span>
-&lt;a href="#delete" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>删除会话&lt;/strong>&lt;/p>
-&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-yellow-100 hx:bg-yellow-50 hx:text-yellow-900 hx:dark:border-yellow-200/30 hx:dark:bg-yellow-700/30 hx:dark:text-yellow-200">
-&lt;div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2">&lt;div class="hx:select-none hx:text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">⚠️&lt;/div>&lt;/div>
-&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
-&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">请谨慎调用该方法，该方法会删除该会话的所有聊天记录，无法恢复！！&lt;br>
-请谨慎调用该方法，该方法会删除该会话的所有聊天记录，无法恢复！！&lt;br>
-请谨慎调用该方法，该方法会删除该会话的所有聊天记录，无法恢复！！&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;p>参数：无&lt;/p>
-&lt;p>返回值：&lt;a href="#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/p>
-&lt;p>示例：&lt;/p>
-&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">session&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">delete&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-&lt;button
-class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-title="Copy code"
->
-&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;/button>
-&lt;/div>
-&lt;/div>
-&lt;h4>✨hide&lt;span class="hx:absolute hx:-mt-20" id="hide">&lt;/span>
-&lt;a href="#hide" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>隐藏会话&lt;/strong>&lt;/p>
-&lt;p>参数：无&lt;/p>
-&lt;p>返回值：&lt;a href="#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/p>
-&lt;p>示例：&lt;/p>
-&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">session&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">hide&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-&lt;button
-class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-title="Copy code"
->
-&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;/button>
-&lt;/div>
-&lt;/div>
-&lt;h4>✨select_option&lt;span class="hx:absolute hx:-mt-20" id="select_option">&lt;/span>
-&lt;a href="#select_option" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>选择会话选项&lt;/strong>，即右键点击会话，然后选择某个选项&lt;/p>
-&lt;p>参数：&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align: left">参数名&lt;/th>
-&lt;th style="text-align: left">类型&lt;/th>
-&lt;th style="text-align: left">说明&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align: left">option&lt;/td>
-&lt;td style="text-align: left">str&lt;/td>
-&lt;td style="text-align: left">选项名称，例如“置顶”、“标为未读”等&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>返回值：&lt;a href="#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/p>
-&lt;h3>NewFriendElement&lt;span class="hx:absolute hx:-mt-20" id="newfriendelement">&lt;/span>
-&lt;a href="#newfriendelement" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;img src="https://example.org/images/new_friend_element.png" alt="NewFriendElement" loading="lazy" />&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>属性&lt;/th>
-&lt;th>类型&lt;/th>
-&lt;th>描述（以上图为例）&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>name&lt;/td>
-&lt;td>str&lt;/td>
-&lt;td>对方名（诸葛孔明）&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>msg&lt;/td>
-&lt;td>str&lt;/td>
-&lt;td>申请信息（wxautox）&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>acceptable&lt;/td>
-&lt;td>bool&lt;/td>
-&lt;td>是否可接受（True）&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h4>accept&lt;span class="hx:absolute hx:-mt-20" id="accept">&lt;/span>
-&lt;a href="#accept" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>同意添加好友&lt;/strong>&lt;/p>
-&lt;p>参数：&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align: left">参数名&lt;/th>
-&lt;th style="text-align: left">类型&lt;/th>
-&lt;th style="text-align: left">默认值&lt;/th>
-&lt;th style="text-align: left">说明&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align: left">remark&lt;/td>
-&lt;td style="text-align: left">str&lt;/td>
-&lt;td style="text-align: left">None&lt;/td>
-&lt;td style="text-align: left">备注&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">tags&lt;/td>
-&lt;td style="text-align: left">list&lt;/td>
-&lt;td style="text-align: left">None&lt;/td>
-&lt;td style="text-align: left">标签&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">permission&lt;/td>
-&lt;td style="text-align: left">str&lt;/td>
-&lt;td style="text-align: left">&amp;lsquo;朋友圈&amp;rsquo;&lt;/td>
-&lt;td style="text-align: left">朋友圈权限，可选值：&amp;lsquo;全部&amp;rsquo;、&amp;lsquo;仅聊天&amp;rsquo;&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h4>✨delete&lt;span class="hx:absolute hx:-mt-20" id="delete-1">&lt;/span>
-&lt;a href="#delete-1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>删除好友申请&lt;/strong>&lt;/p>
-&lt;p>参数：无&lt;/p>
-&lt;h4>✨reply&lt;span class="hx:absolute hx:-mt-20" id="reply">&lt;/span>
-&lt;a href="#reply" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>回复好友申请&lt;/strong>&lt;/p>
-&lt;p>参数：&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align: left">参数名&lt;/th>
-&lt;th style="text-align: left">类型&lt;/th>
-&lt;th style="text-align: left">默认值&lt;/th>
-&lt;th style="text-align: left">说明&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align: left">text&lt;/td>
-&lt;td style="text-align: left">str&lt;/td>
-&lt;td style="text-align: left">必填&lt;/td>
-&lt;td style="text-align: left">回复信息&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h4>✨get_account&lt;span class="hx:absolute hx:-mt-20" id="get_account">&lt;/span>
-&lt;a href="#get_account" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>获取申请添加的好友的账号信息&lt;/strong>&lt;/p>
-&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
-&lt;div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2">&lt;div class="hx:select-none hx:text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">ℹ️&lt;/div>&lt;/div>
-&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
-&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">该方法仅接受好友申请后，已经成为好友，才能获取到对方账号信息&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;p>参数：&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align: left">参数名&lt;/th>
-&lt;th style="text-align: left">类型&lt;/th>
-&lt;th style="text-align: left">默认值&lt;/th>
-&lt;th style="text-align: left">说明&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align: left">wait&lt;/td>
-&lt;td style="text-align: left">int&lt;/td>
-&lt;td style="text-align: left">5&lt;/td>
-&lt;td style="text-align: left">等待时间&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>返回值：str&lt;/p>
-&lt;h3>✨LoginWnd&lt;span class="hx:absolute hx:-mt-20" id="loginwnd">&lt;/span>
-&lt;a href="#loginwnd" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 3;">
-&lt;a
-class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="https://example.org/docs/example/#6-%e8%87%aa%e5%8a%a8%e7%99%bb%e5%bd%95"
->&lt;span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">👉查看自动登录、二维码示例&lt;/span>&lt;div class="hextra-badge hextra-card-tag">
-&lt;div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">点击跳转&lt;/div>
-&lt;/div>&lt;/a>
-&lt;/div>
-&lt;p>该类用于微信登录、获取二维码等操作&lt;/p>
-&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">LoginWnd&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wxlogin&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">LoginWnd&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">app_path&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;...&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-&lt;button
-class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-title="Copy code"
->
-&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;/button>
-&lt;/div>
-&lt;/div>
-&lt;p>&lt;img src="https://example.org/images/login_wnd.png" alt="LoginWnd" loading="lazy" />&lt;/p>
-&lt;p>参数：&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align: left">参数名&lt;/th>
-&lt;th style="text-align: left">类型&lt;/th>
-&lt;th style="text-align: left">默认值&lt;/th>
-&lt;th style="text-align: left">说明&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align: left">app_path&lt;/td>
-&lt;td style="text-align: left">str&lt;/td>
-&lt;td style="text-align: left">None&lt;/td>
-&lt;td style="text-align: left">微信客户端路径&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>属性：无&lt;/p>
-&lt;h4>login&lt;span class="hx:absolute hx:-mt-20" id="login">&lt;/span>
-&lt;a href="#login" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>登录微信&lt;/strong>&lt;/p>
-&lt;p>参数：&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align: left">参数名&lt;/th>
-&lt;th style="text-align: left">类型&lt;/th>
-&lt;th style="text-align: left">默认值&lt;/th>
-&lt;th style="text-align: left">说明&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align: left">timeout&lt;/td>
-&lt;td style="text-align: left">int&lt;/td>
-&lt;td style="text-align: left">10&lt;/td>
-&lt;td style="text-align: left">登录超时时间&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>返回值：&lt;a href="#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/p>
-&lt;h4>get_qrcode&lt;span class="hx:absolute hx:-mt-20" id="get_qrcode">&lt;/span>
-&lt;a href="#get_qrcode" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>获取二维码&lt;/strong>&lt;/p>
-&lt;p>参数：&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align: left">参数名&lt;/th>
-&lt;th style="text-align: left">类型&lt;/th>
-&lt;th style="text-align: left">默认值&lt;/th>
-&lt;th style="text-align: left">说明&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align: left">path&lt;/td>
-&lt;td style="text-align: left">str&lt;/td>
-&lt;td style="text-align: left">None&lt;/td>
-&lt;td style="text-align: left">二维码图片的保存路径，None即本地目录下的wxauto_qrcode文件夹&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>返回值：str，二维码图片的路径&lt;/p>
-&lt;h4>reopen&lt;span class="hx:absolute hx:-mt-20" id="reopen">&lt;/span>
-&lt;a href="#reopen" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>重新打开微信&lt;/strong>，为了避免各种弹窗影响操作，建议调用该方法后再执行login或get_qrcode&lt;/p>
-&lt;p>参数：无&lt;/p>
-&lt;p>返回值：无&lt;/p>
-&lt;h4>open&lt;span class="hx:absolute hx:-mt-20" id="open">&lt;/span>
-&lt;a href="#open" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>启动微信&lt;/strong>，建议在初始化的时候传入app_path参数，否则可能会启动失败&lt;/p>
-&lt;p>参数：无&lt;/p>
-&lt;p>返回值：无&lt;/p>
-&lt;h3>WeChatImage&lt;span class="hx:absolute hx:-mt-20" id="wechatimage">&lt;/span>
-&lt;a href="#wechatimage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
-&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox.ui.component&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">WeChatImage&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">imgwnd&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">WeChatImage&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
-&lt;button
-class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
-title="Copy code"
->
-&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
-&lt;/button>
-&lt;/div>
-&lt;/div>
-&lt;p>微信图片/视频&lt;strong>窗口&lt;/strong>类，用于处理微信图片或图片窗口的各种操作&lt;/p>
-&lt;p>&lt;img src="https://example.org/images/wxauto_image_wnd.png" alt="wxauto_image_wnd" loading="lazy" />&lt;/p>
-&lt;h4>ocr&lt;span class="hx:absolute hx:-mt-20" id="ocr">&lt;/span>
-&lt;a href="#ocr" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>识别图片中的文字&lt;/strong>，仅支持图片，不支持视频&lt;/p>
-&lt;p>参数：&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align: left">参数名&lt;/th>
-&lt;th style="text-align: left">类型&lt;/th>
-&lt;th style="text-align: left">默认值&lt;/th>
-&lt;th style="text-align: left">说明&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align: left">wait&lt;/td>
-&lt;td style="text-align: left">int&lt;/td>
-&lt;td style="text-align: left">10&lt;/td>
-&lt;td style="text-align: left">隐性等待时间&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>返回值：str，识别到的文字&lt;/p>
-&lt;h4>save&lt;span class="hx:absolute hx:-mt-20" id="save">&lt;/span>
-&lt;a href="#save" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>保存图片/视频&lt;/strong>&lt;/p>
-&lt;p>参数：&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align: left">参数名&lt;/th>
-&lt;th style="text-align: left">类型&lt;/th>
-&lt;th style="text-align: left">默认值&lt;/th>
-&lt;th style="text-align: left">说明&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align: left">dir_path&lt;/td>
-&lt;td style="text-align: left">str&lt;/td>
-&lt;td style="text-align: left">None&lt;/td>
-&lt;td style="text-align: left">保存的目录路径，None即本地路径下自动生成&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align: left">timeout&lt;/td>
-&lt;td style="text-align: left">int&lt;/td>
-&lt;td style="text-align: left">10&lt;/td>
-&lt;td style="text-align: left">保存超时时间&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>返回值：Path，保存的文件路径&lt;/p>
-&lt;h4>close&lt;span class="hx:absolute hx:-mt-20" id="close">&lt;/span>
-&lt;a href="#close" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>关闭图片/视频窗口&lt;/strong>&lt;/p>
-&lt;p>参数：无&lt;/p>
-&lt;p>返回值：无&lt;/p>
-&lt;h3>✨WeChatDialog&lt;span class="hx:absolute hx:-mt-20" id="wechatdialog">&lt;/span>
-&lt;a href="#wechatdialog" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>微信对话框对象，用于处理微信对话框的各种操作&lt;/p>
-&lt;p>&lt;img src="https://example.org/images/wechatdialog.png" alt="wxauto_dialog_wnd" loading="lazy" />&lt;/p>
-&lt;h4>select_option&lt;span class="hx:absolute hx:-mt-20" id="select_option-1">&lt;/span>
-&lt;a href="#select_option-1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>选择对话框中的选项&lt;/strong>，如“确定”、“取消”等&lt;/p>
-&lt;p>参数：无&lt;/p>
-&lt;p>返回值：&lt;a href="#wxresponse" >WxResponse&lt;/a>对象&lt;/p>
-&lt;h4>close&lt;span class="hx:absolute hx:-mt-20" id="close-1">&lt;/span>
-&lt;a href="#close-1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>关闭对话框&lt;/strong>&lt;/p>
-&lt;p>参数：无&lt;/p>
-&lt;p>返回值：无&lt;/p></description></item><item><title>五、使用示例</title><link>https://example.org/docs/example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/docs/example/</guid><description>
+&lt;/ul></description></item><item><title>五、使用示例</title><link>https://example.org/docs/example/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/docs/example/</guid><description>
 &lt;h3>1. 基本使用&lt;span class="hx:absolute hx:-mt-20" id="1-基本使用">&lt;/span>
 &lt;a href="#1-%e5%9f%ba%e6%9c%ac%e4%bd%bf%e7%94%a8" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">WeChat&lt;/span>
@@ -4804,14 +4576,34 @@ title="Copy code"
 &lt;/button>
 &lt;/div>
 &lt;/div>
-&lt;h3>5. 获取多个微信客户端&lt;span class="hx:absolute hx:-mt-20" id="5-获取多个微信客户端">&lt;/span>
-&lt;a href="#5-%e8%8e%b7%e5%8f%96%e5%a4%9a%e4%b8%aa%e5%be%ae%e4%bf%a1%e5%ae%a2%e6%88%b7%e7%ab%af" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;h3>5. 获取多个微信客户端/登录窗口&lt;span class="hx:absolute hx:-mt-20" id="5-获取多个微信客户端登录窗口">&lt;/span>
+&lt;a href="#5-%e8%8e%b7%e5%8f%96%e5%a4%9a%e4%b8%aa%e5%be%ae%e4%bf%a1%e5%ae%a2%e6%88%b7%e7%ab%af%e7%99%bb%e5%bd%95%e7%aa%97%e5%8f%a3" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;h4>5.1 获取多个微信客户端&lt;span class="hx:absolute hx:-mt-20" id="51-获取多个微信客户端">&lt;/span>
+&lt;a href="#51-%e8%8e%b7%e5%8f%96%e5%a4%9a%e4%b8%aa%e5%be%ae%e4%bf%a1%e5%ae%a2%e6%88%b7%e7%ab%af" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">get_wx_clients&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 获取所有微信客户端&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">clients&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">get_wx_clients&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">client&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">clients&lt;/span>&lt;span class="p">:&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">f&lt;/span>&lt;span class="s2">&amp;#34;微信客户端: &lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">client&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h4>5.2 获取多个登录窗口&lt;span class="hx:absolute hx:-mt-20" id="52-获取多个登录窗口">&lt;/span>
+&lt;a href="#52-%e8%8e%b7%e5%8f%96%e5%a4%9a%e4%b8%aa%e7%99%bb%e5%bd%95%e7%aa%97%e5%8f%a3" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">get_wx_logins&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 获取所有微信客户端&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">login_windows&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">get_wx_logins&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 关闭所有登录窗口&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">login_window&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">login_windows&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">login_window&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1"># 关闭&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
 &lt;button
 class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
 title="Copy code"
@@ -5078,7 +4870,457 @@ title="Copy code"
 &lt;/div>
 &lt;h2>可以最小化吗&lt;span class="hx:absolute hx:-mt-20" id="可以最小化吗">&lt;/span>
 &lt;a href="#%e5%8f%af%e4%bb%a5%e6%9c%80%e5%b0%8f%e5%8c%96%e5%90%97" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>可以但是&lt;strong>不建议&lt;/strong>。&lt;/p>
-&lt;p>wxauto项目本身是ui自动化，最小化会导致窗口ui绘制更新慢，自动化效率低&lt;/p></description></item><item><title>Markdown 语法指南</title><link>https://example.org/blog/markdown/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><guid>https://example.org/blog/markdown/</guid><description>
+&lt;p>wxauto项目本身是ui自动化，最小化会导致窗口ui绘制更新慢，自动化效率低&lt;/p></description></item><item><title>其他类（方法）</title><link>https://example.org/docs/class/other/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/docs/class/other/</guid><description>
+&lt;h3>WxResponse&lt;span class="hx:absolute hx:-mt-20" id="wxresponse">&lt;/span>
+&lt;a href="#wxresponse" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>该类用于该项目多个方法的返回值&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 这里假设result为某个方法的WxResponse类型返回值&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">result&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">WxResponse&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="o">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 判断是否成功&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;data&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="c1"># 成功，获取返回数据，大多数情况下为None&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">result&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;message&amp;#39;&lt;/span>&lt;span class="p">])&lt;/span> &lt;span class="c1"># 该方法调用失败，打印错误信息&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>WxParam&lt;span class="hx:absolute hx:-mt-20" id="wxparam">&lt;/span>
+&lt;a href="#wxparam" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>该类用于该项目的一些参数，在获取&lt;code>WeChat&lt;/code>实例前，可以通过修改该类的属性来修改默认参数&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>属性&lt;/th>
+&lt;th>类型&lt;/th>
+&lt;th>默认值&lt;/th>
+&lt;th>描述&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>ENABLE_FILE_LOGGER&lt;/td>
+&lt;td>bool&lt;/td>
+&lt;td>True&lt;/td>
+&lt;td>是否启用日志文件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>DEFAULT_SAVE_PATH&lt;/td>
+&lt;td>str&lt;/td>
+&lt;td>./wxautox&lt;/td>
+&lt;td>下载文件/图片默认保存路径&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>✨MESSAGE_HASH&lt;/td>
+&lt;td>bool&lt;/td>
+&lt;td>False&lt;/td>
+&lt;td>是否启用消息哈希值用于辅助判断消息，开启后会稍微影响性能&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>DEFAULT_MESSAGE_XBIAS&lt;/td>
+&lt;td>int&lt;/td>
+&lt;td>51&lt;/td>
+&lt;td>头像到消息X偏移量，用于消息定位，点击消息等操作&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>FORCE_MESSAGE_XBIAS&lt;/td>
+&lt;td>bool&lt;/td>
+&lt;td>False&lt;/td>
+&lt;td>是否强制重新自动获取X偏移量，如果设置为True，则每次启动都会重新获取，系统设置了分辨率缩放时开启&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>LISTEN_INTERVAL&lt;/td>
+&lt;td>int&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>监听消息时间间隔，单位秒&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>✨LISTENER_EXCUTOR_WORKERS&lt;/td>
+&lt;td>int&lt;/td>
+&lt;td>4&lt;/td>
+&lt;td>监听执行器线程池大小，根据自身需求和设备性能设置&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>SEARCH_CHAT_TIMEOUT&lt;/td>
+&lt;td>int&lt;/td>
+&lt;td>5&lt;/td>
+&lt;td>搜索聊天对象超时时间，单位秒&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>✨NOTE_LOAD_TIMEOUT&lt;/td>
+&lt;td>int&lt;/td>
+&lt;td>30&lt;/td>
+&lt;td>微信笔记加载超时时间，单位秒&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>示例：&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">WxParam&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 设置8个监听线程&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">WxParam&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">LISTENER_EXCUTOR_WORKERS&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">8&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;h3>NewFriendElement&lt;span class="hx:absolute hx:-mt-20" id="newfriendelement">&lt;/span>
+&lt;a href="#newfriendelement" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;img src="https://example.org/images/new_friend_element.png" alt="NewFriendElement" loading="lazy" />&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>属性&lt;/th>
+&lt;th>类型&lt;/th>
+&lt;th>描述（以上图为例）&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>name&lt;/td>
+&lt;td>str&lt;/td>
+&lt;td>对方名（诸葛孔明）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>msg&lt;/td>
+&lt;td>str&lt;/td>
+&lt;td>申请信息（wxautox）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>acceptable&lt;/td>
+&lt;td>bool&lt;/td>
+&lt;td>是否可接受（True）&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4>accept&lt;span class="hx:absolute hx:-mt-20" id="accept">&lt;/span>
+&lt;a href="#accept" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>同意添加好友&lt;/strong>&lt;/p>
+&lt;p>参数：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">参数名&lt;/th>
+&lt;th style="text-align: left">类型&lt;/th>
+&lt;th style="text-align: left">默认值&lt;/th>
+&lt;th style="text-align: left">说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">remark&lt;/td>
+&lt;td style="text-align: left">str&lt;/td>
+&lt;td style="text-align: left">None&lt;/td>
+&lt;td style="text-align: left">备注&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">tags&lt;/td>
+&lt;td style="text-align: left">list&lt;/td>
+&lt;td style="text-align: left">None&lt;/td>
+&lt;td style="text-align: left">标签&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">permission&lt;/td>
+&lt;td style="text-align: left">str&lt;/td>
+&lt;td style="text-align: left">&amp;lsquo;朋友圈&amp;rsquo;&lt;/td>
+&lt;td style="text-align: left">朋友圈权限，可选值：&amp;lsquo;全部&amp;rsquo;、&amp;lsquo;仅聊天&amp;rsquo;&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4>✨delete&lt;span class="hx:absolute hx:-mt-20" id="delete">&lt;/span>
+&lt;a href="#delete" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>删除好友申请&lt;/strong>&lt;/p>
+&lt;p>参数：无&lt;/p>
+&lt;h4>✨reply&lt;span class="hx:absolute hx:-mt-20" id="reply">&lt;/span>
+&lt;a href="#reply" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>回复好友申请&lt;/strong>&lt;/p>
+&lt;p>参数：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">参数名&lt;/th>
+&lt;th style="text-align: left">类型&lt;/th>
+&lt;th style="text-align: left">默认值&lt;/th>
+&lt;th style="text-align: left">说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">text&lt;/td>
+&lt;td style="text-align: left">str&lt;/td>
+&lt;td style="text-align: left">必填&lt;/td>
+&lt;td style="text-align: left">回复信息&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4>✨get_account&lt;span class="hx:absolute hx:-mt-20" id="get_account">&lt;/span>
+&lt;a href="#get_account" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>获取申请添加的好友的账号信息&lt;/strong>&lt;/p>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">
+&lt;div class="hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2">&lt;div class="hx:select-none hx:text-xl" style="font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">ℹ️&lt;/div>&lt;/div>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">该方法仅接受好友申请后，已经成为好友，才能获取到对方账号信息&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;p>参数：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">参数名&lt;/th>
+&lt;th style="text-align: left">类型&lt;/th>
+&lt;th style="text-align: left">默认值&lt;/th>
+&lt;th style="text-align: left">说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">wait&lt;/td>
+&lt;td style="text-align: left">int&lt;/td>
+&lt;td style="text-align: left">5&lt;/td>
+&lt;td style="text-align: left">等待时间&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>返回值：str&lt;/p>
+&lt;h3>✨LoginWnd&lt;span class="hx:absolute hx:-mt-20" id="loginwnd">&lt;/span>
+&lt;a href="#loginwnd" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 3;">
+&lt;a
+class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="https://example.org/docs/example/#6-%e8%87%aa%e5%8a%a8%e7%99%bb%e5%bd%95"
+>&lt;span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">👉查看自动登录、二维码示例&lt;/span>&lt;div class="hextra-badge hextra-card-tag">
+&lt;div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">点击跳转&lt;/div>
+&lt;/div>&lt;/a>
+&lt;/div>
+&lt;p>该类用于微信登录、获取二维码等操作&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">LoginWnd&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wxlogin&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">LoginWnd&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">app_path&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;...&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;img src="https://example.org/images/login_wnd.png" alt="LoginWnd" loading="lazy" />&lt;/p>
+&lt;p>参数：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">参数名&lt;/th>
+&lt;th style="text-align: left">类型&lt;/th>
+&lt;th style="text-align: left">默认值&lt;/th>
+&lt;th style="text-align: left">说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">app_path&lt;/td>
+&lt;td style="text-align: left">str&lt;/td>
+&lt;td style="text-align: left">None&lt;/td>
+&lt;td style="text-align: left">微信客户端路径&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>属性：无&lt;/p>
+&lt;h4>login&lt;span class="hx:absolute hx:-mt-20" id="login">&lt;/span>
+&lt;a href="#login" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>登录微信&lt;/strong>&lt;/p>
+&lt;p>参数：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">参数名&lt;/th>
+&lt;th style="text-align: left">类型&lt;/th>
+&lt;th style="text-align: left">默认值&lt;/th>
+&lt;th style="text-align: left">说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">timeout&lt;/td>
+&lt;td style="text-align: left">int&lt;/td>
+&lt;td style="text-align: left">10&lt;/td>
+&lt;td style="text-align: left">登录超时时间&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>返回值：&lt;a href="#wxresponse" >&lt;code>WxResponse&lt;/code>&lt;/a>&lt;/p>
+&lt;h4>get_qrcode&lt;span class="hx:absolute hx:-mt-20" id="get_qrcode">&lt;/span>
+&lt;a href="#get_qrcode" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>获取二维码&lt;/strong>&lt;/p>
+&lt;p>参数：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">参数名&lt;/th>
+&lt;th style="text-align: left">类型&lt;/th>
+&lt;th style="text-align: left">默认值&lt;/th>
+&lt;th style="text-align: left">说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">path&lt;/td>
+&lt;td style="text-align: left">str&lt;/td>
+&lt;td style="text-align: left">None&lt;/td>
+&lt;td style="text-align: left">二维码图片的保存路径，None即本地目录下的wxauto_qrcode文件夹&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>返回值：str，二维码图片的路径&lt;/p>
+&lt;h4>reopen&lt;span class="hx:absolute hx:-mt-20" id="reopen">&lt;/span>
+&lt;a href="#reopen" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>重新打开微信&lt;/strong>，为了避免各种弹窗影响操作，建议调用该方法后再执行login或get_qrcode&lt;/p>
+&lt;p>参数：无&lt;/p>
+&lt;p>返回值：无&lt;/p>
+&lt;h4>open&lt;span class="hx:absolute hx:-mt-20" id="open">&lt;/span>
+&lt;a href="#open" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>启动微信&lt;/strong>，建议在初始化的时候传入app_path参数，否则可能会启动失败&lt;/p>
+&lt;p>参数：无&lt;/p>
+&lt;p>返回值：无&lt;/p>
+&lt;h3>WeChatImage&lt;span class="hx:absolute hx:-mt-20" id="wechatimage">&lt;/span>
+&lt;a href="#wechatimage" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox.ui.component&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">WeChatImage&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">imgwnd&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">WeChatImage&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>微信图片/视频&lt;strong>窗口&lt;/strong>类，用于处理微信图片或图片窗口的各种操作&lt;/p>
+&lt;p>&lt;img src="https://example.org/images/wxauto_image_wnd.png" alt="wxauto_image_wnd" loading="lazy" />&lt;/p>
+&lt;h4>ocr&lt;span class="hx:absolute hx:-mt-20" id="ocr">&lt;/span>
+&lt;a href="#ocr" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>识别图片中的文字&lt;/strong>，仅支持图片，不支持视频&lt;/p>
+&lt;p>参数：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">参数名&lt;/th>
+&lt;th style="text-align: left">类型&lt;/th>
+&lt;th style="text-align: left">默认值&lt;/th>
+&lt;th style="text-align: left">说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">wait&lt;/td>
+&lt;td style="text-align: left">int&lt;/td>
+&lt;td style="text-align: left">10&lt;/td>
+&lt;td style="text-align: left">隐性等待时间&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>返回值：str，识别到的文字&lt;/p>
+&lt;h4>save&lt;span class="hx:absolute hx:-mt-20" id="save">&lt;/span>
+&lt;a href="#save" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>保存图片/视频&lt;/strong>&lt;/p>
+&lt;p>参数：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">参数名&lt;/th>
+&lt;th style="text-align: left">类型&lt;/th>
+&lt;th style="text-align: left">默认值&lt;/th>
+&lt;th style="text-align: left">说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">dir_path&lt;/td>
+&lt;td style="text-align: left">str&lt;/td>
+&lt;td style="text-align: left">None&lt;/td>
+&lt;td style="text-align: left">保存的目录路径，None即本地路径下自动生成&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">timeout&lt;/td>
+&lt;td style="text-align: left">int&lt;/td>
+&lt;td style="text-align: left">10&lt;/td>
+&lt;td style="text-align: left">保存超时时间&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>返回值：Path，保存的文件路径&lt;/p>
+&lt;h4>close&lt;span class="hx:absolute hx:-mt-20" id="close">&lt;/span>
+&lt;a href="#close" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>关闭图片/视频窗口&lt;/strong>&lt;/p>
+&lt;p>参数：无&lt;/p>
+&lt;p>返回值：无&lt;/p>
+&lt;h3>✨WeChatDialog&lt;span class="hx:absolute hx:-mt-20" id="wechatdialog">&lt;/span>
+&lt;a href="#wechatdialog" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>微信对话框对象，用于处理微信对话框的各种操作&lt;/p>
+&lt;p>&lt;img src="https://example.org/images/wechatdialog.png" alt="wxauto_dialog_wnd" loading="lazy" />&lt;/p>
+&lt;h4>select_option&lt;span class="hx:absolute hx:-mt-20" id="select_option">&lt;/span>
+&lt;a href="#select_option" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>选择对话框中的选项&lt;/strong>，如“确定”、“取消”等&lt;/p>
+&lt;p>参数：无&lt;/p>
+&lt;p>返回值：&lt;a href="#wxresponse" >WxResponse&lt;/a>对象&lt;/p>
+&lt;h4>get_all_text&lt;span class="hx:absolute hx:-mt-20" id="get_all_text">&lt;/span>
+&lt;a href="#get_all_text" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>获取对话框中所有的文字内容&lt;/strong>&lt;/p>
+&lt;p>参数：无&lt;/p>
+&lt;p>返回值：str&lt;/p>
+&lt;h4>close&lt;span class="hx:absolute hx:-mt-20" id="close-1">&lt;/span>
+&lt;a href="#close-1" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;p>&lt;strong>关闭对话框&lt;/strong>&lt;/p>
+&lt;p>参数：无&lt;/p>
+&lt;p>返回值：无&lt;/p>
+&lt;h3>✨get_wx_clients&lt;span class="hx:absolute hx:-mt-20" id="get_wx_clients">&lt;/span>
+&lt;a href="#get_wx_clients" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>&lt;strong>获取所有已登录的微信3.9客户端&lt;/strong>&lt;/p>
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">get_wx_clients&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 获取所有微信客户端&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">clients&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">get_wx_clients&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">client&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">clients&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">f&lt;/span>&lt;span class="s2">&amp;#34;微信客户端: &lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">client&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>返回值：List[&lt;a href="https://example.org/docs/class/wechat/" >WeChat&lt;/a>]&lt;/p>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-amber-200 hx:bg-amber-100 hx:text-amber-900 hx:dark:border-amber-200/30 hx:dark:bg-amber-900/30 hx:dark:text-amber-200">
+&lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>&lt;/svg>Warning&lt;/p>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>&lt;strong>wxauto项目不支持一切违反官方用户协议的操作，&lt;font color='red'>不建议&lt;/font>、&lt;font color='red'>不支持&lt;/font>、&lt;font color='red'>不提供&lt;/font>微信多开的方法或行为。&lt;/strong>
+但是如果你&lt;strong>自行使用&lt;/strong>其他方法多开微信，wxauto不承担由你自行多开的行为导致的风险，也不保证所有功能的正常调用。&lt;/p>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h3>✨get_wx_logins&lt;span class="hx:absolute hx:-mt-20" id="get_wx_logins">&lt;/span>
+&lt;a href="#get_wx_logins" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+&lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">wxautox&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">get_wx_logins&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 获取所有微信客户端&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">login_windows&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">get_wx_logins&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 关闭所有登录窗口&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">login_window&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">login_windows&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">login_window&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1"># 关闭&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+>
+&lt;div class="copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;div class="success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4">&lt;/div>
+&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;p>返回值：List[&lt;a href="#loginwnd" >LoginWnd&lt;/a>]&lt;/p>
+&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-amber-200 hx:bg-amber-100 hx:text-amber-900 hx:dark:border-amber-200/30 hx:dark:bg-amber-900/30 hx:dark:text-amber-200">
+&lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>&lt;/svg>Warning&lt;/p>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>&lt;strong>wxauto项目不支持一切违反官方用户协议的操作，&lt;font color='red'>不建议&lt;/font>、&lt;font color='red'>不支持&lt;/font>、&lt;font color='red'>不提供&lt;/font>微信多开的方法或行为。&lt;/strong>
+但是如果你&lt;strong>自行使用&lt;/strong>其他方法多开微信，wxauto不承担由你自行多开的行为导致的风险，也不保证所有功能的正常调用。&lt;/p>&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Markdown 语法指南</title><link>https://example.org/blog/markdown/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><guid>https://example.org/blog/markdown/</guid><description>
 &lt;p>这篇文章提供了一些基础的 Markdown 语法样例，这些可以在 Hugo 的内容文件中使用。&lt;/p>
 &lt;h2>基础语法&lt;span class="hx:absolute hx:-mt-20" id="基础语法">&lt;/span>
 &lt;a href="#%e5%9f%ba%e7%a1%80%e8%af%ad%e6%b3%95" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>标题&lt;span class="hx:absolute hx:-mt-20" id="标题">&lt;/span>

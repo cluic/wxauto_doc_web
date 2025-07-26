@@ -1,7 +1,7 @@
 ---
-weight: 5
+weight: 6
 bookFlatSection: true
-title: "其他类"
+title: "其他类（方法）"
 ---
 
 ### WxResponse
@@ -45,99 +45,6 @@ from wxautox import WxParam
 WxParam.LISTENER_EXCUTOR_WORKERS = 8
 ...
 ```
-
-### SessionElement
-
-![SessionElement](/images/session_element.png)
-
-| 属性     | 类型   | 描述（以上图为例）       |
-| -------- | ------ | --------------- |
-| name     | str    | 会话名（wxauto三群）  |
-| time     | str    | 时间（2025-05-14 14:41）  |
-| content     | str    | 消息内容（[10条]天道酬勤：这..）  |
-| ismute     | bool    | 是否消息免打扰（True）  |
-| isnew     | bool    | 是否有新消息（True）  |
-| new_count     | int    | 新消息数量（10）  |
-| info     | Dict[str, Any]    | 会话信息（包含了上述所有属性的dict）  |
-
-```python
-from wxauto import WeChat
-
-wx = WeChat()
-sessions = wx.GetSession()
-session = sessions[0]  # 获取第一个会话
-```
-
-#### click
-
-**点击会话**，即切换到这个聊天窗口
-
-参数：无
-
-返回值：无
-
-示例：
-```python
-session.click()
-```
-
-#### double_click
-
-**双击会话**，即将这个聊天窗口独立出去
-
-参数：无
-
-返回值：无
-
-示例：
-```python
-session.double_click()
-```
-
-#### ✨delete
-
-**删除会话**
-
-{{< callout type="warning" >}}
-  请谨慎调用该方法，该方法会删除该会话的所有聊天记录，无法恢复！！<br>
-  请谨慎调用该方法，该方法会删除该会话的所有聊天记录，无法恢复！！<br>
-  请谨慎调用该方法，该方法会删除该会话的所有聊天记录，无法恢复！！
-{{< /callout >}}
-
-
-参数：无
-
-返回值：[`WxResponse`](#wxresponse)
-
-示例：
-```python
-session.delete()
-```
-
-#### ✨hide
-
-**隐藏会话**
-
-参数：无
-
-返回值：[`WxResponse`](#wxresponse)
-
-示例：
-```python
-session.hide()
-```
-
-#### ✨select_option
-
-**选择会话选项**，即右键点击会话，然后选择某个选项
-
-参数：
-
-| 参数名 | 类型 | 说明 |
-| :--- | :--- | :--- |
-| option | str | 选项名称，例如“置顶”、“标为未读”等 |
-
-返回值：[`WxResponse`](#wxresponse)
 
 
 ### NewFriendElement
@@ -318,6 +225,14 @@ imgwnd = WeChatImage()
 
 返回值：[WxResponse](#wxresponse)对象
 
+#### get_all_text
+
+**获取对话框中所有的文字内容**
+
+参数：无
+
+返回值：str
+
 #### close
 
 **关闭对话框**
@@ -325,3 +240,42 @@ imgwnd = WeChatImage()
 参数：无
 
 返回值：无
+
+### ✨get_wx_clients
+
+**获取所有已登录的微信3.9客户端**
+
+```python
+from wxautox import get_wx_clients
+
+# 获取所有微信客户端
+clients = get_wx_clients()
+for client in clients:
+    print(f"微信客户端: {client}")
+```
+
+返回值：List[[WeChat](/docs/class/wechat)]
+
+> [!Warning]
+> **wxauto项目不支持一切违反官方用户协议的操作，<font color='red'>不建议</font>、<font color='red'>不支持</font>、<font color='red'>不提供</font>微信多开的方法或行为。**
+> 但是如果你**自行使用**其他方法多开微信，wxauto不承担由你自行多开的行为导致的风险，也不保证所有功能的正常调用。
+
+### ✨get_wx_logins
+
+```python
+from wxautox import get_wx_logins
+
+# 获取所有微信客户端
+login_windows = get_wx_logins()
+
+# 关闭所有登录窗口
+for login_window in login_windows:
+    login_window.close()  # 关闭
+```
+
+返回值：List[[LoginWnd](#loginwnd)]
+
+
+> [!Warning]
+> **wxauto项目不支持一切违反官方用户协议的操作，<font color='red'>不建议</font>、<font color='red'>不支持</font>、<font color='red'>不提供</font>微信多开的方法或行为。**
+> 但是如果你**自行使用**其他方法多开微信，wxauto不承担由你自行多开的行为导致的风险，也不保证所有功能的正常调用。

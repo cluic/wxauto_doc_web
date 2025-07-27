@@ -1657,7 +1657,14 @@ title="Copy code"
 &lt;/tbody>
 &lt;/table>
 &lt;h2>二、安装&lt;span class="hx:absolute hx:-mt-20" id="二安装">&lt;/span>
-&lt;a href="#%e4%ba%8c%e5%ae%89%e8%a3%85" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;h3>1. 开源版&lt;span class="hx:absolute hx:-mt-20" id="1-开源版">&lt;/span>
+&lt;a href="#%e4%ba%8c%e5%ae%89%e8%a3%85" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;div class="hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-green-200 hx:bg-green-100 hx:text-green-900 hx:dark:border-green-200/30 hx:dark:bg-green-900/30 hx:dark:text-green-200">
+&lt;p class="hx:flex hx:items-center hx:font-medium">&lt;svg height=16px class="hx:inline-block hx:align-middle hx:mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>&lt;/svg>云部署&lt;/p>
+&lt;div class="hx:w-full hx:min-w-0 hx:leading-7">
+&lt;div class="hx:mt-6 hx:leading-7 hx:first:mt-0">&lt;p>本项目已制作了预配置镜像，适合希望快速运行项目的用户，无需手动配置环境。
+&lt;a href="https://example.org/deploy/" >&lt;strong>查看详情 ➔&lt;/strong>&lt;/a>&lt;/p>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h3>1. 开源版&lt;span class="hx:absolute hx:-mt-20" id="1-开源版">&lt;/span>
 &lt;a href="#1-%e5%bc%80%e6%ba%90%e7%89%88" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
 &lt;div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">pip install wxauto&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
 &lt;button

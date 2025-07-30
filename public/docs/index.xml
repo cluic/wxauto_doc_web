@@ -4892,11 +4892,10 @@ title="Copy code"
 &lt;/li>
 &lt;/ul>
 &lt;h2>掉线怎么办&lt;span class="hx:absolute hx:-mt-20" id="掉线怎么办">&lt;/span>
-&lt;a href="#%e6%8e%89%e7%ba%bf%e6%80%8e%e4%b9%88%e5%8a%9e" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>掉线是微信客户端在3.9.9+版本以后新增的安全机制，主要发生在微信号在陌生电脑设备登录后触发，不会涉及封号，没有完美解决方案，以下提供两个思路：&lt;/p>
+&lt;a href="#%e6%8e%89%e7%ba%bf%e6%80%8e%e4%b9%88%e5%8a%9e" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>掉线是微信客户端近期新增的安全机制，主要发生在微信号在陌生电脑设备或云服务器登录后触发，不会涉及封号，没有完美解决方案，以下提供两个思路：&lt;/p>
 &lt;ul>
 &lt;li>微信号在同一台电脑养至可快速登录，几乎不会掉线，再进行wxauto托管&lt;/li>
-&lt;li>想办法使用3.9.8版本微信客户端，完全不掉线（绕过微信版本检测的风险自行承担）&lt;/li>
-&lt;li>plus版本提供掉线检测、二维码获取、自动登录等方法&lt;/li>
+&lt;li>plus版本提供掉线检测、二维码获取、自动登录等方法（被踢下线无法自动登录，需扫码）&lt;/li>
 &lt;/ul>
 &lt;h2>支持Linux/Mac吗&lt;span class="hx:absolute hx:-mt-20" id="支持linuxmac吗">&lt;/span>
 &lt;a href="#%e6%94%af%e6%8c%81linuxmac%e5%90%97" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>不支持，基于windows官方API开发，只支持windows系统&lt;/p>

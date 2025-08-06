@@ -5,6 +5,16 @@ weight: 4
 ---
 # 更新日志
 
+## v39.1.39
+
+- 修复获取通讯录群组有时失败的问题
+- 修复合并消息有时无法下载图片的问题
+- 修复朋友圈偶尔评论卡住的问题
+- 修复msg对象download_head_image方法偶尔无法正常下载的问题
+- 优化SendUrlCard方法
+- 修复朋友圈偶尔评论卡住的问题
+- 修复转发消息多目标报错问题、发送卡片附带none的问题
+
 ## v39.1.38
 
 - [dialog对象](/docs/class/other/#wechatdialog)增加[get_all_text](/docs/class/other/#get_all_text)方法，以方便获取对话框内容

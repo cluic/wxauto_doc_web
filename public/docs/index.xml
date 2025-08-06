@@ -931,6 +931,12 @@ title="Copy code"
 &lt;td>发送对象，可以是单个用户名或用户名列表&lt;/td>
 &lt;/tr>
 &lt;tr>
+&lt;td>message&lt;/td>
+&lt;td>str&lt;/td>
+&lt;td>None&lt;/td>
+&lt;td>附加消息，默认不发送&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;td>timeout&lt;/td>
 &lt;td>int&lt;/td>
 &lt;td>10&lt;/td>
@@ -1585,7 +1591,11 @@ title="Copy code"
 &lt;ul>
 &lt;li>类型：List[str]&lt;/li>
 &lt;/ul></description></item><item><title>开源版</title><link>https://example.org/update/wxauto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/update/wxauto/</guid><description>
-&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.14&lt;span class="hx:absolute hx:-mt-20" id="v39114">&lt;/span>
+&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.15&lt;span class="hx:absolute hx:-mt-20" id="v39115">&lt;/span>
+&lt;a href="#v39115" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>修复当前页面没有任何聊天消息时，无法触发新消息判断的问题&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.14&lt;span class="hx:absolute hx:-mt-20" id="v39114">&lt;/span>
 &lt;a href="#v39114" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
 &lt;li>修复折叠群聊导致无法正常运行的问题&lt;/li>
 &lt;/ul>

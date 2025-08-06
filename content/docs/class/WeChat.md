@@ -73,6 +73,7 @@ wx.SendUrlCard(url="https://example.com", friends="张三", timeout=10)
 | ------- | --------------------- | ------ | -------------------------------------- |
 | url     | str                   | 必填   | 链接地址                               |
 | friends | Union[str, List[str]] | None   | 发送对象，可以是单个用户名或用户名列表 |
+| message | str | None   | 附加消息，默认不发送 |
 | timeout | int                   | 10     | 等待时间（秒）                         |
 
 **返回值**：

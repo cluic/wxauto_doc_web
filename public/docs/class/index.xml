@@ -931,6 +931,12 @@ title="Copy code"
 &lt;td>发送对象，可以是单个用户名或用户名列表&lt;/td>
 &lt;/tr>
 &lt;tr>
+&lt;td>message&lt;/td>
+&lt;td>str&lt;/td>
+&lt;td>None&lt;/td>
+&lt;td>附加消息，默认不发送&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;td>timeout&lt;/td>
 &lt;td>int&lt;/td>
 &lt;td>10&lt;/td>

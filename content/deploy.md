@@ -15,7 +15,9 @@ weight: 3
 
 {{< cards >}}
   {{< card link="https://www.pulidc.com/buy/wxauto" image="/images/puli1.png" title="👉点击购买：4核4G 12/月" tag="点击跳转" tagType="info" >}}
+  {{< card link="https://www.pulidc.com/buy/wxauto" image="/images/puli3.png" title="👉点击购买：4核6G 13/月" tag="点击跳转" tagType="info" >}}
   {{< card link="https://www.pulidc.com/buy/wxauto" image="/images/puli2.png" title="👉点击购买：4核8G 15/月" tag="点击跳转" tagType="info" >}}
+  {{< card link="https://www.pulidc.com/buy/wxauto" image="/images/puli4.png" title="👉点击购买：8核8G 18/月" tag="点击跳转" tagType="info" >}}
 {{< /cards >}}
 
 ### 预装环境清单

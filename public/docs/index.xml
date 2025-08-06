@@ -3939,7 +3939,6 @@ title="Copy code"
 &lt;li>修复朋友圈偶尔评论卡住的问题&lt;/li>
 &lt;li>修复msg对象download_head_image方法偶尔无法正常下载的问题&lt;/li>
 &lt;li>优化SendUrlCard方法&lt;/li>
-&lt;li>修复朋友圈偶尔评论卡住的问题&lt;/li>
 &lt;li>修复转发消息多目标报错问题、发送卡片附带none的问题&lt;/li>
 &lt;/ul>
 &lt;h2>v39.1.38&lt;span class="hx:absolute hx:-mt-20" id="v39138">&lt;/span>

@@ -16,9 +16,9 @@ wxauto(x) 相关衍生项目，由用户开发。
 {{< cards >}}
 
   {{< card
-        link="https://github.com/zj591227045/WXAUTO-HTTP-API"
+        link="https://github.com/cluic/wxauto-restful-api"
         icon="github"
-        title="WXAUTO-HTTP-API"
+        title="wxauto-restful-api"
         subtitle="wxauto Restful API 管理应用"
         image="/images/showcase/wxauto_http_api.png"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"

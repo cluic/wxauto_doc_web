@@ -43,15 +43,6 @@ wxauto(x) 相关衍生项目，由用户开发。
   >}}
 
   {{< card
-        link="https://github.com/KouriChat/KouriChat"
-        icon="github"
-        title="KouriChat"
-        subtitle="在虚拟与现实交织处，给予永恒的温柔羁绊"
-        image="/images/showcase/courichat.png"
-        imageStyle="object-fit:cover; aspect-ratio:16/9;"
-  >}}
-
-  {{< card
         link="https://github.com/iwyxdxl/WeChatBot_WXAUTO_SE"
         icon="github"
         title="WeChatBot_WXAUTO_SE"

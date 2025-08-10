@@ -29,7 +29,7 @@ else:
 | DEFAULT_SAVE_PATH   | str    | ./wxautox | 下载文件/图片默认保存路径 |
 | ✨MESSAGE_HASH        | bool   | False    | 是否启用消息哈希值用于辅助判断消息，开启后会稍微影响性能                               |
 | DEFAULT_MESSAGE_XBIAS | int    | 51       | 头像到消息X偏移量，用于消息定位，点击消息等操作                                       |
-| FORCE_MESSAGE_XBIAS  | bool   | False    | 是否强制重新自动获取X偏移量，如果设置为True，则每次启动都会重新获取，系统设置了分辨率缩放时开启    |
+| FORCE_MESSAGE_XBIAS  | bool   | True    | 是否强制重新自动获取X偏移量，如果设置为True，则每次启动都会重新获取，系统设置了分辨率缩放时开启    |
 | LISTEN_INTERVAL     | int    | 1        | 监听消息时间间隔，单位秒                                                                 |
 | ✨LISTENER_EXCUTOR_WORKERS | int    | 4        | 监听执行器线程池大小，根据自身需求和设备性能设置                                       |
 | SEARCH_CHAT_TIMEOUT | int    | 5        | 搜索聊天对象超时时间，单位秒                                                             |

@@ -3684,7 +3684,7 @@ title="Copy code"
 &lt;tr>
 &lt;td>FORCE_MESSAGE_XBIAS&lt;/td>
 &lt;td>bool&lt;/td>
-&lt;td>False&lt;/td>
+&lt;td>True&lt;/td>
 &lt;td>是否强制重新自动获取X偏移量，如果设置为True，则每次启动都会重新获取，系统设置了分辨率缩放时开启&lt;/td>
 &lt;/tr>
 &lt;tr>

@@ -4903,16 +4903,6 @@ title="Copy code"
 &lt;p>&lt;img src="https://example.org/images/issues_global_message.png" alt="image-20241221115227556" loading="lazy" />&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h2>为什么会掉线&lt;span class="hx:absolute hx:-mt-20" id="为什么会掉线">&lt;/span>
-&lt;a href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e4%bc%9a%e6%8e%89%e7%ba%bf" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>掉线是微信3.9.9及以后的版本中加入的机制，客户端频繁操作导致的&lt;/p>
-&lt;h5>plus版本会掉线吗&lt;span class="hx:absolute hx:-mt-20" id="plus版本会掉线吗">&lt;/span>
-&lt;a href="#plus%e7%89%88%e6%9c%ac%e4%bc%9a%e6%8e%89%e7%ba%bf%e5%90%97" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;p>会，手动操作频繁也会掉线，是微信客户端的机制&lt;/p>
-&lt;h5>如何规避&lt;span class="hx:absolute hx:-mt-20" id="如何规避">&lt;/span>
-&lt;a href="#%e5%a6%82%e4%bd%95%e8%a7%84%e9%81%bf" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h5>&lt;ul>
-&lt;li>加延迟时间&lt;/li>
-&lt;li>用3.9.8版本客户端&lt;/li>
-&lt;li>plus版本提供自动登录、获取二维码操作&lt;/li>
-&lt;/ul>
 &lt;h2>会封号吗&lt;span class="hx:absolute hx:-mt-20" id="会封号吗">&lt;/span>
 &lt;a href="#%e4%bc%9a%e5%b0%81%e5%8f%b7%e5%90%97" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;p>&lt;strong>该项目基于Windows官方API开发，不涉及任何侵入、破解、抓包微信客户端应用，完全以人操作微信的行为执行操作&lt;/strong>&lt;/p>
 &lt;p>但是如果你有以下行为，&lt;u>&lt;strong>即使手动操作&lt;/strong>&lt;/u>也有风控的风险：&lt;/p>

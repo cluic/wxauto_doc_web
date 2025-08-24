@@ -269,6 +269,10 @@ msg.quote("回复内容")
 转发该消息
 
 ```python
+# 开源版
+msg.forward("张三")
+
+# ✨附带消息message参数仅plus版本有效
 msg.forward("张三", message="转发会议材料给你，请查收")
 ```
 

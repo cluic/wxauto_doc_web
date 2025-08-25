@@ -180,3 +180,20 @@ targets = [
 ]
 wx.MergeForward(targets)
 ```
+
+### 9. 创建群聊
+
+```python
+from wxautox import WeChat
+
+wx = WeChat()
+
+# 以“张三”聊天窗口，添加“李四”，形成群聊
+wx.AddGroupMembers(group='张三', members=['李四'])
+
+# 简单等待
+time.sleep(3)
+
+# 修改群名
+wx.ManageGroup(name='这是新群名')
+```

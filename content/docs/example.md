@@ -7,7 +7,7 @@ title: "五、使用示例"
 ### 1. 基本使用
 
 ```python
-from wxautox import WeChat
+from wxauto import WeChat
 
 # 初始化微信实例
 wx = WeChat()
@@ -24,8 +24,8 @@ for msg in msgs:
 ### 2. 监听消息
 
 ```python
-from wxautox import WeChat
-from wxautox.msgs import FriendMessage
+from wxauto import WeChat
+from wxauto.msgs import FriendMessage
 import time
 
 wx = WeChat()
@@ -42,7 +42,6 @@ def on_message(msg, chat):
 
     # 示例3：自动回复收到
     if isinstance(msg, FriendMessage):
-        time.sleep(len(msg.content))
         msg.quote('收到')
 
     ...# 其他处理逻辑，配合Message类的各种方法，可以实现各种功能
@@ -61,7 +60,7 @@ wx.KeepRunning()
 wx.RemoveListenChat(nickname="张三")
 ```
 
-### 3. 处理好友申请
+### 3. ✨处理好友申请
 
 ```python
 from wxautox import WeChat
@@ -78,7 +77,7 @@ for friend in newfriends:
     friend.accept(remark=remark, tags=tags)  # 接受好友请求，并设置备注和标签
 ```
 
-### 4. 使用打字机模式发送消息
+### 4. ✨使用打字机模式发送消息
 
 ```python
 from wxautox import WeChat
@@ -92,7 +91,7 @@ wx.SendTypingText("你好，这是一条测试消息", who="张三")
 wx.SendTypingText("各位好：\n{@张三} 请负责前端部分\n{@李四} 请负责后端部分", who="项目群")
 ```
 
-### 5. 获取多个微信客户端/登录窗口
+### 5. ✨获取多个微信客户端/登录窗口
 
 #### 5.1 获取多个微信客户端
 ```python
@@ -117,7 +116,7 @@ for login_window in login_windows:
     login_window.close()  # 关闭
 ```
 
-### 6. 自动登录
+### 6. ✨自动登录
 
 {{< callout type="info" >}}
 仅可自动登录的微信有效
@@ -135,7 +134,7 @@ loginwnd = LoginWnd(wxpath)
 loginwnd.login()
 ```
 
-### 7. 获取登录二维码
+### 7. ✨获取登录二维码
 
 ```python
 from wxautox import LoginWnd
@@ -150,7 +149,7 @@ qrcode_path = loginwnd.get_qrcode()
 print(qrcode)
 ```
 
-### 8. 合并转发消息
+### 8. ✨合并转发消息
 
 ```python
 from wxautox import WeChat
@@ -181,7 +180,7 @@ targets = [
 wx.MergeForward(targets)
 ```
 
-### 9. 创建群聊
+### 9. ✨创建群聊
 
 ```python
 from wxautox import WeChat

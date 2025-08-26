@@ -4901,14 +4901,14 @@ title="Copy code"
 &lt;td style="text-align: center">获取微信主窗口中，其中一个&lt;strong>未设置消息免打扰&lt;/strong>窗口的新消息&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: center">AddListenMessage&lt;/td>
+&lt;td style="text-align: center">AddListenChat&lt;/td>
 &lt;td style="text-align: center">获取&lt;strong>监听模式&lt;/strong>下聊天窗口的新消息&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h3>监听模式&lt;span class="hx:absolute hx:-mt-20" id="监听模式">&lt;/span>
-&lt;a href="#%e7%9b%91%e5%90%ac%e6%a8%a1%e5%bc%8f" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>AddListenMessage&lt;/p>
-&lt;p>调用AddListenMessage方法将目标聊天窗口独立出去加入监听列表，获取新消息，并触发回调函数来处理每一条消息&lt;/p>
+&lt;a href="#%e7%9b%91%e5%90%ac%e6%a8%a1%e5%bc%8f" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>AddListenChat&lt;/p>
+&lt;p>调用AddListenChat方法将目标聊天窗口独立出去加入监听列表，获取新消息，并触发回调函数来处理每一条消息&lt;/p>
 &lt;h4>优点&lt;span class="hx:absolute hx:-mt-20" id="优点">&lt;/span>
 &lt;a href="#%e4%bc%98%e7%82%b9" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h4>&lt;ul>
 &lt;li>准确&lt;/li>

@@ -3950,7 +3950,12 @@ title="Copy code"
 &lt;/ol>
 &lt;h3>其他商业远程软件&lt;span class="hx:absolute hx:-mt-20" id="其他商业远程软件">&lt;/span>
 &lt;a href="#%e5%85%b6%e4%bb%96%e5%95%86%e4%b8%9a%e8%bf%9c%e7%a8%8b%e8%bd%af%e4%bb%b6" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h3>&lt;p>如向日葵、TeamViewer、ToDesk等，断开连接不会锁屏即可&lt;/p></description></item><item><title>Plus版✨</title><link>https://example.org/update/wxautox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/update/wxautox/</guid><description>
-&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.39&lt;span class="hx:absolute hx:-mt-20" id="v39139">&lt;/span>
+&lt;h1>更新日志&lt;/h1>&lt;h2>v39.1.40&lt;span class="hx:absolute hx:-mt-20" id="v39140">&lt;/span>
+&lt;a href="#v39140" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
+&lt;li>修复添加监听偶尔卡死的问题&lt;/li>
+&lt;li>优化GetNextNewMessage&lt;/li>
+&lt;/ul>
+&lt;h2>v39.1.39&lt;span class="hx:absolute hx:-mt-20" id="v39139">&lt;/span>
 &lt;a href="#v39139" class="subheading-anchor" aria-label="Permalink for this section">&lt;/a>&lt;/h2>&lt;ul>
 &lt;li>修复获取通讯录群组有时失败的问题&lt;/li>
 &lt;li>修复合并消息有时无法下载图片的问题&lt;/li>

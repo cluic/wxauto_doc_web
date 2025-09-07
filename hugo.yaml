@@ -133,3 +133,7 @@ params:
       repoId: R_kgDONhkCTQ
       category: General
       categoryId: DIC_kwDONhkCTc4Cqx3W
+
+  banner:
+    key: "announcement"
+    message: wxauto **4.0** 发布啦！🎉 [立即查看](https://github.com/cluic/wxauto4)

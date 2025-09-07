@@ -217,7 +217,7 @@ imgwnd = WeChatImage()
 
 ![wxauto_dialog_wnd](/images/wechatdialog.png)
 
-#### select_option
+#### click_button
 
 **选择对话框中的选项**，如“确定”、“取消”等
 

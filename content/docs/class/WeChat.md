@@ -226,7 +226,7 @@ messages = wx.GetNextNewMessage(filter_mute=False)
 
 **返回值**：
 
-- 类型：Dict[str, List[[Message](/docs/class/message/)]
+- 类型：Dict[str, List[[Message](/docs/class/message/)]]
 - 描述：消息列表，键为聊天名称，值为消息列表
 - 示例：
     ```python

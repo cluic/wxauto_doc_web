@@ -25,15 +25,6 @@ wxauto(x) 相关衍生项目，由用户开发。
   >}}
 
   {{< card
-        link="https://github.com/zj591227045/WXAUTO-MGT"
-        icon="github"
-        title="WXAUTO-MGT"
-        subtitle="wxauto应用管理，支持Dify"
-        image="/images/showcase/wxauto_mgt.png"
-        imageStyle="object-fit:cover; aspect-ratio:16/9;"
-  >}}
-
-  {{< card
         link="https://blog.siverking.online/index.php/archives/7/"
         icon="link"
         title="wxauto(x)UI面板"

@@ -711,10 +711,10 @@ from pathlib import Path
 
 note_content_list = msg.get_content()
 for content in note_content_list:
-    if isintance(content, str):
+    if isinstance(content, str):
         # 文本内容
         print(content)
-    elif isintance(content, Path):
+    elif isinstance(content, Path):
         # 文件路径，文件、视频、图片等
         print('文件路径：', content)
 ```

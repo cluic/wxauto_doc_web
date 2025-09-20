@@ -5,6 +5,11 @@ weight: 1
 ---
 # 更新日志
 
+## v39.1.17
+
+- 修复SendFiles没有返回值的问题
+- 优化SessionBox滚动
+
 ## v39.1.16
 
 - `WeChat`类增加`SessionBox`属性
